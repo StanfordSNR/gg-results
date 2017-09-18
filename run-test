@@ -2,12 +2,36 @@
 
 import os
 import sys
+import base64
 import subprocess as sub
+
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
 
 from contextlib import contextmanager
 
 def debug(*args):
     print('\u2192', *args, file=sys.stderr)
+
+def send_alert(message):
+    access_id = os.environ['TWILIO_ACCESS_ID']
+    secret_id = os.environ['TWILIO_SECRET_ID']
+
+    url = 'https://api.twilio.com/2010-04-01/Accounts/{}/Messages.json'.format(access_id)
+
+    post_fields = {
+        'To': '+16692256066',
+        'From': '+16505572929',
+        'Body': message
+    }
+
+    authentication = "{}:{}".format(access_id, secret_id)
+    base64string = base64.b64encode(authentication.encode('utf-8'))
+
+    request = Request(url, urlencode(post_fields).encode())
+    request.add_header("Authorization", "Basic %s" % base64string.decode('ascii'))
+
+    urlopen(request).read()
 
 @contextmanager
 def pushd(new_dir):
@@ -81,4 +105,7 @@ if __name__ == '__main__':
     debug('chdir to', ROOT_DIR)
     os.chdir(ROOT_DIR)
 
-    main()
+    try:
+        main()
+    except Exception as ex:
+        send_alert('Test failed: {}#{}\nException: {}'.format(sys.argv[1], sys.argv[2], str(ex)))
