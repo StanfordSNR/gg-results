@@ -1,3 +1,3 @@
 #!/bin/bash -ex
 
-sudo apt-get install ccache
+sudo apt-get install -y ccache
