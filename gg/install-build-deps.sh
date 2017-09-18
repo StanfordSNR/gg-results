@@ -1,6 +1,7 @@
 #!/bin/bash -ex
 
 # install protobuf
+git submodule update --init -- deps/protobuf
 pushd deps/protobuf
 ./autogen.sh
 ./configure
@@ -10,6 +11,7 @@ sudo ldconfig
 popd
 
 # install libcrypto++-dev
+git submodule update --init -- deps/cryptopp
 pushd deps/cryptopp
 make -j$(nproc)
 sudo make install
