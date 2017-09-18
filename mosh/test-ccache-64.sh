@@ -3,6 +3,7 @@
 source define.sh
 
 export PATH=/usr/lib/ccache:$PATH
-export CCACHE_PREFIX=icecc
 
+${TIMECOMMAND_PREP} make -j64
+make clean
 ${TIMECOMMAND} make -j64

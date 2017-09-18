@@ -7,6 +7,9 @@ popd
 rm -rf build/
 mkdir -p build
 
+# clear ccache cache
+ccache -C
+
 pushd build/
 ../source/configure
 popd
