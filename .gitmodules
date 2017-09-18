@@ -1,0 +1,9 @@
+[submodule "gg/source"]
+	path = gg/source
+	url = https://github.com/stanfordsnr/gg
+[submodule "gg/deps/protobuf"]
+	path = gg/deps/protobuf
+	url = https://github.com/google/protobuf
+[submodule "gg/deps/cryptopp"]
+	path = gg/deps/cryptopp
+	url = https://github.com/weidai11/cryptopp
