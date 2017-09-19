@@ -79,7 +79,7 @@ def run_tests(program_name, test_name, repeat_count):
 
             if gg_test: env['__GG_TEST'] = '1'
 
-            sub.check_call(["./1-prepare.sh"], env=env)
+            sub.check_call(["./1-prepare.sh"], stderr=sub.DEVNULL, stdout=sub.DEVNULL, env=env)
 
             debug('running test {program}#{test} ({num}/{total})'.format(
                 program=program_name, test=test_name, num=run_index+1, total=repeat_count))
@@ -97,7 +97,7 @@ def run_tests(program_name, test_name, repeat_count):
             env['TIMECOMMAND_PREP3'] = '/usr/bin/time --output={output} --verbose'.format(
                 output=os.path.join(result_path, '{}-prep3.log'.format(run_index)))
 
-            sub.check_call([test_command], env=env, cwd=build_path)
+            sub.check_call([test_command], stderr=sub.DEVNULL, stdout=sub.DEVNULL, env=env, cwd=build_path)
 
 
 def main():
