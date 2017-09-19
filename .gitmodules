@@ -7,3 +7,6 @@
 [submodule "protobuf/source"]
 	path = protobuf/source
 	url = https://github.com/google/protobuf
+[submodule "ffmpeg/source"]
+	path = ffmpeg/source
+	url = https://git.ffmpeg.org/ffmpeg.git
