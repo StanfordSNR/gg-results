@@ -10,3 +10,6 @@
 [submodule "ffmpeg/source"]
 	path = ffmpeg/source
 	url = https://git.ffmpeg.org/ffmpeg.git
+[submodule "openssh/source"]
+	path = openssh/source
+	url = https://github.com/openssh/openssh-portable
