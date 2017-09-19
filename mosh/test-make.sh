@@ -1,5 +1,5 @@
 #!/bin/bash -ex
 
-source define.sh
+source ${BASH_SOURCE%/*}/define.sh
 
 ${TIMECOMMAND} make

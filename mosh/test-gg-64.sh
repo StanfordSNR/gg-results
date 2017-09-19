@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-source define.sh
+source ${BASH_SOURCE%/*}/define.sh
 
 ${TIMECOMMAND_PREP0} gg-run make -j${LARGE_CORES}
 

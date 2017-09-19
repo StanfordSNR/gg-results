@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-source define.sh
+source ${BASH_SOURCE%/*}/define.sh
 
 export PATH=/usr/lib/icecc/bin:$PATH
 

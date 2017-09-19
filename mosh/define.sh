@@ -1,3 +1,3 @@
-source ../config.sh
+source ${BASH_SOURCE%/*}/../config.sh
 
-export __TARGETS=src/frontend/mosh-server src/frontend/mosh-client
+export __TARGETS="src/frontend/mosh-server src/frontend/mosh-client"
