@@ -79,7 +79,7 @@ def run_tests(program_name, test_name, repeat_count):
                 program=program_name, test=test_name, num=run_index+1, total=repeat_count))
 
             env = DEFAULT_ENV.copy()
-            
+
             env['TIMECOMMAND'] = '/usr/bin/time --output={output} --verbose'.format(
                 output=os.path.join(result_path, '{}.log'.format(run_index)))
             env['TIMECOMMAND_PREP0'] = '/usr/bin/time --output={output} --verbose'.format(
@@ -116,3 +116,4 @@ if __name__ == '__main__':
         main()
     except Exception as ex:
         send_alert('Test failed: {}#{}\nException: {}'.format(sys.argv[1], sys.argv[2], str(ex)))
+        raise
