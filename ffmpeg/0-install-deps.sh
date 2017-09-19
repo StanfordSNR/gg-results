@@ -1,3 +1,3 @@
-#!/usr/bin -ex
+#!/bin/bash -ex
 
 sudo apt-get build-dep -y ffmpeg 

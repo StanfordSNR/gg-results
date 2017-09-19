@@ -1,1 +1,1 @@
-#!/usr/bin -ex
+#!/bin/bash -ex
