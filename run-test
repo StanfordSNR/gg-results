@@ -65,6 +65,8 @@ def run_tests(program_name, test_name, repeat_count):
 
     test_command = '../test-{name}.sh'.format(name=test_name)
 
+    gg_test = 'gg-' in test_name
+
     if not os.path.exists(program_name):
         raise Exception("program not found")
 
@@ -73,7 +75,11 @@ def run_tests(program_name, test_name, repeat_count):
             debug('running preparation script {program}#{test} ({num}/{total})'.format(
                 program=program_name, test=test_name, num=run_index+1, total=repeat_count))
 
-            sub.check_call(["./1-prepare.sh"])
+            env = DEFAULT_ENV.copy()
+
+            if gg_test: env['__GG_TEST'] = '1'
+
+            sub.check_call(["./1-prepare.sh"], env=env)
 
             debug('running test {program}#{test} ({num}/{total})'.format(
                 program=program_name, test=test_name, num=run_index+1, total=repeat_count))
