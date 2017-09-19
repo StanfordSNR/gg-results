@@ -73,7 +73,7 @@ def run_tests(program_name, test_name, repeat_count):
             debug('running preparation script {program}#{test} ({num}/{total})'.format(
                 program=program_name, test=test_name, num=run_index+1, total=repeat_count))
 
-            sub.check_call(["./1-prepare.sh"], stdout=sub.DEVNULL, stderr=sub.DEVNULL)
+            sub.check_call(["./1-prepare.sh"])
 
             debug('running test {program}#{test} ({num}/{total})'.format(
                 program=program_name, test=test_name, num=run_index+1, total=repeat_count))
