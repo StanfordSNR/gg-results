@@ -1,5 +1,7 @@
 #!/bin/bash -ex
 
+git submodule update --init -- source/
+
 pushd source/
 ./autogen.sh
 popd
