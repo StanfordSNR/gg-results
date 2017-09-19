@@ -4,3 +4,6 @@
 [submodule "mosh/source"]
 	path = mosh/source
 	url = https://github.com/mobile-shell/mosh
+[submodule "protobuf/source"]
+	path = protobuf/source
+	url = https://github.com/google/protobuf
