@@ -13,3 +13,6 @@
 [submodule "openssh/source"]
 	path = openssh/source
 	url = https://github.com/openssh/openssh-portable
+[submodule "llvm/source"]
+	path = llvm/source
+	url = https://github.com/llvm-mirror/llvm
