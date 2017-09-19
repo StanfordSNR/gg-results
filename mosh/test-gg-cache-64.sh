@@ -3,10 +3,12 @@
 source define.sh
 
 export PATH=/usr/lib/ccache:$PATH
+export GG_MAXJOBS=${LARGE_CORES}
 
-gg-run make -j64
+${TIMECOMMAND_PREP0} gg-run make -j${LARGE_CORES}
+${TIMECOMMAND_PREP1} gg-reduce ${__TARGETS?"not set"}
 
-export GG_MAXJOBS=64
-${TIMECOMMAND_PREP} gg-reduce ${__TARGETS?"not set"}
 make clean
+
+${TIMECOMMAND_PREP2} gg-run make -j${LARGE_CORES}
 ${TIMECOMMAND} gg-reduce ${__TARGETS?"not set"}

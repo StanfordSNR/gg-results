@@ -2,4 +2,4 @@
 
 source define.sh
 
-${TIMECOMMAND} make -j64
+${TIMECOMMAND} make -j${LARGE_CORES}

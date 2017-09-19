@@ -4,6 +4,6 @@ source define.sh
 
 export PATH=/usr/lib/ccache:$PATH
 
-${TIMECOMMAND_PREP} make -j64
+${TIMECOMMAND_PREP0} make -j${LARGE_CORES}
 make clean
-${TIMECOMMAND} make -j64
+${TIMECOMMAND} make -j${LARGE_CORES}

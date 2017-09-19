@@ -2,7 +2,7 @@
 
 source define.sh
 
-${TIMECOMMAND_PREP} gg-run make -j64
+${TIMECOMMAND_PREP0} gg-run make -j${LARGE_CORES}
 
-export GG_MAXJOBS=64
+export GG_MAXJOBS=${LARGE_CORES}
 ${TIMECOMMAND} gg-reduce ${__TARGETS?"not set"}

@@ -79,10 +79,17 @@ def run_tests(program_name, test_name, repeat_count):
                 program=program_name, test=test_name, num=run_index+1, total=repeat_count))
 
             env = DEFAULT_ENV.copy()
+            
             env['TIMECOMMAND'] = '/usr/bin/time --output={output} --verbose'.format(
                 output=os.path.join(result_path, '{}.log'.format(run_index)))
-            env['TIMECOMMAND_PREP'] = '/usr/bin/time --output={output} --verbose'.format(
-                output=os.path.join(result_path, '{}-prep.log'.format(run_index)))
+            env['TIMECOMMAND_PREP0'] = '/usr/bin/time --output={output} --verbose'.format(
+                output=os.path.join(result_path, '{}-prep0.log'.format(run_index)))
+            env['TIMECOMMAND_PREP1'] = '/usr/bin/time --output={output} --verbose'.format(
+                output=os.path.join(result_path, '{}-prep1.log'.format(run_index)))
+            env['TIMECOMMAND_PREP2'] = '/usr/bin/time --output={output} --verbose'.format(
+                output=os.path.join(result_path, '{}-prep2.log'.format(run_index)))
+            env['TIMECOMMAND_PREP3'] = '/usr/bin/time --output={output} --verbose'.format(
+                output=os.path.join(result_path, '{}-prep3.log'.format(run_index)))
 
             sub.check_call([test_command], env=env, cwd=build_path)
 
