@@ -11,5 +11,4 @@ mkdir -p build
 
 pushd build/
 ../source/configure
-gg-init
 popd

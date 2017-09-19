@@ -7,5 +7,4 @@ cp -R source/ build/
 
 pushd build/
 ./configure --disable-doc
-gg-init
 popd

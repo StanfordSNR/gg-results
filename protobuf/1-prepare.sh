@@ -10,5 +10,4 @@ cp -R source/ build/
 pushd build/
 ./autogen.sh
 ./configure --disable-shared --with-protoc=/usr/bin/protoc
-gg-init
 popd

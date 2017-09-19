@@ -8,5 +8,4 @@ cp -R source/ build/
 pushd build/
 autoreconf -fi
 ./configure
-gg-init
 popd
