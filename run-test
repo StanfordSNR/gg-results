@@ -65,7 +65,14 @@ def run_tests(program_name, test_name, repeat_count):
 
     test_command = '../test-{name}.sh'.format(name=test_name)
 
-    gg_test = 'gg-' in test_name
+    test_type = 'MAKE'
+
+    if 'gg-' in test_name:
+        test_type = 'GG'
+    elif 'icecc-' in test_name:
+        test_type = 'ICECC'
+    elif 'ccache-' in test_name:
+        test_type = 'CCACHE'
 
     if not os.path.exists(program_name):
         raise Exception("program not found")
@@ -77,7 +84,7 @@ def run_tests(program_name, test_name, repeat_count):
 
             env = DEFAULT_ENV.copy()
 
-            if gg_test: env['__GG_TEST'] = '1'
+            env['__TEST_TYPE'] = test_type
 
             sub.check_call(["./1-prepare.sh"], stderr=sub.DEVNULL, stdout=sub.DEVNULL, env=env)
 
