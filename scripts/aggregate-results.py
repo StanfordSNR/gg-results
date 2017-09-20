@@ -4,11 +4,7 @@ import os
 import sys
 import numpy
 
-import datetime
-
-class MyTimeDelta(datetime.timedelta):
-    def __repr__(self):
-        return str(self)
+from datetime import timedelta
 
 PROGRAMS = [
     'mosh',
@@ -51,7 +47,7 @@ def parse_time(time_str):
     if len(d) > 3:
         raise Exception("wrong time string: %s" % time_str)
 
-    return MyTimeDelta(hours=hours, minutes=minutes, seconds=seconds)
+    return timedelta(hours=hours, minutes=minutes, seconds=seconds)
 
 def process_logs(log_dir, suffix=''):
     data = []
@@ -73,9 +69,9 @@ def process_logs(log_dir, suffix=''):
 
     seconds_data = [x.total_seconds() for x in data]
     return {
-        'mean': MyTimeDelta(seconds=numpy.mean(seconds_data)),
-        'stdev': MyTimeDelta(seconds=numpy.std(seconds_data)),
-        'median': MyTimeDelta(seconds=numpy.median(seconds_data))
+        'mean': timedelta(seconds=numpy.mean(seconds_data)),
+        'stdev': timedelta(seconds=numpy.std(seconds_data)),
+        'median': timedelta(seconds=numpy.median(seconds_data))
     }
 
 def generate_tables(results_dir):
@@ -86,10 +82,10 @@ def generate_tables(results_dir):
             data_path = os.path.join(results_dir, program, test)
 
             if not os.path.exists(data_path):
-                continue
                 for i in range(prep_count):
                     output[program]['%s@prep%d' % (test, i)] = None
                 output[program][test] = None
+                continue
 
             for i in range(prep_count):
                 output[program]['%s@prep%d' % (test, i)] = process_logs(data_path, '-prep%d' % i)
@@ -97,5 +93,28 @@ def generate_tables(results_dir):
 
     return output
 
-import pprint
-pprint.pprint(generate_tables(sys.argv[1]))
+def format_timedelta(td):
+    res = str(td)
+    return res.strip('0').strip(':')
+
+def main():
+    data = generate_tables(sys.argv[1])
+    print("tests|%s" % ("|").join(PROGRAMS))
+    print("|".join(["---"] * (len(PROGRAMS) + 1)))
+
+
+    for test, prep_count in TESTS:
+        for test_name in ['%s@prep%d' % (test, i) for i in range(prep_count)] + [test]:
+            row_data = []
+
+            for p in PROGRAMS:
+                if data[p][test_name]:
+                    row_data += [format_timedelta(data[p][test_name]['median'])]
+                else:
+                    row_data += ["—"]
+
+            print("|".join([('**%s**' if '@' not in test_name else '*%s*') % test_name] + row_data))
+
+
+if __name__ == '__main__':
+    main()
