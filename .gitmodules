@@ -16,3 +16,6 @@
 [submodule "llvm/source"]
 	path = llvm/source
 	url = https://github.com/llvm-mirror/llvm
+[submodule "cmake/source"]
+	path = cmake/source
+	url = https://github.com/Kitware/CMake
