@@ -27,8 +27,9 @@ TESTS = [
     ('gg-cache-64', 3),
 ]
 
-TEST_START_IDX = 1
-TEST_COUNT = 9
+TEST_START_IDX = 0
+TEST_COUNT = 12
+MIN_ACCEPTABLE = 10
 TIME_LINE = 'Elapsed (wall clock) time (h:mm:ss or m:ss): '
 
 def parse_time(time_str):
@@ -54,6 +55,9 @@ def process_logs(log_dir, suffix=''):
     for i in range(TEST_START_IDX, TEST_COUNT + 1):
         log_file = os.path.join(log_dir, '%d%s.log' % (i, suffix))
 
+        if not os.path.exists(log_file):
+            continue
+
         point = None
         with open(log_file, "r") as fin:
             for line in fin:
@@ -66,6 +70,9 @@ def process_logs(log_dir, suffix=''):
             raise Exception("data not found in %s" % log_file)
 
         data += [parse_time(point)]
+
+    if len(data) < MIN_ACCEPTABLE:
+        raise Exception("Too many failed!")
 
     seconds_data = [x.total_seconds() for x in data]
     return {
