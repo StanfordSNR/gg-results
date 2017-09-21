@@ -3,6 +3,7 @@
 import os
 import sys
 import base64
+import time
 import subprocess as sub
 
 from urllib.parse import urlencode
@@ -106,6 +107,7 @@ def run_tests(program_name, test_name, repeat_count):
 
             try:
                 sub.check_call([test_command], stderr=sub.DEVNULL, stdout=sub.DEVNULL, env=env, cwd=build_path)
+                time.sleep(30)
             except:
                 debug('test failed')
                 try:
