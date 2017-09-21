@@ -1,18 +1,18 @@
 	Command being timed: "gg-reduce src/protoc"
-	User time (seconds): 1.04
-	System time (seconds): 0.57
-	Percent of CPU this job got: 1%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:42.44
+	User time (seconds): 1.14
+	System time (seconds): 0.42
+	Percent of CPU this job got: 3%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:43.10
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 188540
+	Maximum resident set size (kbytes): 188176
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 34063
-	Voluntary context switches: 8935
-	Involuntary context switches: 109
+	Minor (reclaiming a frame) page faults: 32400
+	Voluntary context switches: 10484
+	Involuntary context switches: 96
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 199312
