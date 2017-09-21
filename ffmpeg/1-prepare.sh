@@ -6,5 +6,5 @@ rm -rf build/
 cp -R source/ build/
 
 pushd build/
-./configure --disable-doc
+./configure --disable-doc --disable-sdl --disable-libpulse
 popd
