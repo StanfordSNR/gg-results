@@ -1,18 +1,18 @@
 	Command being timed: "gg-reduce src/frontend/mosh-server src/frontend/mosh-client"
-	User time (seconds): 0.31
+	User time (seconds): 0.22
 	System time (seconds): 0.18
-	Percent of CPU this job got: 4%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.00
+	Percent of CPU this job got: 3%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:11.09
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 108584
+	Maximum resident set size (kbytes): 98128
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 31033
-	Voluntary context switches: 5545
-	Involuntary context switches: 126
+	Minor (reclaiming a frame) page faults: 30954
+	Voluntary context switches: 5488
+	Involuntary context switches: 109
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 42288
