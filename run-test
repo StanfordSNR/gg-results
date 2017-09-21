@@ -104,7 +104,14 @@ def run_tests(program_name, test_name, repeat_count):
             env['TIMECOMMAND_PREP3'] = '/usr/bin/time --output={output} --verbose'.format(
                 output=os.path.join(result_path, '{}-prep3.log'.format(run_index)))
 
-            sub.check_call([test_command], stderr=sub.DEVNULL, stdout=sub.DEVNULL, env=env, cwd=build_path)
+            try:
+                sub.check_call([test_command], stderr=sub.DEVNULL, stdout=sub.DEVNULL, env=env, cwd=build_path)
+            except:
+                try:
+                    os.rename(os.path.join(result_path, '{}.log'.format(run_index)),
+                                           result_path, '{}.log.failed'.format(run_index)))
+                except:
+                    pass
 
 
 def main():
