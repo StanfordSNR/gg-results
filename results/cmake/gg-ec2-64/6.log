@@ -1,34 +1,18 @@
 	Command being timed: "gg-reduce bin/cmake"
-<<<<<<< HEAD
-	User time (seconds): 2.20
-	System time (seconds): 0.69
-	Percent of CPU this job got: 6%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:46.52
-=======
 	User time (seconds): 2.82
 	System time (seconds): 0.79
 	Percent of CPU this job got: 7%
 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:50.73
->>>>>>> Add results for {openssh,cmake}#gg-ec2-64.
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-<<<<<<< HEAD
-	Maximum resident set size (kbytes): 151880
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 42288
-	Voluntary context switches: 11090
-	Involuntary context switches: 156
-=======
 	Maximum resident set size (kbytes): 147992
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
 	Minor (reclaiming a frame) page faults: 42974
 	Voluntary context switches: 10669
 	Involuntary context switches: 122
->>>>>>> Add results for {openssh,cmake}#gg-ec2-64.
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 88984
