@@ -107,6 +107,7 @@ def run_tests(program_name, test_name, repeat_count):
             try:
                 sub.check_call([test_command], stderr=sub.DEVNULL, stdout=sub.DEVNULL, env=env, cwd=build_path)
             except:
+                debug('test failed')
                 try:
                     os.rename(os.path.join(result_path, '{}.log'.format(run_index)),
                                            result_path, '{}.log.failed'.format(run_index)))
