@@ -10,7 +10,10 @@ PROGRAMS = [
     'mosh',
     'protobuf',
     'llvm',
+    'llvm-minrel',
+    'clang-minrel',
     'ffmpeg',
+    'ffmpeg-minrel',
     'openssh',
     'cmake',
 ]
@@ -27,9 +30,6 @@ TESTS = [
     ('gg-cache-64', 3),
 ]
 
-TEST_START_IDX = 0
-TEST_COUNT = 12
-MIN_ACCEPTABLE = TEST_COUNT / 2
 TIME_LINE = 'Elapsed (wall clock) time (h:mm:ss or m:ss): '
 
 def parse_time(time_str):
@@ -50,12 +50,14 @@ def parse_time(time_str):
 
     return timedelta(hours=hours, minutes=minutes, seconds=seconds)
 
-def process_logs(log_dir, suffix=''):
+def process_logs(log_dir, test_count, suffix=''):
     data = []
-    for i in range(TEST_START_IDX, TEST_COUNT + 1):
+
+    for i in range(test_count):
         log_file = os.path.join(log_dir, '%d%s.log' % (i, suffix))
 
         if not os.path.exists(log_file):
+            data += [timedelta(hours=99,minutes=59,seconds=59)]
             continue
 
         point = None
@@ -70,9 +72,6 @@ def process_logs(log_dir, suffix=''):
             raise Exception("data not found in %s" % log_file)
 
         data += [parse_time(point)]
-
-    if len(data) < MIN_ACCEPTABLE:
-        raise Exception("Too many failed!")
 
     seconds_data = [x.total_seconds() for x in data]
     return {
@@ -94,15 +93,23 @@ def generate_tables(results_dir):
                 output[program][test] = None
                 continue
 
+            file_count = len(os.listdir(data_path))
+            batch_count = 1 + prep_count
+
+            if file_count % batch_count != 0:
+                raise Exception("inconsistency in " + data_path)
+
+            test_count = file_count // batch_count
+
             for i in range(prep_count):
-                output[program]['%s@prep%d' % (test, i)] = process_logs(data_path, '-prep%d' % i)
-            output[program][test] = process_logs(data_path)
+                output[program]['%s@prep%d' % (test, i)] = process_logs(data_path, test_count, '-prep%d' % i)
+            output[program][test] = process_logs(data_path, test_count)
 
     return output
 
 def format_timedelta(td):
     res = str(td)
-    return res.strip('0').strip(':')
+    return res.rstrip('0')
 
 def main():
     data = generate_tables(sys.argv[1])
