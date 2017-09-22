@@ -29,7 +29,7 @@ TESTS = [
 
 TEST_START_IDX = 0
 TEST_COUNT = 12
-MIN_ACCEPTABLE = TEST_COUNT / 2 + 1
+MIN_ACCEPTABLE = TEST_COUNT / 2
 TIME_LINE = 'Elapsed (wall clock) time (h:mm:ss or m:ss): '
 
 def parse_time(time_str):
