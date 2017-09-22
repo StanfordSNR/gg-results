@@ -107,7 +107,7 @@ def run_tests(program_name, test_name, repeat_count):
 
             try:
                 sub.check_call([test_command], stderr=sub.DEVNULL, stdout=sub.DEVNULL, env=env, cwd=build_path)
-                time.sleep(30)
+                time.sleep(60)
             except:
                 debug('test failed')
                 try:
