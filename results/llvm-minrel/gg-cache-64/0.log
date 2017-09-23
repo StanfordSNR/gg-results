@@ -1,18 +1,18 @@
 	Command being timed: "gg-reduce bin/llc"
-	User time (seconds): 0.83
-	System time (seconds): 0.18
-	Percent of CPU this job got: 94%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.08
+	User time (seconds): 0.79
+	System time (seconds): 0.21
+	Percent of CPU this job got: 90%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.10
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 254560
+	Maximum resident set size (kbytes): 255392
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 48466
-	Voluntary context switches: 133
-	Involuntary context switches: 20
+	Minor (reclaiming a frame) page faults: 48645
+	Voluntary context switches: 126
+	Involuntary context switches: 18
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 81312
