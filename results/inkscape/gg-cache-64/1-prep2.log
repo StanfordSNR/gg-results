@@ -1,18 +1,18 @@
 	Command being timed: "gg-run make -j64"
-	User time (seconds): 61.27
-	System time (seconds): 49.02
+	User time (seconds): 61.24
+	System time (seconds): 49.04
 	Percent of CPU this job got: 326%
 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:33.76
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 174976
+	Maximum resident set size (kbytes): 175088
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 2266516
-	Voluntary context switches: 15864
-	Involuntary context switches: 4660
+	Minor (reclaiming a frame) page faults: 2265268
+	Voluntary context switches: 15939
+	Involuntary context switches: 4709
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 114088
