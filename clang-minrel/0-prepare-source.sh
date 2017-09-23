@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-git submodule update --init -- ../ffmpeg/source/
+git submodule update --init -- ../llvm/source/
 cp -R ../llvm/source/ .
 
 pushd source/tools
