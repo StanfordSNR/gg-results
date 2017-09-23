@@ -2,7 +2,6 @@
 
 source ${BASH_SOURCE%/*}/define.sh
 
-export PATH=/usr/lib/ccache:$PATH
 export GG_MAXJOBS=${LARGE_CORES}
 
 gg-init
