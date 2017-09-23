@@ -16,6 +16,7 @@ PROGRAMS = [
     'ffmpeg-minrel',
     'openssh',
     'cmake',
+    'inkscape',
 ]
 
 TESTS = [
