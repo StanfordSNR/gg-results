@@ -1,18 +1,18 @@
 	Command being timed: "gg-reduce bin/clang"
-	User time (seconds): 1.20
-	System time (seconds): 0.33
-	Percent of CPU this job got: 93%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.63
+	User time (seconds): 1.15
+	System time (seconds): 0.36
+	Percent of CPU this job got: 86%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.76
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 406728
+	Maximum resident set size (kbytes): 406776
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 70697
-	Voluntary context switches: 195
-	Involuntary context switches: 30
+	Minor (reclaiming a frame) page faults: 69181
+	Voluntary context switches: 190
+	Involuntary context switches: 31
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 138976

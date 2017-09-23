@@ -1,21 +1,21 @@
 	Command being timed: "gg-run make -j64 clang"
-	User time (seconds): 4125.64
-	System time (seconds): 329.81
-	Percent of CPU this job got: 1981%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:44.87
+	User time (seconds): 3894.86
+	System time (seconds): 317.53
+	Percent of CPU this job got: 1890%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:42.80
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 387568
+	Maximum resident set size (kbytes): 387524
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 90050782
-	Voluntary context switches: 211140
-	Involuntary context switches: 215538
+	Minor (reclaiming a frame) page faults: 85778881
+	Voluntary context switches: 211454
+	Involuntary context switches: 212405
 	Swaps: 0
 	File system inputs: 0
-	File system outputs: 11890136
+	File system outputs: 12778656
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
