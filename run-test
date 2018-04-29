@@ -135,8 +135,4 @@ if __name__ == '__main__':
     debug('chdir to', ROOT_DIR)
     os.chdir(ROOT_DIR)
 
-    try:
-        main()
-    except Exception as ex:
-        send_alert('Test failed: {}#{}\nException: {}'.format(sys.argv[1], sys.argv[2], str(ex)))
-        raise
+    main()
