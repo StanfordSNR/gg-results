@@ -1,3 +1,6 @@
 [submodule "gg/source"]
 	path = gg/source
 	url = https://github.com/stanfordsnr/gg
+[submodule "ffmpeg/source"]
+	path = ffmpeg/source
+	url = https://git.ffmpeg.org/ffmpeg.git
