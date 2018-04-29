@@ -1,21 +1,3 @@
 [submodule "gg/source"]
 	path = gg/source
 	url = https://github.com/stanfordsnr/gg
-[submodule "mosh/source"]
-	path = mosh/source
-	url = https://github.com/mobile-shell/mosh
-[submodule "protobuf/source"]
-	path = protobuf/source
-	url = https://github.com/google/protobuf
-[submodule "ffmpeg/source"]
-	path = ffmpeg/source
-	url = https://git.ffmpeg.org/ffmpeg.git
-[submodule "openssh/source"]
-	path = openssh/source
-	url = https://github.com/openssh/openssh-portable
-[submodule "llvm/source"]
-	path = llvm/source
-	url = https://github.com/llvm-mirror/llvm
-[submodule "cmake/source"]
-	path = cmake/source
-	url = https://github.com/Kitware/CMake
