@@ -1,7 +1,10 @@
 #!/bin/bash -ex
 
-if [ "$__TEST_TYPE" != "SCANNER" ]
-then
+case "${__TEST_TYPE}" in
+SCANNER)
+  ;;
+
+*)
   git submodule update --init -- source/
 
   rm -rf build/
@@ -12,4 +15,5 @@ then
   cp ../../gg/source/examples/viddec/gen_vid_thunks.py .
   cp ../../gg/build/examples/viddec/gen_vid_thunks{,25} .
   popd
-fi
+  ;;
+esac
