@@ -21,6 +21,7 @@ PROGRAMS = [
     'ffmpeg',
     'gimp',
     'inkscape',
+    'objectrec',
 ]
 
 TESTS = [
@@ -34,6 +35,11 @@ TESTS = [
     ('gg-remodel', 1),
     ('ccache-64', 1),
     ('gg-cache-64', 3),
+    ('scanner', 0),
+    ('gg-64-c1', 1),
+    ('gg-lambda-2000-c1', 1),
+    ('gg-64-c25', 1),
+    ('gg-lambda-2000-c25', 1),
 ]
 
 TIME_LINE = 'Elapsed (wall clock) time (h:mm:ss or m:ss): '
