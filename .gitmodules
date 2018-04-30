@@ -4,3 +4,6 @@
 [submodule "ffmpeg/source"]
 	path = ffmpeg/source
 	url = https://git.ffmpeg.org/ffmpeg.git
+[submodule "inkscape/source"]
+	path = inkscape/source
+	url = https://gitlab.com/inkscape/inkscape.git
