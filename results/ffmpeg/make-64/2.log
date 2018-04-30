@@ -1,21 +1,21 @@
 	Command being timed: "make -j64"
-	User time (seconds): 769.63
-	System time (seconds): 46.72
-	Percent of CPU this job got: 4048%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:20.16
+	User time (seconds): 769.51
+	System time (seconds): 45.72
+	Percent of CPU this job got: 4040%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:20.17
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 218988
+	Maximum resident set size (kbytes): 218804
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 11270107
-	Voluntary context switches: 17818
-	Involuntary context switches: 17595
+	Minor (reclaiming a frame) page faults: 11208081
+	Voluntary context switches: 17952
+	Involuntary context switches: 16946
 	Swaps: 0
 	File system inputs: 0
-	File system outputs: 561056
+	File system outputs: 489712
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
