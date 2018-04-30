@@ -1,18 +1,18 @@
 	Command being timed: "gg-force --engine lambda --jobs 2000 --timeout 2 ffmpeg ffprobe"
-	User time (seconds): 7.61
-	System time (seconds): 2.05
-	Percent of CPU this job got: 36%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:26.32
+	User time (seconds): 5.24
+	System time (seconds): 1.43
+	Percent of CPU this job got: 22%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:30.21
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 492272
+	Maximum resident set size (kbytes): 455532
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 194230
-	Voluntary context switches: 17118
-	Involuntary context switches: 434
+	Minor (reclaiming a frame) page faults: 176863
+	Voluntary context switches: 12342
+	Involuntary context switches: 326
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 245392
