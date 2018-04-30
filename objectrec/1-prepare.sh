@@ -1,12 +1,15 @@
 #!/bin/bash -ex
 
-git submodule update --init -- source/
+if [ "$__TEST_TYPE" != "SCANNER" ]
+then
+  git submodule update --init -- source/
 
-rm -rf build/
-cp -R source/ build/
+  rm -rf build/
+  cp -R source/ build/
 
-pushd build/
-rm -rf .git
-cp ../../gg/source/examples/viddec/gen_vid_thunks.py .
-cp ../../gg/build/examples/viddec/gen_vid_thunks{,25} .
-popd
+  pushd build/
+  rm -rf .git
+  cp ../../gg/source/examples/viddec/gen_vid_thunks.py .
+  cp ../../gg/build/examples/viddec/gen_vid_thunks{,25} .
+  popd
+fi
