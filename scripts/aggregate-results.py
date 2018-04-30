@@ -15,11 +15,12 @@ PROGRAMS = [
     # 'llvm',
     # 'llvm-minrel',
     # 'clang-minrel',
-    'ffmpeg',
     # 'ffmpeg-minrel',
     # 'openssh',
     # 'cmake',
-    # 'inkscape',
+    'ffmpeg',
+    'gimp',
+    'inkscape',
 ]
 
 TESTS = [
@@ -30,6 +31,7 @@ TESTS = [
     # ('gg-ec2-64', 1),
     # ('gg-lambda-64', 1),
     ('gg-lambda-2000', 1),
+    ('gg-remodel', 1),
     ('ccache-64', 1),
     ('gg-cache-64', 3),
 ]
@@ -137,7 +139,7 @@ def markdown(data):
 
             for p in PROGRAMS:
                 if data[p][test_name]:
-                    row_data += [format_timedelta(data[p][test_name]['median'])]
+                    row_data += ["%s *(± %s)*" % (format_timedelta(data[p][test_name]['median']), format_timedelta(data[p][test_name]['stdev']))]
                 else:
                     row_data += ["—"]
 

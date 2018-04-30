@@ -7,3 +7,6 @@
 [submodule "inkscape/source"]
 	path = inkscape/source
 	url = https://gitlab.com/inkscape/inkscape.git
+[submodule "objectrec/source"]
+	path = objectrec/source
+	url = https://github.com/StanfordSNR/gg-objectrec-experiment.git
