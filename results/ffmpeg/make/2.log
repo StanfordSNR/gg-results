@@ -1,21 +1,21 @@
 	Command being timed: "make"
-	User time (seconds): 446.76
-	System time (seconds): 27.02
+	User time (seconds): 444.38
+	System time (seconds): 26.97
 	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:54.28
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:51.84
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 218892
+	Maximum resident set size (kbytes): 218784
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 11220053
-	Voluntary context switches: 18174
-	Involuntary context switches: 5970
+	Minor (reclaiming a frame) page faults: 11166518
+	Voluntary context switches: 18139
+	Involuntary context switches: 5940
 	Swaps: 0
 	File system inputs: 0
-	File system outputs: 561056
+	File system outputs: 489712
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
