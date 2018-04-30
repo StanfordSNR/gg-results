@@ -94,6 +94,7 @@ def run_tests(program_name, test_name, repeat_count):
 
             env = DEFAULT_ENV.copy()
 
+            env['TIMEOUTFILE'] = os.path.join(result_path, '{}.log'.format(run_index))
             env['TIMECOMMAND'] = '/usr/bin/time --output={output} --verbose'.format(
                 output=os.path.join(result_path, '{}.log'.format(run_index)))
             env['TIMECOMMAND_PREP0'] = '/usr/bin/time --output={output} --verbose'.format(
