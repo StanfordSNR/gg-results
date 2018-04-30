@@ -10,16 +10,16 @@ from contextlib import contextmanager
 
 
 PROGRAMS = [
-    'mosh',
-    'protobuf',
-    'llvm',
-    'llvm-minrel',
-    'clang-minrel',
+    # 'mosh',
+    # 'protobuf',
+    # 'llvm',
+    # 'llvm-minrel',
+    # 'clang-minrel',
     'ffmpeg',
-    'ffmpeg-minrel',
-    'openssh',
-    'cmake',
-    'inkscape',
+    # 'ffmpeg-minrel',
+    # 'openssh',
+    # 'cmake',
+    # 'inkscape',
 ]
 
 TESTS = [
@@ -27,9 +27,9 @@ TESTS = [
     ('make-64', 0),
     ('icecc-make-64', 0),
     ('gg-64', 1),
-    ('gg-ec2-64', 1),
-    ('gg-lambda-64', 1),
-    ('gg-lambda-1000', 1),
+    # ('gg-ec2-64', 1),
+    # ('gg-lambda-64', 1),
+    ('gg-lambda-2000', 1),
     ('ccache-64', 1),
     ('gg-cache-64', 3),
 ]
@@ -119,7 +119,13 @@ def format_timedelta(td):
     ts = ts % 60
     seconds = int(math.ceil(ts))
 
-    return '{}h {:02d}m {:02d}s'.format(hours, minutes, seconds)
+    if hours == 0:
+        if minutes == 0:
+            return '{:02d}s'.format(seconds)
+        else:
+            return '{:02d}m {:02d}s'.format(minutes, seconds)
+    else:
+        return '{}h {:02d}m {:02d}s'.format(hours, minutes, seconds)
 
 def markdown(data):
     print("tests|%s" % ("|").join(PROGRAMS))
