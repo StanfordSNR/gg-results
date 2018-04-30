@@ -6,5 +6,5 @@ rm -rf build/
 cp -R source/ build/
 
 pushd build/
-./configure --disable-doc --disable-libpulse --disable-x86asm --disable-debug
+./configure --disable-doc --disable-libpulse --disable-x86asm --disable-debug --disable-sdl2
 popd
