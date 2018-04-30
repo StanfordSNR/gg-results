@@ -10,3 +10,6 @@
 [submodule "objectrec/source"]
 	path = objectrec/source
 	url = https://github.com/StanfordSNR/gg-objectrec-experiment.git
+[submodule "excamera/source"]
+	path = excamera/source
+	url = https://github.com/stanfordsnr/gg-excamera-experiment
