@@ -13,3 +13,6 @@
 [submodule "excamera/source"]
 	path = excamera/source
 	url = https://github.com/stanfordsnr/gg-excamera-experiment
+[submodule "inkscape-cbc/source"]
+	path = inkscape-cbc/source
+	url = https://gitlab.com/inkscape/inkscape.git
