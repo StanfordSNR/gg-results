@@ -22,6 +22,7 @@ PROGRAMS = [
     'gimp',
     'inkscape',
     'objectrec',
+    'excamera'
 ]
 
 TESTS = [
@@ -40,6 +41,9 @@ TESTS = [
     ('gg-lambda-2000-c1', 1),
     ('gg-64-c25', 1),
     ('gg-lambda-2000-c25', 1),
+    ('mu', 0),
+    ('gg-lambda', 0),
+    ('gg-meow', 0),
 ]
 
 TIME_LINE = 'Elapsed (wall clock) time (h:mm:ss or m:ss): '
