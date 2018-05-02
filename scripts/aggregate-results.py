@@ -139,6 +139,22 @@ def format_timedelta(td):
     else:
         return '{}h {:02d}m {:02d}s'.format(hours, minutes, seconds)
 
+def format_timedelta_latex(td):
+    ts = td.total_seconds()
+    hours = int(ts // 3600)
+    ts = ts % 3600
+    minutes = int(ts // 60)
+    ts = ts % 60
+    seconds = int(math.ceil(ts))
+
+    if hours == 0:
+        if minutes == 0:
+            return '{:02d}s'.format(seconds)
+        else:
+            return '{:02d}m {:02d}s'.format(minutes, seconds)
+    else:
+        return '{}h {:02d}m {:02d}s'.format(hours, minutes, seconds)
+
 def markdown(data):
     print("tests|%s" % ("|").join(PROGRAMS))
     print("|".join(["---"] * (len(PROGRAMS) + 1)))
@@ -156,14 +172,13 @@ def markdown(data):
             print("|".join([('**%s**' if '@' not in test_name else '*%s*') % test_name] + row_data))
 
 target_programs = [
-    ('mosh', 'Mosh'),
-    ('openssh', 'OpenSSH'),
-    ('cmake', 'CMake'),
-    ('protobuf', 'Protobuf'),
-    ('ffmpeg-minrel', 'FFmpeg'),
+    # ('mosh', 'Mosh'),
+    # ('openssh', 'OpenSSH'),
+    # ('cmake', 'CMake'),
+    # ('protobuf', 'Protobuf'),
+    ('ffmpeg', 'FFmpeg'),
+    ('gimp', 'GIMP'),
     ('inkscape', 'Inkscape'),
-    ('llvm-minrel', 'LLVM'),
-    ('clang-minrel', 'Clang'),
 ]
 
 @contextmanager
@@ -184,9 +199,7 @@ def latex_main_results(data):
         ('make-64', 'make (64)'),
         ('gg-64', 'gg (64)'),
         ('icecc-make-64', ('Icecream (64+1)')),
-        ('gg-ec2-64', 'gg-remote (64)'),
-        ('gg-lambda-64', r'gg-\textlambda~(64)'),
-        ('gg-lambda-1000', r'gg-\textlambda~(1000)'),
+        ('gg-lambda-2000', r'gg-\textlambda'),
     ]
 
     with latex_table('l %s' % (' '.join(['c'] * len(target_tests)))):
@@ -200,10 +213,51 @@ def latex_main_results(data):
 
 def latex_prep_results(data):
     target_tests = [
+        ('gg-lambda-2000@prep0', r'gg-\textlambda'),
         ('gg-64@prep0', 'gg (64)'),
-        ('gg-ec2-64@prep0', 'gg-remote (64)'),
-        ('gg-lambda-64@prep0', r'gg-\textlambda~(64)'),
-        ('gg-lambda-1000@prep0', r'gg-\textlambda~(1000)'),
+        ('gg-remodel', 'remodel'),
+    ]
+
+    with latex_table('l %s' % (' '.join(['c'] * len(target_tests)))):
+        print('&', ' & '.join([x[1] for x in target_tests]), end='')
+        print(r'\\ \hline\hline')
+
+        for pname, plabel in target_programs:
+            best = min([data[pname][T]['median'] for T, _ in target_tests])
+            print(plabel, '&', ' & '.join([r'{%s}' % (format_timedelta(data[pname][T]['median'])) for T, _ in target_tests]))
+            print(r'\\[1pt]')
+
+def latex_excamera_results(data):
+    target_programs = [
+        ('excamera', 'ExCamera'),
+    ]
+
+    target_tests = [
+        ('mu', 'mu'),
+        ('gg-lambda', r'gg-\textlambda'),
+        ('gg-meow', 'gg-meow'),
+    ]
+
+    with latex_table('l %s' % (' '.join(['c'] * len(target_tests)))):
+        print('&', ' & '.join([x[1] for x in target_tests]), end='')
+        print(r'\\ \hline\hline')
+
+        for pname, plabel in target_programs:
+            best = min([data[pname][T]['median'] for T, _ in target_tests])
+            print(plabel, '&', ' & '.join([r'{%s}' % (format_timedelta(data[pname][T]['median'])) for T, _ in target_tests]))
+            print(r'\\[1pt]')
+
+def latex_scanner_results(data):
+    target_programs = [
+        ('objectrec', 'Object Recognition'),
+    ]
+
+    target_tests = [
+        ('scanner', 'scanner'),
+        ('gg-64-c1', 'gg-64-c1'),
+        ('gg-lambda-2000-c1', r'gg-lambda-2000-c1'),
+        ('gg-64-c25', 'gg-64-c25'),
+        ('gg-lambda-2000-c25', r'gg-lambda-2000-c25'),
     ]
 
     with latex_table('l %s' % (' '.join(['c'] * len(target_tests)))):
@@ -238,6 +292,10 @@ def main(output_format, results_dir):
         latex_main_results(data)
     elif output_format == 'latex-prep':
         latex_prep_results(data)
+    elif output_format == 'latex-excamera':
+        latex_excamera_results(data)
+    elif output_format == 'latex-scanner':
+        latex_scanner_results(data)
     elif output_format == 'latex-cache':
         latex_cache_results(data)
     else:

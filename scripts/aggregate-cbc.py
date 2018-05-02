@@ -60,18 +60,34 @@ def format_timedelta(td):
 def main(log_root):
     actions = ['gg-get', 'gg-remodel', 'gg-force']
 
+    data = {}
+    for action in actions:
+        data[action] = []
+
     for i in range(1, 51):
         total = None
-        data = {}
         for j, action in enumerate(actions):
             log_file = os.path.join(log_root, '%d.%d-%s.log' % (i, j + 1, action))
             point = process_log(log_file)
-            data[action] = format_timedelta(point)
+            data[action] += [point.total_seconds()]
             total = point if not total else (total + point)
             #print("%s: %s" % (action, format_timedelta(point)))
-        print("%02d: %s [get: %s, remodel: %s, force: %s]"
-            % (i, format_timedelta(total),
-               data['gg-get'], data['gg-remodel'], data['gg-force']))
+        #print("%02d: %s [get: %s, remodel: %s, force: %s]"
+            #% (i, format_timedelta(total),
+               #data['gg-get'], data['gg-remodel'], data['gg-force']))
+
+    # remodel_data = data['gg-remodel']
+    # bins = numpy.arange(numpy.floor(min(remodel_data)) - 1,numpy.ceil(max(remodel_data)) + 1)
+    # counts, bin_edges = numpy.histogram(remodel_data, bins=bins, density=True)
+    # cdf = numpy.cumsum(counts)
+
+    force_data = data['gg-force']
+    bins = numpy.arange(numpy.floor(min(force_data)) - 1,numpy.ceil(max(force_data)) + 1)
+    counts, bin_edges = numpy.histogram(force_data, bins=bins, density=True)
+    cdf = numpy.cumsum(counts)
+
+    for i, val in enumerate(cdf):
+        print((bin_edges[i] + bin_edges[i+1]) / 2, val)
 
 if __name__ == '__main__':
     main(sys.argv[1])
