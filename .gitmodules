@@ -16,3 +16,6 @@
 [submodule "inkscape-cbc/source"]
 	path = inkscape-cbc/source
 	url = https://gitlab.com/inkscape/inkscape.git
+[submodule "llvm/source"]
+	path = llvm/source
+	url = https://github.com/llvm-mirror/llvm
