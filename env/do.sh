@@ -31,6 +31,7 @@ sudo apt-get install -y gcc-7 g++-7 automake autoconf libtool make curl \
                         unzip wget git pkg-config tmux
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 99
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 99
+echo "ubuntu soft nofile 65536" | sudo tee -a /etc/security/limits.conf
 ENDSSH
 
   cat append-to-bashrc | ssh ${MACHINE} "cat >>~/.bashrc"
