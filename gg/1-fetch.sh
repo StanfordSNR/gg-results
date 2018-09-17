@@ -3,4 +3,4 @@
 git submodule update --init -- source/
 
 cd source/
-git submodule update --init -- toolchain/
+./fetch-submodules.sh
