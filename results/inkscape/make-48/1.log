@@ -1,0 +1,23 @@
+	Command being timed: "make -j48 inkscape inkview"
+	User time (seconds): 2866.97
+	System time (seconds): 494.22
+	Percent of CPU this job got: 3358%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:40.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 622476
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 73343898
+	Voluntary context switches: 13353
+	Involuntary context switches: 31998
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 648176
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
