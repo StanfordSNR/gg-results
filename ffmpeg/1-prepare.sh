@@ -1,10 +1,8 @@
 #!/bin/bash -ex
 
-git submodule update --init -- source/
-
 rm -rf build/
-cp -R source/ build/
+mkdir build/
 
 pushd build/
-./configure --disable-doc --disable-libpulse --disable-x86asm --disable-debug --disable-sdl2
+../source/configure --disable-doc --disable-libpulse --disable-x86asm --disable-debug --disable-sdl2
 popd
