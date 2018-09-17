@@ -85,8 +85,8 @@ case "$COMMAND" in
     install_icecc_master
     ;;
 
-  install_icecc_slave)
-    install-icecc-slave
+  install-icecc-slave)
+    install_icecc_slave
     ;;
 
   connect)
