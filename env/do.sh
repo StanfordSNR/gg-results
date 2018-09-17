@@ -19,6 +19,7 @@ function install_base {
   scp tmux.conf ${MACHINE}:${HOMEDIR}/.tmux.conf
 
   ssh ${MACHINE} <<'ENDSSH'
+set -ex
 cp /etc/bash_completion.d/git-prompt ~/.git-prompt.sh
 cd ~
 git clone https://github.com/stanfordsnr/gg-results
@@ -37,6 +38,7 @@ ENDSSH
 
 function install_gg {
   ssh ${MACHINE} <<'ENDSSH'
+set -ex
 cd ~/gg-results/gg
 ./0-install-deps.sh
 ./1-fetch.sh
@@ -46,8 +48,9 @@ ENDSSH
 
 function install_icecc_master {
   ssh ${MACHINE} <<'ENDSSH'
+set -ex
 sudo apt-get install -y icecc
-sudo sed -i 's/^ICECC_MAX_JOBS="1"/ICECC_MAX_JOBS="1"/' /etc/icecc/icecc.conf
+sudo sed -i 's/^ICECC_MAX_JOBS=".*"/ICECC_MAX_JOBS="1"/' /etc/icecc/icecc.conf
 sudo service icecc-scheduler restart
 sudo service iceccd restart
 ENDSSH
@@ -55,7 +58,8 @@ ENDSSH
 
 function install_icecc_slave {
   read -p "icecc master ip address: " ICECC_MASTER
-  ssh ${MACHINE} <<'ENDSSH'
+  ssh ${MACHINE} <<ENDSSH
+set -ex
 sudo apt-get install -y icecc
 sudo sed -i "s/^ICECC_SCHEDULER_HOST=\".*\"/ICECC_SCHEDULER_HOST=\"${ICECC_MASTER}\"/" /etc/icecc/icecc.conf
 sudo service iceccd restart
@@ -64,6 +68,7 @@ ENDSSH
 
 function install_ccache {
   ssh ${MACHINE} <<'ENDSSH'
+set -ex
 sudo apt install -y ccache
 ENDSSH
 }
