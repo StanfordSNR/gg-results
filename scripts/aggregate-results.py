@@ -21,29 +21,21 @@ PROGRAMS = [
     'ffmpeg',
     'gimp',
     'inkscape',
-    'objectrec',
-    'excamera'
+    'llvm',
+    'chrome',
+    # 'objectrec',
+    # 'excamera'
 ]
 
 TESTS = [
     ('make', 0),
-    ('make-64', 0),
-    ('icecc-make-64', 0),
-    ('gg-64', 1),
+    ('make-48', 0),
+    ('icecc-48', 0),
+    ('icecc-48x8', 0),
+    ('gg-48x8', 1),
+    ('gg-lambda', 1),
     # ('gg-ec2-64', 1),
     # ('gg-lambda-64', 1),
-    ('gg-lambda-2000', 1),
-    ('gg-remodel', 1),
-    ('ccache-64', 1),
-    ('gg-cache-64', 3),
-    ('scanner', 0),
-    ('gg-64-c1', 1),
-    ('gg-lambda-2000-c1', 1),
-    ('gg-64-c25', 1),
-    ('gg-lambda-2000-c25', 1),
-    ('mu', 0),
-    ('gg-lambda', 0),
-    ('gg-meow', 0),
 ]
 
 TIME_LINE = 'Elapsed (wall clock) time (h:mm:ss or m:ss): '
@@ -179,6 +171,8 @@ target_programs = [
     ('ffmpeg', 'FFmpeg'),
     ('gimp', 'GIMP'),
     ('inkscape', 'Inkscape'),
+    ('llvm', 'LLVM'),
+    ('chrome', 'Chrome')
 ]
 
 @contextmanager
