@@ -68,6 +68,10 @@ sudo apt install -y ccache
 ENDSSH
 }
 
+function connect_to {
+  mosh ${MACHINE}
+}
+
 case "$COMMAND" in
   install-base)
     install_base
@@ -83,6 +87,10 @@ case "$COMMAND" in
 
   install_icecc_slave)
     install-icecc-slave
+    ;;
+
+  connect)
+    connect_to
     ;;
 
   *)
