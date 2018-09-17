@@ -1,8 +1,7 @@
-diff --git a/debian/rules b/debian/rules
-index 6437bcb14..926a01113 100755
+diff a/debian/rules b/debian/rules
 --- a/debian/rules
 +++ b/debian/rules
-@@ -55,7 +55,7 @@ common_defines+=\
+@@ -55,7 +55,7 @@
  	enable_mdns=true \
  	enable_nacl=false \
  	enable_wayland_server=false \
@@ -11,7 +10,16 @@ index 6437bcb14..926a01113 100755
  	fieldtrial_testing_like_official_build=true \
  	is_component_build=false \
  	is_component_ffmpeg=true \
-@@ -81,7 +81,7 @@ common_defines+=\
+@@ -63,7 +63,7 @@
+ 	is_desktop_linux=true \
+ 	is_official_build=true \
+ 	remove_webcore_debug_symbols=true \
+-	symbol_level=1 \
++	symbol_level=0 \
+ 	treat_warnings_as_errors=false \
+ 	use_allocator="none" \
+ 	use_alsa=true \
+@@ -81,7 +81,7 @@
  	use_system_libjpeg=false \
  	rtc_enable_protobuf=false \
  	rtc_use_h264=true \
@@ -20,7 +28,7 @@ index 6437bcb14..926a01113 100755
  	clang_base_path="/usr" \
  	clang_use_chrome_plugins=false \
  	use_lld=false \
-@@ -90,7 +90,8 @@ common_defines+=\
+@@ -90,7 +90,8 @@
  	fatal_linker_warnings=false \
  	target_os="linux" \
  	current_os="linux" \
@@ -33,11 +41,10 @@ index 6437bcb14..926a01113 100755
 -- 
 2.17.1
 
-diff --git a/components/bookmarks/browser/bookmark_storage.h b/components/bookmarks/browser/bookmark_storage.h
-index 08df5bb65..fa2626514 100644
+diff a/components/bookmarks/browser/bookmark_storage.h b/components/bookmarks/browser/bookmark_storage.h
 --- a/components/bookmarks/browser/bookmark_storage.h
 +++ b/components/bookmarks/browser/bookmark_storage.h
-@@ -19,6 +19,7 @@
+@@ -20,6 +20,7 @@
  #include "base/memory/weak_ptr.h"
  #include "components/bookmarks/browser/bookmark_node.h"
  #include "components/bookmarks/browser/titled_url_index.h"
