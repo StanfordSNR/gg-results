@@ -1,0 +1,11 @@
+// GGHASH:VFssllWOllljXHngPwBfHclcjfyYAO70yQq8PWzPK_mY00000b15
+#ifndef _GLIBCXX_EXPERIMENTAL_NUMERIC
+#define _GLIBCXX_EXPERIMENTAL_NUMERIC 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <numeric>
+#include <experimental/type_traits>
+#define __cpp_lib_experimental_gcd_lcm 201411
+#endif
+#endif

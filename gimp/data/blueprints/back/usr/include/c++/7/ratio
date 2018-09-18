@@ -1,0 +1,14 @@
+// GGHASH:V_EVyIhqlAWdoIUoOpcoS74M790DTkzaCv785dC1jUEw00004dae
+#ifndef _GLIBCXX_RATIO
+#define _GLIBCXX_RATIO 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <type_traits>
+#include <cstdint>
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+#if __cplusplus > 201402L
+#endif
+#endif
+#endif
+#endif

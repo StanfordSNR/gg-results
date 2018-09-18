@@ -1,0 +1,28 @@
+// GGHASH:VXvUatO87bE0WRsRfcR.QnTSoqYzYNV58aCfQfYcYmsI00001676
+#ifndef _GPIO_H_
+#define _GPIO_H_ 
+#include <linux/ioctl.h>
+#include <linux/types.h>
+#define GPIOLINE_FLAG_KERNEL (1UL << 0)
+#define GPIOLINE_FLAG_IS_OUT (1UL << 1)
+#define GPIOLINE_FLAG_ACTIVE_LOW (1UL << 2)
+#define GPIOLINE_FLAG_OPEN_DRAIN (1UL << 3)
+#define GPIOLINE_FLAG_OPEN_SOURCE (1UL << 4)
+#define GPIOHANDLES_MAX 64
+#define GPIOHANDLE_REQUEST_INPUT (1UL << 0)
+#define GPIOHANDLE_REQUEST_OUTPUT (1UL << 1)
+#define GPIOHANDLE_REQUEST_ACTIVE_LOW (1UL << 2)
+#define GPIOHANDLE_REQUEST_OPEN_DRAIN (1UL << 3)
+#define GPIOHANDLE_REQUEST_OPEN_SOURCE (1UL << 4)
+#define GPIOHANDLE_GET_LINE_VALUES_IOCTL _IOWR(0xB4, 0x08, struct gpiohandle_data)
+#define GPIOHANDLE_SET_LINE_VALUES_IOCTL _IOWR(0xB4, 0x09, struct gpiohandle_data)
+#define GPIOEVENT_REQUEST_RISING_EDGE (1UL << 0)
+#define GPIOEVENT_REQUEST_FALLING_EDGE (1UL << 1)
+#define GPIOEVENT_REQUEST_BOTH_EDGES ((1UL << 0) | (1UL << 1))
+#define GPIOEVENT_EVENT_RISING_EDGE 0x01
+#define GPIOEVENT_EVENT_FALLING_EDGE 0x02
+#define GPIO_GET_CHIPINFO_IOCTL _IOR(0xB4, 0x01, struct gpiochip_info)
+#define GPIO_GET_LINEINFO_IOCTL _IOWR(0xB4, 0x02, struct gpioline_info)
+#define GPIO_GET_LINEHANDLE_IOCTL _IOWR(0xB4, 0x03, struct gpiohandle_request)
+#define GPIO_GET_LINEEVENT_IOCTL _IOWR(0xB4, 0x04, struct gpioevent_request)
+#endif

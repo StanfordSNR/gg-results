@@ -1,0 +1,2 @@
+// GGHASH:VNU1y5aboM2irMdlvDRPZHBXq2o8Z3XUfzey4IfCKz5g00000ccc
+#define NofAMmeth max_amg_code

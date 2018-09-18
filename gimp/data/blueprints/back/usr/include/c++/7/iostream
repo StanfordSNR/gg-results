@@ -1,0 +1,9 @@
+// GGHASH:VUbukPkj3QGey3d1fmBsA4ZSzgo7b5hjcVXsVXycMm0c00000a87
+#ifndef _GLIBCXX_IOSTREAM
+#define _GLIBCXX_IOSTREAM 1
+#include <bits/c++config.h>
+#include <ostream>
+#include <istream>
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#endif

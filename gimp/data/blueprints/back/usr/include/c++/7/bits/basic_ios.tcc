@@ -1,0 +1,8 @@
+// GGHASH:VuMFDPFFlyfX6gU2y7c7vUCQ_Yi99iDTWloPAu9PTsGs000017c3
+#ifndef _BASIC_IOS_TCC
+#define _BASIC_IOS_TCC 1
+#if _GLIBCXX_EXTERN_TEMPLATE
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#endif
+#endif

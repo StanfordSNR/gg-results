@@ -1,0 +1,66 @@
+// GGHASH:VJ6HcSICgBGtiOu586EvZEbSm3jZ4kqZJWOY1TY3ykNY00001157
+#include <bits/c++config.h>
+#include <stdio.h>
+#ifndef _GLIBCXX_CSTDIO
+#define _GLIBCXX_CSTDIO 1
+#if __cplusplus <= 201103L && !defined(_GLIBCXX_HAVE_GETS)
+#endif
+#undef clearerr
+#undef fclose
+#undef feof
+#undef ferror
+#undef fflush
+#undef fgetc
+#undef fgetpos
+#undef fgets
+#undef fopen
+#undef fprintf
+#undef fputc
+#undef fputs
+#undef fread
+#undef freopen
+#undef fscanf
+#undef fseek
+#undef fsetpos
+#undef ftell
+#undef fwrite
+#undef getc
+#undef getchar
+#if __cplusplus <= 201103L
+#undef gets
+#endif
+#undef perror
+#undef printf
+#undef putc
+#undef putchar
+#undef puts
+#undef remove
+#undef rename
+#undef rewind
+#undef scanf
+#undef setbuf
+#undef setvbuf
+#undef sprintf
+#undef sscanf
+#undef tmpfile
+#undef tmpnam
+#undef ungetc
+#undef vfprintf
+#undef vprintf
+#undef vsprintf
+#if __cplusplus <= 201103L
+#endif
+#if _GLIBCXX_USE_TMPNAM
+#endif
+#if _GLIBCXX_USE_C99_STDIO
+#undef snprintf
+#undef vfscanf
+#undef vscanf
+#undef vsnprintf
+#undef vsscanf
+#if _GLIBCXX_USE_C99_CHECK || _GLIBCXX_USE_C99_DYNAMIC
+#endif
+#if !_GLIBCXX_USE_C99_DYNAMIC
+#endif
+#endif
+#endif

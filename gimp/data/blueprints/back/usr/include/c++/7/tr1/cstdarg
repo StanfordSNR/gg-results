@@ -1,0 +1,5 @@
+// GGHASH:V8EgSX9iab.swvXf6as8unK38NGJSQU.PkkWqk7Gn.YU000004de
+#ifndef _GLIBCXX_TR1_CSTDARG
+#define _GLIBCXX_TR1_CSTDARG 1
+#include <cstdarg>
+#endif

@@ -1,0 +1,38 @@
+// GGHASH:VDyzXE3RwJuY.T4tQ0gqut7RNWy.9H6RhLBgFeQOQN1g00002bf7
+#ifndef __TEE_H
+#define __TEE_H 
+#include <linux/ioctl.h>
+#include <linux/types.h>
+#define TEE_IOC_MAGIC 0xa4
+#define TEE_IOC_BASE 0
+#define TEE_IOCTL_SHM_MAPPED 0x1
+#define TEE_IOCTL_SHM_DMA_BUF 0x2
+#define TEE_MAX_ARG_SIZE 1024
+#define TEE_GEN_CAP_GP (1 << 0)
+#define TEE_GEN_CAP_PRIVILEGED (1 << 1)
+#define TEE_IMPL_ID_OPTEE 1
+#define TEE_OPTEE_CAP_TZ (1 << 0)
+#define TEE_IOC_VERSION _IOR(TEE_IOC_MAGIC, TEE_IOC_BASE + 0, struct tee_ioctl_version_data)
+#define TEE_IOC_SHM_ALLOC _IOWR(TEE_IOC_MAGIC, TEE_IOC_BASE + 1, struct tee_ioctl_shm_alloc_data)
+#define TEE_IOCTL_PARAM_ATTR_TYPE_NONE 0
+#define TEE_IOCTL_PARAM_ATTR_TYPE_VALUE_INPUT 1
+#define TEE_IOCTL_PARAM_ATTR_TYPE_VALUE_OUTPUT 2
+#define TEE_IOCTL_PARAM_ATTR_TYPE_VALUE_INOUT 3
+#define TEE_IOCTL_PARAM_ATTR_TYPE_MEMREF_INPUT 5
+#define TEE_IOCTL_PARAM_ATTR_TYPE_MEMREF_OUTPUT 6
+#define TEE_IOCTL_PARAM_ATTR_TYPE_MEMREF_INOUT 7
+#define TEE_IOCTL_PARAM_ATTR_TYPE_MASK 0xff
+#define TEE_IOCTL_LOGIN_PUBLIC 0
+#define TEE_IOCTL_LOGIN_USER 1
+#define TEE_IOCTL_LOGIN_GROUP 2
+#define TEE_IOCTL_LOGIN_APPLICATION 4
+#define TEE_IOCTL_LOGIN_USER_APPLICATION 5
+#define TEE_IOCTL_LOGIN_GROUP_APPLICATION 6
+#define TEE_IOCTL_UUID_LEN 16
+#define TEE_IOC_OPEN_SESSION _IOR(TEE_IOC_MAGIC, TEE_IOC_BASE + 2, struct tee_ioctl_buf_data)
+#define TEE_IOC_INVOKE _IOR(TEE_IOC_MAGIC, TEE_IOC_BASE + 3, struct tee_ioctl_buf_data)
+#define TEE_IOC_CANCEL _IOR(TEE_IOC_MAGIC, TEE_IOC_BASE + 4, struct tee_ioctl_cancel_arg)
+#define TEE_IOC_CLOSE_SESSION _IOR(TEE_IOC_MAGIC, TEE_IOC_BASE + 5, struct tee_ioctl_close_session_arg)
+#define TEE_IOC_SUPPL_RECV _IOR(TEE_IOC_MAGIC, TEE_IOC_BASE + 6, struct tee_ioctl_buf_data)
+#define TEE_IOC_SUPPL_SEND _IOR(TEE_IOC_MAGIC, TEE_IOC_BASE + 7, struct tee_ioctl_buf_data)
+#endif

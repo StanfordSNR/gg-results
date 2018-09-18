@@ -1,0 +1,10 @@
+// GGHASH:VxalusxikRtn9VMQFuZmPJO6c2XaMMMvSoP5fzCIkQ7c000007d7
+#ifndef _GLIBCXX_OS_DEFINES
+#define _GLIBCXX_OS_DEFINES 1
+#define __NO_CTYPE 1
+#include <features.h>
+#if __GLIBC_PREREQ(2,15) && defined(_GNU_SOURCE)
+#undef _GLIBCXX_HAVE_GETS
+#endif
+#define _GLIBCXX_NO_OBSOLETE_ISINF_ISNAN_DYNAMIC __GLIBC_PREREQ(2,23)
+#endif

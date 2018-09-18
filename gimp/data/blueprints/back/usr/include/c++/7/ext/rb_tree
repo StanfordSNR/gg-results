@@ -1,0 +1,5 @@
+// GGHASH:Vx2iQcZI5_2kF1B3X8WnVOy4_MiYdSNsh7v1VDQIH4Ls00000cef
+#ifndef _RB_TREE
+#define _RB_TREE 1
+#include <bits/stl_tree.h>
+#endif

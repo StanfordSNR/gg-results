@@ -1,0 +1,50 @@
+// GGHASH:VerYxsfVQj3rEkxuRnQNUfeHYeVmoVseDYRY64aSdEPw000022ba
+#ifndef _DRI2_PROTO_H_
+#define _DRI2_PROTO_H_ 
+#define DRI2_NAME "DRI2"
+#define DRI2_MAJOR 1
+#define DRI2_MINOR 4
+#define DRI2NumberErrors 0
+#define DRI2NumberEvents 2
+#define DRI2NumberRequests 14
+#define X_DRI2QueryVersion 0
+#define X_DRI2Connect 1
+#define X_DRI2Authenticate 2
+#define X_DRI2CreateDrawable 3
+#define X_DRI2DestroyDrawable 4
+#define X_DRI2GetBuffers 5
+#define X_DRI2CopyRegion 6
+#define X_DRI2GetBuffersWithFormat 7
+#define X_DRI2SwapBuffers 8
+#define X_DRI2GetMSC 9
+#define X_DRI2WaitMSC 10
+#define X_DRI2WaitSBC 11
+#define X_DRI2SwapInterval 12
+#define X_DRI2GetParam 13
+#define DRI2_BufferSwapComplete 0
+#define DRI2_InvalidateBuffers 1
+#define sz_xDRI2QueryVersionReq 12
+#define sz_xDRI2QueryVersionReply 32
+#define sz_xDRI2ConnectReq 12
+#define sz_xDRI2ConnectReply 32
+#define sz_xDRI2AuthenticateReq 12
+#define sz_xDRI2AuthenticateReply 32
+#define sz_xDRI2CreateDrawableReq 8
+#define sz_xDRI2DestroyDrawableReq 8
+#define sz_xDRI2GetBuffersReq 12
+#define sz_xDRI2GetBuffersReply 32
+#define sz_xDRI2CopyRegionReq 20
+#define sz_xDRI2CopyRegionReply 32
+#define sz_xDRI2SwapBuffersReq 32
+#define sz_xDRI2SwapBuffersReply 32
+#define sz_xDRI2GetMSCReq 8
+#define sz_xDRI2WaitMSCReq 32
+#define sz_xDRI2WaitSBCReq 16
+#define sz_xDRI2MSCReply 32
+#define sz_xDRI2SwapIntervalReq 12
+#define sz_xDRI2BufferSwapComplete 32
+#define sz_xDRI2BufferSwapComplete2 32
+#define sz_xDRI2InvalidateBuffers 32
+#define sz_xDRI2GetParamReq 12
+#define sz_xDRI2GetParamReply 32
+#endif

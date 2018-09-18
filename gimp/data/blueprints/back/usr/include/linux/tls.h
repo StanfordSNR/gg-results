@@ -1,0 +1,19 @@
+// GGHASH:VxTKPsDMunwPUIl9pMr93QF8.9xLV02gCxcYEd.C04oo00000aa3
+#ifndef _LINUX_TLS_H
+#define _LINUX_TLS_H 
+#include <linux/types.h>
+#define TLS_TX 1
+#define TLS_VERSION_MINOR(ver) ((ver) & 0xFF)
+#define TLS_VERSION_MAJOR(ver) (((ver) >> 8) & 0xFF)
+#define TLS_VERSION_NUMBER(id) ((((id ##_VERSION_MAJOR) & 0xFF) << 8) | ((id ##_VERSION_MINOR) & 0xFF))
+#define TLS_1_2_VERSION_MAJOR 0x3
+#define TLS_1_2_VERSION_MINOR 0x3
+#define TLS_1_2_VERSION TLS_VERSION_NUMBER(TLS_1_2)
+#define TLS_CIPHER_AES_GCM_128 51
+#define TLS_CIPHER_AES_GCM_128_IV_SIZE 8
+#define TLS_CIPHER_AES_GCM_128_KEY_SIZE 16
+#define TLS_CIPHER_AES_GCM_128_SALT_SIZE 4
+#define TLS_CIPHER_AES_GCM_128_TAG_SIZE 16
+#define TLS_CIPHER_AES_GCM_128_REC_SEQ_SIZE 8
+#define TLS_SET_RECORD_TYPE 1
+#endif

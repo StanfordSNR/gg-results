@@ -1,0 +1,11 @@
+// GGHASH:VlyoYREwdKg0d8qwnHtYUyC_FB32D8NjHYrRw_K2NzCs00000cc7
+#ifndef _GLIBCXX_EXPERIMENTAL_ARRAY
+#define _GLIBCXX_EXPERIMENTAL_ARRAY 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <array>
+#include <experimental/type_traits>
+#define __cpp_lib_experimental_make_array 201505
+#endif
+#endif

@@ -1,0 +1,67 @@
+// GGHASH:VH7chcQER28b21vCOn6CThGt8yMvrwztPO6ud89t.BD00000426c
+#ifndef _GLIBCXX_DEBUG_DEQUE
+#define _GLIBCXX_DEBUG_DEQUE 1
+#include <deque>
+#include <debug/safe_sequence.h>
+#include <debug/safe_container.h>
+#include <debug/safe_iterator.h>
+#if __cplusplus < 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus < 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#if __cplusplus > 201402L
+#else
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#else
+#endif
+#if __cplusplus > 201402L
+#endif
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#endif

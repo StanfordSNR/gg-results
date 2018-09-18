@@ -1,0 +1,21 @@
+// GGHASH:VxB4TSjIK_yZVGy58d36cf8veutxBOBpY6mO6U6FjrPs00003130
+#ifndef _GLIBCXX_EXPERIMENTAL_FUNCTIONAL
+#define _GLIBCXX_EXPERIMENTAL_FUNCTIONAL 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <functional>
+#include <tuple>
+#include <iterator>
+#include <unordered_map>
+#include <vector>
+#include <array>
+#include <bits/stl_algo.h>
+#ifdef _GLIBCXX_PARALLEL
+# include <parallel/algorithm>
+#endif
+#include <experimental/bits/lfts_config.h>
+#define __cpp_lib_experimental_boyer_moore_searching 201411
+#define __cpp_lib_experimental_not_fn 201406
+#endif
+#endif

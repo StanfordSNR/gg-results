@@ -1,0 +1,13 @@
+// GGHASH:VniegufhqKlQGpG48Yf2SPFxweRWWh9_vdlpoTiW0QRs00000626
+#ifndef _GLIBCXX_TR1_UNORDERED_MAP
+#define _GLIBCXX_TR1_UNORDERED_MAP 1
+#include <utility>
+#include <bits/stl_algobase.h>
+#include <bits/allocator.h>
+#include <bits/stl_function.h>
+#include <bits/stringfwd.h>
+#include <tr1/type_traits>
+#include <tr1/functional_hash.h>
+#include <tr1/hashtable.h>
+#include <tr1/unordered_map.h>
+#endif

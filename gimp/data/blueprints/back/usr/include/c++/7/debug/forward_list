@@ -1,0 +1,11 @@
+// GGHASH:VJItN_qM5k1cBJx_jMrI2AwXXzXN9ks1s2Vp5e0ugQ.U000062a5
+#ifndef _GLIBCXX_DEBUG_FORWARD_LIST
+#define _GLIBCXX_DEBUG_FORWARD_LIST 1
+#include <forward_list>
+#include <debug/safe_sequence.h>
+#include <debug/safe_container.h>
+#include <debug/safe_iterator.h>
+#define __glibcxx_check_valid_fl_range(_First,_Last,_Dist) _GLIBCXX_DEBUG_VERIFY(_First._M_valid_range(_Last, _Dist, false), _M_message(__gnu_debug::__msg_valid_range) ._M_iterator(_First, #_First) ._M_iterator(_Last, #_Last))
+#ifndef _GLIBCXX_DEBUG_PEDANTIC
+#endif
+#endif

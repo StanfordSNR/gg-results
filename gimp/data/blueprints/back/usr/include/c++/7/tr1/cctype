@@ -1,0 +1,9 @@
+// GGHASH:VoYHzT2gPvaBE7YKzcS9gdhkxXIzinlrjyRVa1zhSyXY00000584
+#ifndef _GLIBCXX_TR1_CCTYPE
+#define _GLIBCXX_TR1_CCTYPE 1
+#include <bits/c++config.h>
+#include <cctype>
+#ifdef _GLIBCXX_USE_C99_CTYPE_TR1
+#undef isblank
+#endif
+#endif

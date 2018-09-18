@@ -1,0 +1,35 @@
+// GGHASH:VbmgIkjCSBiSsHktuof6_QDJ3GKgiVgPG733Jdb6o1oA00004bd1
+#ifndef _GLIBCXX_SHARED_MUTEX
+#define _GLIBCXX_SHARED_MUTEX 1
+#if __cplusplus >= 201402L
+#include <bits/c++config.h>
+#include <condition_variable>
+#include <bits/functexcept.h>
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+#ifdef _GLIBCXX_HAS_GTHREADS
+#if __cplusplus >= 201703L
+#define __cpp_lib_shared_mutex 201505
+#endif
+#define __cpp_lib_shared_timed_mutex 201402
+#if _GLIBCXX_USE_PTHREAD_RWLOCK_T
+#ifdef PTHREAD_RWLOCK_INITIALIZER
+#else
+#endif
+#endif
+#if ! (_GLIBCXX_USE_PTHREAD_RWLOCK_T && _GTHREAD_USE_MUTEX_TIMEDLOCK)
+#endif
+#if __cplusplus > 201402L
+#if _GLIBCXX_USE_PTHREAD_RWLOCK_T
+#else
+#endif
+#endif
+#if _GLIBCXX_USE_PTHREAD_RWLOCK_T && _GTHREAD_USE_MUTEX_TIMEDLOCK
+#else
+#endif
+#if _GLIBCXX_USE_PTHREAD_RWLOCK_T && _GTHREAD_USE_MUTEX_TIMEDLOCK
+#else
+#endif
+#endif
+#endif
+#endif
+#endif

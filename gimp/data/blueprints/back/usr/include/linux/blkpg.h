@@ -1,0 +1,11 @@
+// GGHASH:VuAZJ8SG2CmqX9UZE25Bfv0nUtor71bBeBjUo6uRo98U00000662
+#ifndef __LINUX_BLKPG_H
+#define __LINUX_BLKPG_H 
+#include <linux/ioctl.h>
+#define BLKPG _IO(0x12,105)
+#define BLKPG_ADD_PARTITION 1
+#define BLKPG_DEL_PARTITION 2
+#define BLKPG_RESIZE_PARTITION 3
+#define BLKPG_DEVNAMELTH 64
+#define BLKPG_VOLNAMELTH 64
+#endif

@@ -1,0 +1,25 @@
+// GGHASH:Vn_jmSp2Mf0.MXWUmqfeevrR7KQlISK8vm7ie5zX1JzQ00000803
+#ifndef _GLIBCXX_CFENV
+#define _GLIBCXX_CFENV 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <bits/c++config.h>
+#if _GLIBCXX_HAVE_FENV_H
+# include <fenv.h>
+#endif
+#ifdef _GLIBCXX_USE_C99_FENV_TR1
+#undef feclearexcept
+#undef fegetexceptflag
+#undef feraiseexcept
+#undef fesetexceptflag
+#undef fetestexcept
+#undef fegetround
+#undef fesetround
+#undef fegetenv
+#undef feholdexcept
+#undef fesetenv
+#undef feupdateenv
+#endif
+#endif
+#endif

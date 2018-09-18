@@ -1,0 +1,17 @@
+// GGHASH:V2oC4K89.tQBRZcqSv9adc_HyxXXf_LbeyfJRL3oUM9000001499
+#ifndef _GLIBCXX_PROFILE_DEQUE
+#define _GLIBCXX_PROFILE_DEQUE 1
+#include <deque>
+#if __cplusplus < 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus < 201103L
+#else
+#endif
+#endif

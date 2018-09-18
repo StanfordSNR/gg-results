@@ -1,0 +1,8 @@
+// GGHASH:Vr7GlIh8Obl5RFi4l660qRmz9xU0FgLTvSgVrwCJRgUs00001341
+#ifndef _STREAMBUF_TCC
+#define _STREAMBUF_TCC 1
+#if _GLIBCXX_EXTERN_TEMPLATE
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#endif
+#endif

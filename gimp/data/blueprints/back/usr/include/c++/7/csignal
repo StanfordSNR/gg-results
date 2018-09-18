@@ -1,0 +1,7 @@
+// GGHASH:VNaTHmzk29afpsuLnIA8NShdHpaLBHEFFT0Gxk4ciWF80000073f
+#include <bits/c++config.h>
+#include <signal.h>
+#ifndef _GLIBCXX_CSIGNAL
+#define _GLIBCXX_CSIGNAL 1
+#undef raise
+#endif

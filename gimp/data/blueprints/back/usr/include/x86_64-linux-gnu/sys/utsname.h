@@ -1,0 +1,29 @@
+// GGHASH:VWmqttCOSoH.FT4hLIfJxUm00ocntCZs9Rh_dtm3Hyu0000009b0
+#ifndef _SYS_UTSNAME_H
+#define _SYS_UTSNAME_H 1
+#include <features.h>
+#include <bits/utsname.h>
+#ifndef _UTSNAME_SYSNAME_LENGTH
+#define _UTSNAME_SYSNAME_LENGTH _UTSNAME_LENGTH
+#endif
+#ifndef _UTSNAME_NODENAME_LENGTH
+#define _UTSNAME_NODENAME_LENGTH _UTSNAME_LENGTH
+#endif
+#ifndef _UTSNAME_RELEASE_LENGTH
+#define _UTSNAME_RELEASE_LENGTH _UTSNAME_LENGTH
+#endif
+#ifndef _UTSNAME_VERSION_LENGTH
+#define _UTSNAME_VERSION_LENGTH _UTSNAME_LENGTH
+#endif
+#ifndef _UTSNAME_MACHINE_LENGTH
+#define _UTSNAME_MACHINE_LENGTH _UTSNAME_LENGTH
+#endif
+#if _UTSNAME_DOMAIN_LENGTH - 0
+# ifdef __USE_GNU
+# else
+# endif
+#endif
+#ifdef __USE_MISC
+#define SYS_NMLN _UTSNAME_LENGTH
+#endif
+#endif

@@ -1,0 +1,15 @@
+// GGHASH:VsUJelez_S6L.Chthfe6jEmBf7bHVDnqfcZILyfJJcAI0000084d
+#include <bits/c++config.h>
+#include <time.h>
+#ifndef _GLIBCXX_CTIME
+#define _GLIBCXX_CTIME 1
+#undef clock
+#undef difftime
+#undef mktime
+#undef time
+#undef asctime
+#undef ctime
+#undef gmtime
+#undef localtime
+#undef strftime
+#endif

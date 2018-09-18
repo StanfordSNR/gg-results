@@ -1,0 +1,4 @@
+// GGHASH:VJm07ZHt1bbkN_gcimm_gYH30fGKFCMnrh2zR1OCSOVM000003bb
+#ifndef _BABL_INTROSPECT_H
+#define _BABL_INTROSPECT_H 
+#endif

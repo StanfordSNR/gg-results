@@ -1,0 +1,17 @@
+// GGHASH:VLoJiJ5wFo7z508i3JxxDvDWmFmT1w.610o3cMUs5wjY00002c38
+#ifndef FTRENDER_H_
+#define FTRENDER_H_ 
+#include <ft2build.h>
+#include FT_MODULE_H
+#include FT_GLYPH_H
+#define FT_Glyph_Init_Func FT_Glyph_InitFunc
+#define FT_Glyph_Done_Func FT_Glyph_DoneFunc
+#define FT_Glyph_Transform_Func FT_Glyph_TransformFunc
+#define FT_Glyph_BBox_Func FT_Glyph_GetBBoxFunc
+#define FT_Glyph_Copy_Func FT_Glyph_CopyFunc
+#define FT_Glyph_Prepare_Func FT_Glyph_PrepareFunc
+#define FTRenderer_render FT_Renderer_RenderFunc
+#define FTRenderer_transform FT_Renderer_TransformFunc
+#define FTRenderer_getCBox FT_Renderer_GetCBoxFunc
+#define FTRenderer_setMode FT_Renderer_SetModeFunc
+#endif

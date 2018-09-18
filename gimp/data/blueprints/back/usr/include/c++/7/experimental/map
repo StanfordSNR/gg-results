@@ -1,0 +1,11 @@
+// GGHASH:VXpUi594crFitxS9tfrOf72cD7ZEeq3VFJ4CHbf1a5uc00000a6b
+#ifndef _GLIBCXX_EXPERIMENTAL_MAP
+#define _GLIBCXX_EXPERIMENTAL_MAP 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <map>
+#include <experimental/bits/erase_if.h>
+#include <experimental/memory_resource>
+#endif
+#endif

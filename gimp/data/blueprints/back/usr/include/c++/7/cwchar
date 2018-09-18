@@ -1,0 +1,117 @@
+// GGHASH:Vw3k7OeE.vDmFwmxQsMDn_aATCFYuMzKtORQwXNDPyyI0000196d
+#include <bits/c++config.h>
+#if _GLIBCXX_HAVE_WCHAR_H
+#include <wchar.h>
+#endif
+#ifndef _GLIBCXX_CWCHAR
+#define _GLIBCXX_CWCHAR 1
+#ifndef _GLIBCXX_HAVE_MBSTATE_T
+#endif
+#undef btowc
+#undef fgetwc
+#undef fgetws
+#undef fputwc
+#undef fputws
+#undef fwide
+#undef fwprintf
+#undef fwscanf
+#undef getwc
+#undef getwchar
+#undef mbrlen
+#undef mbrtowc
+#undef mbsinit
+#undef mbsrtowcs
+#undef putwc
+#undef putwchar
+#undef swprintf
+#undef swscanf
+#undef ungetwc
+#undef vfwprintf
+#if _GLIBCXX_HAVE_VFWSCANF
+#undef vfwscanf
+#endif
+#undef vswprintf
+#if _GLIBCXX_HAVE_VSWSCANF
+#undef vswscanf
+#endif
+#undef vwprintf
+#if _GLIBCXX_HAVE_VWSCANF
+#undef vwscanf
+#endif
+#undef wcrtomb
+#undef wcscat
+#undef wcschr
+#undef wcscmp
+#undef wcscoll
+#undef wcscpy
+#undef wcscspn
+#undef wcsftime
+#undef wcslen
+#undef wcsncat
+#undef wcsncmp
+#undef wcsncpy
+#undef wcspbrk
+#undef wcsrchr
+#undef wcsrtombs
+#undef wcsspn
+#undef wcsstr
+#undef wcstod
+#if _GLIBCXX_HAVE_WCSTOF
+#undef wcstof
+#endif
+#undef wcstok
+#undef wcstol
+#undef wcstoul
+#undef wcsxfrm
+#undef wctob
+#undef wmemchr
+#undef wmemcmp
+#undef wmemcpy
+#undef wmemmove
+#undef wmemset
+#undef wprintf
+#undef wscanf
+#if _GLIBCXX_USE_WCHAR_T
+#ifndef _GLIBCXX_HAVE_BROKEN_VSWPRINTF
+#endif
+#if _GLIBCXX_HAVE_VFWSCANF
+#endif
+#ifndef _GLIBCXX_HAVE_BROKEN_VSWPRINTF
+#endif
+#if _GLIBCXX_HAVE_VSWSCANF
+#endif
+#if _GLIBCXX_HAVE_VWSCANF
+#endif
+#if _GLIBCXX_HAVE_WCSTOF
+#endif
+#ifndef __CORRECT_ISO_CPP_WCHAR_H_PROTO
+#endif
+#if _GLIBCXX_USE_C99_WCHAR
+#undef wcstold
+#undef wcstoll
+#undef wcstoull
+#if _GLIBCXX_USE_C99_CHECK || _GLIBCXX_USE_C99_DYNAMIC
+#endif
+#if !_GLIBCXX_USE_C99_DYNAMIC
+#endif
+#if _GLIBCXX_USE_C99_LONG_LONG_CHECK || _GLIBCXX_USE_C99_LONG_LONG_DYNAMIC
+#endif
+#if !_GLIBCXX_USE_C99_LONG_LONG_DYNAMIC
+#endif
+#endif
+#endif
+#if __cplusplus >= 201103L
+#ifdef _GLIBCXX_USE_WCHAR_T
+#if _GLIBCXX_HAVE_WCSTOF
+#endif
+#if _GLIBCXX_HAVE_VFWSCANF
+#endif
+#if _GLIBCXX_HAVE_VSWSCANF
+#endif
+#if _GLIBCXX_HAVE_VWSCANF
+#endif
+#if _GLIBCXX_USE_C99_WCHAR
+#endif
+#endif
+#endif
+#endif

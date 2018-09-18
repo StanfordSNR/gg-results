@@ -1,0 +1,35 @@
+// GGHASH:Vbb6AZD5XIZb2bqEzIWLvOIVTmu0ebdmEXrbL8E200PM00001d53
+#ifndef _NEW
+#define _NEW 
+#include <bits/c++config.h>
+#include <exception>
+#pragma GCC visibility push(default)
+#if __cplusplus >= 201103L
+#endif
+#if __cpp_aligned_new
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cpp_sized_deallocation
+#endif
+#if __cpp_aligned_new
+#if __cpp_sized_deallocation
+#endif
+#endif
+#if __cplusplus > 201402L
+#if __GNUC__ >= 7
+#define _GLIBCXX_HAVE_BUILTIN_LAUNDER 1
+#elif defined __has_builtin
+# if __has_builtin(__builtin_launder)
+#define _GLIBCXX_HAVE_BUILTIN_LAUNDER 1
+# endif
+#endif
+#ifdef _GLIBCXX_HAVE_BUILTIN_LAUNDER
+#define __cpp_lib_launder 201606
+#endif
+#undef _GLIBCXX_HAVE_BUILTIN_LAUNDER
+#endif
+#pragma GCC visibility pop
+#endif

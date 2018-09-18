@@ -1,0 +1,23 @@
+// GGHASH:VKAXz0MfVR9eQP252L4Ta0M3AoCme0nB7qOm4h5F.2Oo00003927
+#ifndef _GLIBCXX_EXPERIMENTAL_ANY
+#define _GLIBCXX_EXPERIMENTAL_ANY 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <typeinfo>
+#include <new>
+#include <utility>
+#include <type_traits>
+#include <experimental/bits/lfts_config.h>
+#define __cpp_lib_experimental_any 201411
+#if __cpp_exceptions
+#else
+#endif
+#if __cpp_rtti
+#endif
+#if __cpp_rtti
+#endif
+#if __cpp_rtti
+#endif
+#endif
+#endif

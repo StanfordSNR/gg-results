@@ -1,0 +1,83 @@
+// GGHASH:VvT_Rs1pB9wd.ZpnjWSMnZg04LprxSAO1IS8P1lqf_H400005786
+#ifndef _GLIBCXX_DEBUG_LIST
+#define _GLIBCXX_DEBUG_LIST 1
+#include <list>
+#include <debug/safe_sequence.h>
+#include <debug/safe_container.h>
+#include <debug/safe_iterator.h>
+#if __cplusplus < 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus < 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#ifndef _GLIBCXX_USE_CXX11_ABI
+#endif
+#ifndef _GLIBCXX_DEBUG_PEDANTIC
+#endif
+#endif

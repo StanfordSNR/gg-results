@@ -1,0 +1,7 @@
+// GGHASH:VcbFlGdt5GN_ZLjpdL7teEe4hV2ulsic6Jq9I.4rymz4000005ca
+#ifndef _GLIBCXX_TR1_CSTDIO
+#define _GLIBCXX_TR1_CSTDIO 1
+#include <cstdio>
+#if _GLIBCXX_USE_C99_STDIO
+#endif
+#endif

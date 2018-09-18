@@ -1,0 +1,35 @@
+// GGHASH:VSAs5ENS.p7Z.TgI3q6oIK7QOI8wBKzbF9PsgVE.wmQg00000ae9
+#include <bits/c++config.h>
+#if _GLIBCXX_HAVE_WCTYPE_H
+#if __GLIBC__ == 2 && __GLIBC_MINOR__ < 10
+#include <stddef.h>
+#endif
+#include <wctype.h>
+#endif
+#ifndef _GLIBCXX_CWCTYPE
+#define _GLIBCXX_CWCTYPE 1
+#undef iswalnum
+#undef iswalpha
+#if _GLIBCXX_HAVE_ISWBLANK
+#undef iswblank
+#endif
+#undef iswcntrl
+#undef iswctype
+#undef iswdigit
+#undef iswgraph
+#undef iswlower
+#undef iswprint
+#undef iswpunct
+#undef iswspace
+#undef iswupper
+#undef iswxdigit
+#undef towctrans
+#undef towlower
+#undef towupper
+#undef wctrans
+#undef wctype
+#if _GLIBCXX_USE_WCHAR_T
+#if _GLIBCXX_HAVE_ISWBLANK
+#endif
+#endif
+#endif

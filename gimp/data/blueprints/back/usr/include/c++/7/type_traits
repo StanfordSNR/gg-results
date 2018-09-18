@@ -1,0 +1,115 @@
+// GGHASH:V03DeT78FJPPPfeOTN5KQpIIZbBkY.CfCfysdE1brBks0001684f
+#ifndef _GLIBCXX_TYPE_TRAITS
+#define _GLIBCXX_TYPE_TRAITS 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <bits/c++config.h>
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+# if defined (__UINT_LEAST16_TYPE__) && defined(__UINT_LEAST32_TYPE__)
+# else
+# include <cstdint>
+# endif
+#endif
+#if __cplusplus > 201103L
+#define __cpp_lib_integral_constant_callable 201304
+#endif
+#if __cplusplus > 201402L
+#define __cpp_lib_bool_constant 201505
+#endif
+#if __cplusplus >= 201703L
+#define __cpp_lib_logical_traits 201510
+#endif
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_0)
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_1)
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_2)
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_3)
+#endif
+#if !defined(__STRICT_ANSI__) && defined(_GLIBCXX_USE_FLOAT128) && !defined(__CUDACC__)
+#endif
+#define __cpp_lib_is_null_pointer 201309
+#if __cplusplus >= 201402L
+#define __cpp_lib_is_final 201402L
+#endif
+#if __cplusplus > 201103L
+#define __cpp_lib_transformation_trait_aliases 201304
+#endif
+#if __cplusplus > 201103L
+#endif
+#if defined(_GLIBCXX_USE_WCHAR_T) && !defined(__WCHAR_UNSIGNED__)
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_0)
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_1)
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_2)
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_3)
+#endif
+#if defined(_GLIBCXX_USE_WCHAR_T) && defined(__WCHAR_UNSIGNED__)
+#endif
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_0)
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_1)
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_2)
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_3)
+#endif
+#if __cplusplus > 201103L
+#endif
+#if __cplusplus > 201103L
+#endif
+#if __cplusplus > 201103L
+#endif
+#define __cpp_lib_result_of_sfinae 201210
+#if __cplusplus > 201103L
+#endif
+#if __cplusplus > 201402L || !defined(__STRICT_ANSI__)
+#define __cpp_lib_void_t 201411
+#endif
+#define _GLIBCXX_HAS_NESTED_TYPE(_NTYPE) template<typename _Tp, typename = __void_t<>> struct __has_ ##_NTYPE : false_type { }; template<typename _Tp> struct __has_ ##_NTYPE<_Tp, __void_t<typename _Tp::_NTYPE>> : true_type { };
+#if __cplusplus > 201402L || !defined(__STRICT_ANSI__)
+#define __cpp_lib_is_swappable 201603
+#if __cplusplus >= 201402L
+#endif
+#if __cplusplus >= 201402L
+#endif
+#endif
+#if __cplusplus > 201402L
+#define __cpp_lib_is_invocable 201703
+#endif
+#if __cplusplus > 201402L
+#define __cpp_lib_type_trait_variable_templates 201510L
+#if __GNUC__ >= 7
+#define _GLIBCXX_HAVE_BUILTIN_HAS_UNIQ_OBJ_REP 1
+#elif defined(__is_identifier)
+# if ! __is_identifier(__has_unique_object_representations)
+#define _GLIBCXX_HAVE_BUILTIN_HAS_UNIQ_OBJ_REP 1
+# endif
+#endif
+#ifdef _GLIBCXX_HAVE_BUILTIN_HAS_UNIQ_OBJ_REP
+#define __cpp_lib_has_unique_object_representations 201606
+#endif
+#undef _GLIBCXX_HAVE_BUILTIN_HAS_UNIQ_OBJ_REP
+#if __GNUC__ >= 7
+#define _GLIBCXX_HAVE_BUILTIN_IS_AGGREGATE 1
+#elif defined(__is_identifier)
+# if ! __is_identifier(__is_aggregate)
+#define _GLIBCXX_HAVE_BUILTIN_IS_AGGREGATE 1
+# endif
+#endif
+#ifdef _GLIBCXX_HAVE_BUILTIN_IS_AGGREGATE
+#define __cpp_lib_is_aggregate 201703
+#endif
+#undef _GLIBCXX_HAVE_BUILTIN_IS_AGGREGATE
+#endif
+#endif
+#endif

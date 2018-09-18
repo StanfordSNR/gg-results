@@ -1,0 +1,17 @@
+// GGHASH:V8ceMj_NsAnDGDFieMeVksKvlJu5R05Yjb73lzcLME0o0000773a
+#ifndef _GLIBCXX_DEBUG_UNORDERED_SET
+#define _GLIBCXX_DEBUG_UNORDERED_SET 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+# include <unordered_set>
+#include <debug/safe_unordered_container.h>
+#include <debug/safe_container.h>
+#include <debug/safe_iterator.h>
+#include <debug/safe_local_iterator.h>
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#endif
+#endif

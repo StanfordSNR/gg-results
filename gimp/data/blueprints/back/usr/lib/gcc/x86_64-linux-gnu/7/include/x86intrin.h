@@ -1,0 +1,41 @@
+// GGHASH:V9XfPSTpBzHc8yFym1NAVOtK8QB4NLIdEjYipVCtO2Bc00000806
+#ifndef _X86INTRIN_H_INCLUDED
+#define _X86INTRIN_H_INCLUDED 
+#include <ia32intrin.h>
+#ifndef __iamcu__
+#include <mmintrin.h>
+#include <xmmintrin.h>
+#include <emmintrin.h>
+#include <pmmintrin.h>
+#include <tmmintrin.h>
+#include <ammintrin.h>
+#include <smmintrin.h>
+#include <wmmintrin.h>
+#include <immintrin.h>
+#include <mm3dnow.h>
+#include <fma4intrin.h>
+#include <xopintrin.h>
+#include <lwpintrin.h>
+#include <bmiintrin.h>
+#include <bmi2intrin.h>
+#include <tbmintrin.h>
+#include <lzcntintrin.h>
+#include <popcntintrin.h>
+#include <rdseedintrin.h>
+#include <prfchwintrin.h>
+#include <fxsrintrin.h>
+#include <xsaveintrin.h>
+#include <xsaveoptintrin.h>
+#include <sgxintrin.h>
+#endif
+#include <adxintrin.h>
+#ifndef __iamcu__
+#include <clwbintrin.h>
+#include <clflushoptintrin.h>
+#include <xsavesintrin.h>
+#include <xsavecintrin.h>
+#include <mwaitxintrin.h>
+#include <clzerointrin.h>
+#include <pkuintrin.h>
+#endif
+#endif

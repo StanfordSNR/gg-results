@@ -1,0 +1,5 @@
+// GGHASH:VDbkEhc8vvUfDX4rTw0Lv9KYjcF_qoZYkrNOTFkblH8E000005b8
+#ifndef _GLIBCXX_CISO646
+#define _GLIBCXX_CISO646 
+#include <bits/c++config.h>
+#endif

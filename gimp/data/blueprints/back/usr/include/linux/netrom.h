@@ -1,0 +1,14 @@
+// GGHASH:Va.V5_RgNyRi0.KJog7p56YW4ZqrxtrNaATKUVNq0acE00000327
+#ifndef NETROM_KERNEL_H
+#define NETROM_KERNEL_H 
+#include <linux/ax25.h>
+#define NETROM_MTU 236
+#define NETROM_T1 1
+#define NETROM_T2 2
+#define NETROM_N2 3
+#define NETROM_T4 6
+#define NETROM_IDLE 7
+#define SIOCNRDECOBS (SIOCPROTOPRIVATE+2)
+#define NETROM_NEIGH 0
+#define NETROM_NODE 1
+#endif

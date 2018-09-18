@@ -1,0 +1,14 @@
+// GGHASH:VNtSOdR1YyEyVSiKVNwl7dGL9xdXwuutbrj7uR530.4o000005ae
+#ifndef _GLIBCXX_TR1_CLIMITS
+#define _GLIBCXX_TR1_CLIMITS 1
+#include <climits>
+#ifndef LLONG_MIN
+#define LLONG_MIN (-__LONG_LONG_MAX__ - 1)
+#endif
+#ifndef LLONG_MAX
+#define LLONG_MAX __LONG_LONG_MAX__
+#endif
+#ifndef ULLONG_MAX
+#define ULLONG_MAX (__LONG_LONG_MAX__ * 2ULL + 1)
+#endif
+#endif

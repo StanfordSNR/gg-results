@@ -1,0 +1,5 @@
+// GGHASH:VrXmJUvzlRvtBOTYFfL81I.Ch4Ya.39ORFJ64Tlm4BPY000004e7
+#ifndef _GLIBCXX_TR1_CCOMPLEX
+#define _GLIBCXX_TR1_CCOMPLEX 1
+#include <tr1/complex>
+#endif

@@ -1,0 +1,12 @@
+// GGHASH:Vf4bl1obDFr959kcD2HAe3kprn720ckHrdCAyxHEAzUY00000579
+#ifndef _GLIBCXX_CSTDBOOL
+#define _GLIBCXX_CSTDBOOL 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+# include <bits/c++config.h>
+# if _GLIBCXX_HAVE_STDBOOL_H
+# include <stdbool.h>
+# endif
+#endif
+#endif

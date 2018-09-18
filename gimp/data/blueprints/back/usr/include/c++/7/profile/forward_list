@@ -1,0 +1,9 @@
+// GGHASH:VhbtwWOm72nAqCoFtZ_Yx9gZ8qm8acGX7fJ0vMWP3XeU000018f6
+#ifndef _GLIBCXX_PROFILE_FORWARD_LIST
+#define _GLIBCXX_PROFILE_FORWARD_LIST 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <forward_list>
+#endif
+#endif

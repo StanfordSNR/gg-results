@@ -1,0 +1,5 @@
+// GGHASH:V90qspOSxa650bSxwaWEsCJGguHMascGDRFFIUDzbAGM000004e0
+#ifndef _GLIBCXX_TR1_CTGMATH
+#define _GLIBCXX_TR1_CTGMATH 1
+#include <tr1/cmath>
+#endif

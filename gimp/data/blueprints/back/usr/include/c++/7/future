@@ -1,0 +1,31 @@
+// GGHASH:VrURDvuKxJviofcU6ifWuv9UYPxSdQOrK8V_Al313Dao0000c5f6
+#ifndef _GLIBCXX_FUTURE
+#define _GLIBCXX_FUTURE 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <mutex>
+#include <thread>
+#include <condition_variable>
+#include <system_error>
+#include <atomic>
+#include <bits/atomic_futex.h>
+#include <bits/functexcept.h>
+#include <bits/invoke.h>
+#include <bits/unique_ptr.h>
+#include <bits/shared_ptr.h>
+#include <bits/std_function.h>
+#include <bits/uses_allocator.h>
+#include <bits/allocated_ptr.h>
+#include <ext/aligned_buffer.h>
+#if defined(_GLIBCXX_HAS_GTHREADS) && defined(_GLIBCXX_USE_C99_STDINT_TR1)
+#ifdef _GLIBCXX_ASYNC_ABI_COMPAT
+#else
+#endif
+#ifndef _GLIBCXX_ASYNC_ABI_COMPAT
+#if __cpp_exceptions
+#endif
+#endif
+#endif
+#endif
+#endif

@@ -1,0 +1,5 @@
+// GGHASH:V4OlIXhwcnM7WErIjgrv_PWgniADOqS1fVp8uKHfCwog00002f57
+#ifndef _GLIBCXX_TR1_TUPLE
+#define _GLIBCXX_TR1_TUPLE 1
+#include <utility>
+#endif

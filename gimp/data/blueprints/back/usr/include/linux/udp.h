@@ -1,0 +1,14 @@
+// GGHASH:VOGRhe_GbAVuknARTJ4B3Ew5IkKDXMTwgpKmg1.ZDEh0000005b7
+#ifndef _LINUX_UDP_H
+#define _LINUX_UDP_H 
+#include <linux/types.h>
+#define UDP_CORK 1
+#define UDP_ENCAP 100
+#define UDP_NO_CHECK6_TX 101
+#define UDP_NO_CHECK6_RX 102
+#define UDP_ENCAP_ESPINUDP_NON_IKE 1
+#define UDP_ENCAP_ESPINUDP 2
+#define UDP_ENCAP_L2TPINUDP 3
+#define UDP_ENCAP_GTP0 4
+#define UDP_ENCAP_GTP1U 5
+#endif

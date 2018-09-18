@@ -1,0 +1,15 @@
+// GGHASH:V_u6SRtkAj7LCAwJjx4VLBbM3GbpTIKr1qNDOvkYeEWM000019cf
+#ifndef _GLIBCXX_PROFILE_BITSET
+#define _GLIBCXX_PROFILE_BITSET 
+#include <bitset>
+#if __cplusplus < 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#endif

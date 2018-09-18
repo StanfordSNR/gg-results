@@ -1,0 +1,10 @@
+// GGHASH:VJ5G8_sj_qBQxMQJm6QcCLETZKPXvURYpJKF5NxhMD9o0000127b
+#ifndef _EXT_NUMERIC
+#define _EXT_NUMERIC 1
+#include <bits/concept_check.h>
+#include <numeric>
+#include <ext/functional>
+#if __cplusplus >= 201103L
+#else
+#endif
+#endif

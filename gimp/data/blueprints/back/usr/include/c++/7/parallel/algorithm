@@ -1,0 +1,8 @@
+// GGHASH:VrhziUuUvCR05o5z_FB0ixteOJbPUJquZFfCqOOR1f2w00000565
+#ifndef _PARALLEL_ALGORITHM
+#define _PARALLEL_ALGORITHM 1
+#include <algorithm>
+#include <parallel/algorithmfwd.h>
+#include <parallel/algobase.h>
+#include <parallel/algo.h>
+#endif

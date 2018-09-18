@@ -1,0 +1,10 @@
+// GGHASH:VQo55MN9RhIcELguwCK0flUcqoQbk2dc.URQhxaWILAg0000080e
+#ifndef _GLIBCXX_EXPERIMENTAL_SYSTEM_ERROR
+#define _GLIBCXX_EXPERIMENTAL_SYSTEM_ERROR 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <system_error>
+#include <experimental/bits/lfts_config.h>
+#endif
+#endif

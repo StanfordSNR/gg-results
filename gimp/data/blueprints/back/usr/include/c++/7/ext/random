@@ -1,0 +1,29 @@
+// GGHASH:VLcsSqje8bnTiocZrL5XZKHXoq0YjBVs4Veh71lVZgJg0001b2ca
+#ifndef _EXT_RANDOM
+#define _EXT_RANDOM 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <random>
+#include <algorithm>
+#include <array>
+#include <ext/cmath>
+#ifdef __SSE2__
+# include <emmintrin.h>
+#endif
+#if defined(_GLIBCXX_USE_C99_STDINT_TR1) && defined(UINT32_C)
+#if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+#ifdef __SSE2__
+#endif
+#endif
+#if _GLIBCXX_USE_C99_MATH_TR1
+#else
+#endif
+#if _GLIBCXX_USE_C99_MATH_TR1
+#else
+#endif
+#include "ext/opt_random.h"
+#include "random.tcc"
+#endif
+#endif
+#endif

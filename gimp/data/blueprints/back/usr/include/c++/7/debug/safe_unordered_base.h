@@ -1,0 +1,5 @@
+// GGHASH:VuJgw9FLmtR6NrxCMuDXZ4mnD3pqqTpRsNSo4FgHVtg000001aef
+#ifndef _GLIBCXX_DEBUG_SAFE_UNORDERED_BASE_H
+#define _GLIBCXX_DEBUG_SAFE_UNORDERED_BASE_H 1
+#include <debug/safe_base.h>
+#endif

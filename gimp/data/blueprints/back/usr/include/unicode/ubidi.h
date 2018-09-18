@@ -1,0 +1,24 @@
+// GGHASH:VwimAsSGR0fIqMeL25cGUO2uH9rJRQf7UgFo.WVmZNrc00016522
+#ifndef UBIDI_H
+#define UBIDI_H 
+#include "unicode/utypes.h"
+#include "unicode/uchar.h"
+#include "unicode/localpointer.h"
+#define UBIDI_DEFAULT_LTR 0xfe
+#define UBIDI_DEFAULT_RTL 0xff
+#define UBIDI_MAX_EXPLICIT_LEVEL 125
+#define UBIDI_LEVEL_OVERRIDE 0x80
+#define UBIDI_MAP_NOWHERE (-1)
+#if U_SHOW_CPLUSPLUS_API
+#endif
+#ifndef U_HIDE_DEPRECATED_API
+#endif
+#define UBIDI_KEEP_BASE_COMBINING 1
+#define UBIDI_DO_MIRRORING 2
+#define UBIDI_INSERT_LRM_FOR_NUMERIC 4
+#define UBIDI_REMOVE_BIDI_CONTROLS 8
+#define UBIDI_OUTPUT_REVERSE 16
+#ifndef U_HIDE_DEPRECATED_API
+#define U_BIDI_CLASS_DEFAULT U_CHAR_DIRECTION_COUNT
+#endif
+#endif

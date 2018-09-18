@@ -1,0 +1,25 @@
+// GGHASH:Vh9CgQaD1P4vhuCIsNsArpN4NK2oW1MiNMsAfDCxopL40000743a
+#ifndef _GLIBCXX_CHRONO
+#define _GLIBCXX_CHRONO 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <ratio>
+#include <type_traits>
+#include <limits>
+#include <ctime>
+#include <bits/parse_numbers.h>
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus >= 201703L
+#define __cpp_lib_chrono 201611
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201103L
+#define __cpp_lib_chrono_udls 201304
+#endif
+#endif
+#endif
+#endif

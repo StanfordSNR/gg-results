@@ -1,0 +1,24 @@
+// GGHASH:VjxpHc5SEXC5SQTV2OkcY58g4rZy30wVVEUWMvcx8J4Y0000086d
+#ifndef _GLIBCXX_CINTTYPES
+#define _GLIBCXX_CINTTYPES 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <cstdint>
+#if _GLIBCXX_HAVE_INTTYPES_H
+# ifndef __STDC_FORMAT_MACROS
+#define _UNDEF__STDC_FORMAT_MACROS 
+#define __STDC_FORMAT_MACROS 
+# endif
+# include <inttypes.h>
+# ifdef _UNDEF__STDC_FORMAT_MACROS
+#undef __STDC_FORMAT_MACROS
+#undef _UNDEF__STDC_FORMAT_MACROS
+# endif
+#endif
+#ifdef _GLIBCXX_USE_C99_INTTYPES_TR1
+#if defined(_GLIBCXX_USE_WCHAR_T) && _GLIBCXX_USE_C99_INTTYPES_WCHAR_T_TR1
+#endif
+#endif
+#endif
+#endif

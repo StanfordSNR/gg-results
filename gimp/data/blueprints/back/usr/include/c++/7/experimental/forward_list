@@ -1,0 +1,10 @@
+// GGHASH:VIGP_vaSueI6U0eAFCYZoj0_fToOYfZ9E2gInIFTqic00000096c
+#ifndef _GLIBCXX_EXPERIMENTAL_FORWARD_LIST
+#define _GLIBCXX_EXPERIMENTAL_FORWARD_LIST 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <forward_list>
+#include <experimental/memory_resource>
+#endif
+#endif

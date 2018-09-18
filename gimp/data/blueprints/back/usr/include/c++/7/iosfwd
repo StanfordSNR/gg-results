@@ -1,0 +1,9 @@
+// GGHASH:Vce29P3NNEywdAdAxLUpAtO.uKQSha6cOWWdg1BzPrCs00001b06
+#ifndef _GLIBCXX_IOSFWD
+#define _GLIBCXX_IOSFWD 1
+#include <bits/c++config.h>
+#include <bits/stringfwd.h>
+#include <bits/postypes.h>
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#endif

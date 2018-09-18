@@ -1,0 +1,5 @@
+// GGHASH:VYaE5axErBud67KKeZr_0RQLcTBzkdcoBMtWXWZuRfEU00000568
+#ifndef _BITS_UIO_LIM_H
+#define _BITS_UIO_LIM_H 1
+#define __IOV_MAX 1024
+#endif

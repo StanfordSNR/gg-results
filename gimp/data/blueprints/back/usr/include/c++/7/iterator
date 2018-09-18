@@ -1,0 +1,13 @@
+// GGHASH:VI49SYDRhKXQ2oMNaRx0jw_HC2HOd.x0BgbDNX_RIhF400000a54
+#ifndef _GLIBCXX_ITERATOR
+#define _GLIBCXX_ITERATOR 1
+#include <bits/c++config.h>
+#include <bits/stl_iterator_base_types.h>
+#include <bits/stl_iterator_base_funcs.h>
+#include <bits/stl_iterator.h>
+#include <ostream>
+#include <istream>
+#include <bits/stream_iterator.h>
+#include <bits/streambuf_iterator.h>
+#include <bits/range_access.h>
+#endif

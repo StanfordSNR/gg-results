@@ -1,0 +1,26 @@
+// GGHASH:Vn8Dp4s3a7IAQk0SACdtDCbj_5M7jm9BFHRJOHcv8Sfw00002e7f
+#ifndef _GLIBCXX_DEBUG_BITSET
+#define _GLIBCXX_DEBUG_BITSET 
+#include <bitset>
+#include <debug/safe_sequence.h>
+#include <debug/safe_iterator.h>
+#if __cplusplus < 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus < 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#endif

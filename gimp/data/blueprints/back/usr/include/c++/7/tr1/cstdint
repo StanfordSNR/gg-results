@@ -1,0 +1,26 @@
+// GGHASH:Vx9OErKqg7Rcja2NXmherR0QLD2.U.jDpPxOhQ5sgV3k00000a3f
+#ifndef _GLIBCXX_TR1_CSTDINT
+#define _GLIBCXX_TR1_CSTDINT 1
+#include <bits/c++config.h>
+# if _GLIBCXX_HAVE_STDINT_H
+# ifndef __STDC_LIMIT_MACROS
+#define _UNDEF__STDC_LIMIT_MACROS 
+#define __STDC_LIMIT_MACROS 
+# endif
+# ifndef __STDC_CONSTANT_MACROS
+#define _UNDEF__STDC_CONSTANT_MACROS 
+#define __STDC_CONSTANT_MACROS 
+# endif
+# include <stdint.h>
+# ifdef _UNDEF__STDC_LIMIT_MACROS
+#undef __STDC_LIMIT_MACROS
+#undef _UNDEF__STDC_LIMIT_MACROS
+# endif
+# ifdef _UNDEF__STDC_CONSTANT_MACROS
+#undef __STDC_CONSTANT_MACROS
+#undef _UNDEF__STDC_CONSTANT_MACROS
+# endif
+# endif
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+#endif
+#endif

@@ -1,0 +1,10 @@
+// GGHASH:VMY_xVqHvcbh6pDDOaEP_QGvyXkBu2cN5gvFv8PxsFgk0000133c
+#ifndef PB_DS_LEFT_CHILD_NEXT_SIBLING_HEAP_CONST_ITERATOR_HPP
+#define PB_DS_LEFT_CHILD_NEXT_SIBLING_HEAP_CONST_ITERATOR_HPP 
+#include <ext/pb_ds/detail/left_child_next_sibling_heap_/point_const_iterator.hpp>
+#include <debug/debug.h>
+#define PB_DS_CLASS_C_DEC left_child_next_sibling_heap_const_iterator_<Node, _Alloc>
+#define PB_DS_BASIC_HEAP_CIT_BASE left_child_next_sibling_heap_node_point_const_iterator_<Node, _Alloc>
+#undef PB_DS_CLASS_C_DEC
+#undef PB_DS_BASIC_HEAP_CIT_BASE
+#endif

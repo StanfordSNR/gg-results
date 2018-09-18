@@ -1,0 +1,11 @@
+// GGHASH:V1lpuUrulhZVH.o7tfdU4ctMNreMFGaBW9FoY14zFrWs00000641
+#ifndef _GLIBCXX_IOS
+#define _GLIBCXX_IOS 1
+#include <iosfwd>
+#include <exception>
+#include <bits/char_traits.h>
+#include <bits/localefwd.h>
+#include <bits/ios_base.h>
+#include <streambuf>
+#include <bits/basic_ios.h>
+#endif

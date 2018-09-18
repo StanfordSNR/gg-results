@@ -1,0 +1,408 @@
+// GGHASH:VeppZ44nYK5OJlPfCrBz7dJjupM78zIsjBrSdAzZ1A3I0000bd64
+#include <bits/c++config.h>
+#include <bits/cpp_type_traits.h>
+#include <ext/type_traits.h>
+#define _GLIBCXX_INCLUDE_NEXT_C_HEADERS 
+#include_next <math.h>
+#undef _GLIBCXX_INCLUDE_NEXT_C_HEADERS
+#include <bits/std_abs.h>
+#ifndef _GLIBCXX_CMATH
+#define _GLIBCXX_CMATH 1
+#undef div
+#undef acos
+#undef asin
+#undef atan
+#undef atan2
+#undef ceil
+#undef cos
+#undef cosh
+#undef exp
+#undef fabs
+#undef floor
+#undef fmod
+#undef frexp
+#undef ldexp
+#undef log
+#undef log10
+#undef modf
+#undef pow
+#undef sin
+#undef sinh
+#undef sqrt
+#undef tan
+#undef tanh
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#if __cplusplus < 201103L
+#endif
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#endif
+#if _GLIBCXX_USE_C99_MATH
+#if !_GLIBCXX_USE_C99_FP_MACROS_DYNAMIC
+#undef fpclassify
+#undef isfinite
+#undef isinf
+#undef isnan
+#undef isnormal
+#undef signbit
+#undef isgreater
+#undef isgreaterequal
+#undef isless
+#undef islessequal
+#undef islessgreater
+#undef isunordered
+#if __cplusplus >= 201103L
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#if _GLIBCXX_HAVE_OBSOLETE_ISINF && !_GLIBCXX_NO_OBSOLETE_ISINF_ISNAN_DYNAMIC
+#else
+#endif
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#if _GLIBCXX_HAVE_OBSOLETE_ISNAN && !_GLIBCXX_NO_OBSOLETE_ISINF_ISNAN_DYNAMIC
+#else
+#endif
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#else
+#endif
+#endif
+#endif
+#if __cplusplus >= 201103L
+#ifdef _GLIBCXX_USE_C99_MATH_TR1
+#undef acosh
+#undef acoshf
+#undef acoshl
+#undef asinh
+#undef asinhf
+#undef asinhl
+#undef atanh
+#undef atanhf
+#undef atanhl
+#undef cbrt
+#undef cbrtf
+#undef cbrtl
+#undef copysign
+#undef copysignf
+#undef copysignl
+#undef erf
+#undef erff
+#undef erfl
+#undef erfc
+#undef erfcf
+#undef erfcl
+#undef exp2
+#undef exp2f
+#undef exp2l
+#undef expm1
+#undef expm1f
+#undef expm1l
+#undef fdim
+#undef fdimf
+#undef fdiml
+#undef fma
+#undef fmaf
+#undef fmal
+#undef fmax
+#undef fmaxf
+#undef fmaxl
+#undef fmin
+#undef fminf
+#undef fminl
+#undef hypot
+#undef hypotf
+#undef hypotl
+#undef ilogb
+#undef ilogbf
+#undef ilogbl
+#undef lgamma
+#undef lgammaf
+#undef lgammal
+#ifndef _GLIBCXX_NO_C99_ROUNDING_FUNCS
+#undef llrint
+#undef llrintf
+#undef llrintl
+#undef llround
+#undef llroundf
+#undef llroundl
+#endif
+#undef log1p
+#undef log1pf
+#undef log1pl
+#undef log2
+#undef log2f
+#undef log2l
+#undef logb
+#undef logbf
+#undef logbl
+#undef lrint
+#undef lrintf
+#undef lrintl
+#undef lround
+#undef lroundf
+#undef lroundl
+#undef nan
+#undef nanf
+#undef nanl
+#undef nearbyint
+#undef nearbyintf
+#undef nearbyintl
+#undef nextafter
+#undef nextafterf
+#undef nextafterl
+#undef nexttoward
+#undef nexttowardf
+#undef nexttowardl
+#undef remainder
+#undef remainderf
+#undef remainderl
+#undef remquo
+#undef remquof
+#undef remquol
+#undef rint
+#undef rintf
+#undef rintl
+#undef round
+#undef roundf
+#undef roundl
+#undef scalbln
+#undef scalblnf
+#undef scalblnl
+#undef scalbn
+#undef scalbnf
+#undef scalbnl
+#undef tgamma
+#undef tgammaf
+#undef tgammal
+#undef trunc
+#undef truncf
+#undef truncl
+#ifndef _GLIBCXX_NO_C99_ROUNDING_FUNCS
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_INT
+#endif
+#endif
+#endif
+#if __cplusplus > 201402L
+#define __cpp_lib_hypot 201603
+#endif
+#if _GLIBCXX_USE_STD_SPEC_FUNCS
+# include <bits/specfun.h>
+#endif
+#endif

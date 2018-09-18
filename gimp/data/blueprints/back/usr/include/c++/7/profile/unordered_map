@@ -1,0 +1,19 @@
+// GGHASH:VOhKYqjQByirmkv97avFOxfmMYG5yzwgYUVVqSq8sIAM00004488
+#ifndef _GLIBCXX_PROFILE_UNORDERED_MAP
+#define _GLIBCXX_PROFILE_UNORDERED_MAP 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+# include <unordered_map>
+#include <profile/base.h>
+#include <profile/unordered_base.h>
+#define _GLIBCXX_BASE unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>
+#define _GLIBCXX_STD_BASE _GLIBCXX_STD_C::_GLIBCXX_BASE
+#undef _GLIBCXX_BASE
+#undef _GLIBCXX_STD_BASE
+#define _GLIBCXX_BASE unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>
+#define _GLIBCXX_STD_BASE _GLIBCXX_STD_C::_GLIBCXX_BASE
+#undef _GLIBCXX_BASE
+#undef _GLIBCXX_STD_BASE
+#endif
+#endif

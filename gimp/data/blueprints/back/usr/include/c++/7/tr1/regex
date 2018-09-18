@@ -1,0 +1,33 @@
+// GGHASH:VnWlaETp1n.DXPCtx9pw5Hwft_FuReXkjVLs.HG.6Evc00016b11
+#ifndef _GLIBCXX_TR1_REGEX
+#define _GLIBCXX_TR1_REGEX 1
+#include <algorithm>
+#include <bitset>
+#include <iterator>
+#include <locale>
+#include <stdexcept>
+#include <string>
+#include <vector>
+#include <utility>
+#include <sstream>
+#if 0
+#endif
+#ifdef _GLIBCXX_INCLUDE_AS_CXX11
+#endif
+#ifdef _GLIBCXX_INCLUDE_AS_CXX11
+#endif
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#ifdef _GLIBCXX_INCLUDE_AS_CXX11
+#endif
+#ifdef _GLIBCXX_INCLUDE_AS_CXX11
+#endif
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#endif

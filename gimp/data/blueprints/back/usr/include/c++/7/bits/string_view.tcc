@@ -1,0 +1,6 @@
+// GGHASH:VEL0nVKiKuuxGX.nSI60aTNq3AbOUVxS3UV9wF0qTk6c000019e8
+#ifndef _GLIBCXX_STRING_VIEW_TCC
+#define _GLIBCXX_STRING_VIEW_TCC 1
+#if __cplusplus >= 201703L
+#endif
+#endif

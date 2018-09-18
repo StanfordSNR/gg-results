@@ -1,0 +1,10 @@
+// GGHASH:VaYFdjgJVDX9i8TvdFaKEciT8vsMMZI82v_yRzs0OgUk000009d6
+#ifndef _GLIBCXX_ALGORITHM
+#define _GLIBCXX_ALGORITHM 1
+#include <utility>
+#include <bits/stl_algobase.h>
+#include <bits/stl_algo.h>
+#ifdef _GLIBCXX_PARALLEL
+# include <parallel/algorithm>
+#endif
+#endif

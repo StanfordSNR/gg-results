@@ -1,0 +1,13 @@
+// GGHASH:VQ8QsOCaIx5wSHfAxDPFXmbWSEvtJ.tXg3rfZWY5a2Hk000011c4
+#ifndef GTK_DISABLE_DEPRECATED
+#ifndef __GTK_OLD_EDITABLE_H__
+#define __GTK_OLD_EDITABLE_H__ 
+#include <gtk/gtk.h>
+#define GTK_TYPE_OLD_EDITABLE (gtk_old_editable_get_type ())
+#define GTK_OLD_EDITABLE(obj) (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_OLD_EDITABLE, GtkOldEditable))
+#define GTK_OLD_EDITABLE_CLASS(klass) (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_OLD_EDITABLE, GtkOldEditableClass))
+#define GTK_IS_OLD_EDITABLE(obj) (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_OLD_EDITABLE))
+#define GTK_IS_OLD_EDITABLE_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_OLD_EDITABLE))
+#define GTK_OLD_EDITABLE_GET_CLASS(obj) (G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_OLD_EDITABLE, GtkOldEditableClass))
+#endif
+#endif

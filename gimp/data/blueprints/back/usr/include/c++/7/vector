@@ -1,0 +1,20 @@
+// GGHASH:VM6vELLu250Jacw8Q1iE.ce4pcKwJ2bbGG_Wv9RpCO8U00000abb
+#ifndef _GLIBCXX_VECTOR
+#define _GLIBCXX_VECTOR 1
+#include <bits/stl_algobase.h>
+#include <bits/allocator.h>
+#include <bits/stl_construct.h>
+#include <bits/stl_uninitialized.h>
+#include <bits/stl_vector.h>
+#include <bits/stl_bvector.h>
+#include <bits/range_access.h>
+#ifndef _GLIBCXX_EXPORT_TEMPLATE
+# include <bits/vector.tcc>
+#endif
+#ifdef _GLIBCXX_DEBUG
+# include <debug/vector>
+#endif
+#ifdef _GLIBCXX_PROFILE
+# include <profile/vector>
+#endif
+#endif

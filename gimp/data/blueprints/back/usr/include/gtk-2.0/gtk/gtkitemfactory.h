@@ -1,0 +1,13 @@
+// GGHASH:V1ngEGm97F2Bu4yXMOpg7k9mQVgv99RG6dQ5Cm_5bQrQ00001f92
+#ifndef GTK_DISABLE_DEPRECATED
+#ifndef __GTK_ITEM_FACTORY_H__
+#define __GTK_ITEM_FACTORY_H__ 
+#include <gtk/gtk.h>
+#define GTK_TYPE_ITEM_FACTORY (gtk_item_factory_get_type ())
+#define GTK_ITEM_FACTORY(object) (G_TYPE_CHECK_INSTANCE_CAST ((object), GTK_TYPE_ITEM_FACTORY, GtkItemFactory))
+#define GTK_ITEM_FACTORY_CLASS(klass) (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_ITEM_FACTORY, GtkItemFactoryClass))
+#define GTK_IS_ITEM_FACTORY(object) (G_TYPE_CHECK_INSTANCE_TYPE ((object), GTK_TYPE_ITEM_FACTORY))
+#define GTK_IS_ITEM_FACTORY_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_ITEM_FACTORY))
+#define GTK_ITEM_FACTORY_GET_CLASS(obj) (G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_ITEM_FACTORY, GtkItemFactoryClass))
+#endif
+#endif

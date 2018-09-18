@@ -1,0 +1,10 @@
+// GGHASH:VqxeJfBcLl.Cy7FkfgTh8kscwE_oEFBVWwAOXKE7Zs2o0000456f
+#ifndef _BACKWARD_HASH_MAP
+#define _BACKWARD_HASH_MAP 1
+#ifndef _GLIBCXX_PERMIT_BACKWARD_HASH
+#include "backward_warning.h"
+#endif
+#include <bits/c++config.h>
+#include <backward/hashtable.h>
+#include <bits/concept_check.h>
+#endif

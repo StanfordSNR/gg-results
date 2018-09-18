@@ -1,0 +1,19 @@
+// GGHASH:V.5vJvZHc8geRrtBwsUxtG3sJxzRB5HefEiYvBGfKGdw00008a53
+#ifndef _GLIBCXX_DEBUG_UNORDERED_MAP
+#define _GLIBCXX_DEBUG_UNORDERED_MAP 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+# include <unordered_map>
+#include <debug/safe_unordered_container.h>
+#include <debug/safe_container.h>
+#include <debug/safe_iterator.h>
+#include <debug/safe_local_iterator.h>
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#endif
+#endif

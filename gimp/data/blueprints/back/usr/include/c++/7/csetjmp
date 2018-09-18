@@ -1,0 +1,10 @@
+// GGHASH:VOgoVH771Ct96QtQ_Jz9RCg0GPVW950sjGGihN85bbg80000079d
+#include <bits/c++config.h>
+#include <setjmp.h>
+#ifndef _GLIBCXX_CSETJMP
+#define _GLIBCXX_CSETJMP 1
+#undef longjmp
+#ifndef setjmp
+#define setjmp(env) setjmp (env)
+#endif
+#endif

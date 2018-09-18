@@ -1,0 +1,102 @@
+// GGHASH:VizY11FwNGCGmFYjoeYwNGer4tUv_Z2Imvs_b8P8KyOI0001565b
+#ifndef _ROPE
+#define _ROPE 1
+#include <algorithm>
+#include <iosfwd>
+#include <bits/stl_construct.h>
+#include <bits/stl_uninitialized.h>
+#include <bits/stl_function.h>
+#include <bits/stl_numeric.h>
+#include <bits/allocator.h>
+#include <bits/gthr.h>
+#include <tr1/functional>
+# ifdef __GC
+#define __GC_CONST const
+# else
+#define __GC_CONST 
+# endif
+#include <ext/memory>
+#ifdef __GTHREAD_MUTEX_INIT
+#else
+#endif
+#ifndef __GTHREAD_MUTEX_INIT
+#ifdef __GTHREAD_MUTEX_INIT_FUNCTION
+#else
+#error __GTHREAD_MUTEX_INIT or __GTHREAD_MUTEX_INIT_FUNCTION should be defined by gthr.h abstraction layer, report problem to libstdc++@gcc.gnu.org.
+#endif
+#endif
+#ifndef __GTHREAD_MUTEX_INIT
+#endif
+#define __ROPE_DEFINE_ALLOCS(__a) __ROPE_DEFINE_ALLOC(_CharT,_Data) typedef _Rope_RopeConcatenation<_CharT,__a> __C; __ROPE_DEFINE_ALLOC(__C,_C) typedef _Rope_RopeLeaf<_CharT,__a> __L; __ROPE_DEFINE_ALLOC(__L,_L) typedef _Rope_RopeFunction<_CharT,__a> __F; __ROPE_DEFINE_ALLOC(__F,_F) typedef _Rope_RopeSubstring<_CharT,__a> __S; __ROPE_DEFINE_ALLOC(__S,_S)
+#define __STATIC_IF_SGI_ALLOC 
+#define __ROPE_DEFINE_ALLOC(_Tp,__name) typedef typename _Alloc::template rebind<_Tp>::other __name ##Alloc; static _Tp* __name ##_allocate(size_t __n) { return __name ##Alloc().allocate(__n); } static void __name ##_deallocate(_Tp *__p, size_t __n) { __name ##Alloc().deallocate(__p, __n); }
+#undef __ROPE_DEFINE_ALLOC
+# ifndef __GC
+# endif
+#ifdef __GTHREAD_MUTEX_INIT
+#else
+#endif
+#ifndef __GC
+#endif
+#ifdef __GTHREAD_MUTEX_INIT
+#else
+#endif
+#ifdef __GC
+#endif
+#define __STL_FREE_STRING(__s,__l,__a) _S_free_string(__s, __l, __a);
+#ifndef __GC
+# else
+# endif
+#ifdef __GC
+#else
+#endif
+#ifndef __GC
+#endif
+#ifndef __GC
+#endif
+#ifndef __GC
+#else
+#endif
+#ifndef __GC
+#endif
+#ifdef __GC
+#endif
+#ifndef __GC
+# endif
+#ifndef __GC
+#endif
+#ifndef __GC
+#endif
+#ifndef __GC
+#if __cpp_exceptions
+#else
+#endif
+#endif
+#ifdef __GC
+#else
+#endif
+#define __ROPE_DEFINE_ALLOC(_Tp,__name) typedef typename _Alloc::template rebind<_Tp>::other __name ##Alloc; static _Tp* __name ##_allocate(size_t __n) { return __name ##Alloc().allocate(__n); } static void __name ##_deallocate(_Tp *__p, size_t __n) { __name ##Alloc().deallocate(__p, __n); }
+#undef __ROPE_DEFINE_ALLOC
+#ifndef __GC
+#endif
+#ifndef __GC
+#else
+#endif
+#ifdef __GC
+#else
+#endif
+#ifdef __GC
+#else
+#endif
+#define __STL_ROPE_FROM_UNOWNED_CHAR_PTR(__s,__size,__a) _S_RopeLeaf_from_unowned_char_ptr(__s, __size, __a)
+#ifndef __GC
+#endif
+#ifndef __GC
+#endif
+#ifndef __STL_OLD_ROPE_SEMANTICS
+#endif
+#ifdef __STD_STUFF
+#else
+#endif
+# include <ext/ropeimpl.h>
+#endif

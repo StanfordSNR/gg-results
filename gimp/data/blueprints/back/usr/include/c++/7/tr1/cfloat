@@ -1,0 +1,11 @@
+// GGHASH:VUp0E8ikthFTlljYCZ.WzhPDU_Q6O7iEVKcgvSUl1nRI00000564
+#ifndef _GLIBCXX_TR1_CFLOAT
+#define _GLIBCXX_TR1_CFLOAT 1
+#include <cfloat>
+#ifndef DECIMAL_DIG
+#define DECIMAL_DIG __DECIMAL_DIG__
+#endif
+#ifndef FLT_EVAL_METHOD
+#define FLT_EVAL_METHOD __FLT_EVAL_METHOD__
+#endif
+#endif

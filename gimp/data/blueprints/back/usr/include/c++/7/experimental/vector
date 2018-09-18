@@ -1,0 +1,12 @@
+// GGHASH:VjTs_jG_AFZsCpaqyYTfErNnh4BCye6uD0f4cq6hmJIw0000097c
+#ifndef _GLIBCXX_EXPERIMENTAL_VECTOR
+#define _GLIBCXX_EXPERIMENTAL_VECTOR 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <vector>
+#include <algorithm>
+#include <experimental/memory_resource>
+#define __cpp_lib_experimental_erase_if 201411
+#endif
+#endif

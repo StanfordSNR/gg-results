@@ -1,0 +1,4 @@
+// GGHASH:VytqAb.elP.ku_LBTBUMI3YLmbYA85SYmAQ9wO7CA61k00000280
+#ifndef _LINUX_USBIP_H
+#define _LINUX_USBIP_H 
+#endif

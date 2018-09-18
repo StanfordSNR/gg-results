@@ -1,0 +1,5 @@
+// GGHASH:VHdjVEj4wQ.H0.YtagIESu2uAeL3Fo6JsgkjGWw5Uh2000001b34
+#ifndef _GLIBCXX_TR1_ARRAY
+#define _GLIBCXX_TR1_ARRAY 1
+#include <bits/stl_algobase.h>
+#endif

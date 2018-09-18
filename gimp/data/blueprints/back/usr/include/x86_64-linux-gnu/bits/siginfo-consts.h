@@ -1,0 +1,72 @@
+// GGHASH:VDWPFLA8bjd83lm8fxeGZeSqCjnnWow9YTibuT2v2Kzs00001755
+#ifndef _BITS_SIGINFO_CONSTS_H
+#define _BITS_SIGINFO_CONSTS_H 1
+#ifndef _SIGNAL_H
+#error "Don't include <bits/siginfo-consts.h> directly; use <signal.h> instead."
+#endif
+#include <bits/siginfo-arch.h>
+#ifndef __SI_ASYNCIO_AFTER_SIGIO
+#define __SI_ASYNCIO_AFTER_SIGIO 1
+#endif
+#if __SI_ASYNCIO_AFTER_SIGIO
+#else
+#endif
+#define SI_ASYNCNL SI_ASYNCNL
+#define SI_TKILL SI_TKILL
+#define SI_SIGIO SI_SIGIO
+#define SI_ASYNCIO SI_ASYNCIO
+#define SI_MESGQ SI_MESGQ
+#define SI_TIMER SI_TIMER
+#define SI_ASYNCIO SI_ASYNCIO
+#define SI_QUEUE SI_QUEUE
+#define SI_USER SI_USER
+#define SI_KERNEL SI_KERNEL
+# if defined __USE_XOPEN_EXTENDED || defined __USE_XOPEN2K8
+#define ILL_ILLOPC ILL_ILLOPC
+#define ILL_ILLOPN ILL_ILLOPN
+#define ILL_ILLADR ILL_ILLADR
+#define ILL_ILLTRP ILL_ILLTRP
+#define ILL_PRVOPC ILL_PRVOPC
+#define ILL_PRVREG ILL_PRVREG
+#define ILL_COPROC ILL_COPROC
+#define ILL_BADSTK ILL_BADSTK
+#define FPE_INTDIV FPE_INTDIV
+#define FPE_INTOVF FPE_INTOVF
+#define FPE_FLTDIV FPE_FLTDIV
+#define FPE_FLTOVF FPE_FLTOVF
+#define FPE_FLTUND FPE_FLTUND
+#define FPE_FLTRES FPE_FLTRES
+#define FPE_FLTINV FPE_FLTINV
+#define FPE_FLTSUB FPE_FLTSUB
+#define SEGV_MAPERR SEGV_MAPERR
+#define SEGV_ACCERR SEGV_ACCERR
+#define SEGV_BNDERR SEGV_BNDERR
+#define SEGV_PKUERR SEGV_PKUERR
+#define BUS_ADRALN BUS_ADRALN
+#define BUS_ADRERR BUS_ADRERR
+#define BUS_OBJERR BUS_OBJERR
+#define BUS_MCEERR_AR BUS_MCEERR_AR
+#define BUS_MCEERR_AO BUS_MCEERR_AO
+# endif
+# ifdef __USE_XOPEN_EXTENDED
+#define TRAP_BRKPT TRAP_BRKPT
+#define TRAP_TRACE TRAP_TRACE
+# endif
+# if defined __USE_XOPEN_EXTENDED || defined __USE_XOPEN2K8
+#define CLD_EXITED CLD_EXITED
+#define CLD_KILLED CLD_KILLED
+#define CLD_DUMPED CLD_DUMPED
+#define CLD_TRAPPED CLD_TRAPPED
+#define CLD_STOPPED CLD_STOPPED
+#define CLD_CONTINUED CLD_CONTINUED
+#define POLL_IN POLL_IN
+#define POLL_OUT POLL_OUT
+#define POLL_MSG POLL_MSG
+#define POLL_ERR POLL_ERR
+#define POLL_PRI POLL_PRI
+#define POLL_HUP POLL_HUP
+# endif
+#ifdef __USE_GNU
+# include <bits/siginfo-consts-arch.h>
+#endif
+#endif

@@ -1,0 +1,6 @@
+// GGHASH:VJqDQakeiK8xEuXk.cyBvB8Fyv3fzB_h4mjmRVMqEgaU00000a8b
+#ifndef _GLIBCXX_TR2_TYPE_TRAITS
+#define _GLIBCXX_TR2_TYPE_TRAITS 1
+#include <type_traits>
+#include <bits/c++config.h>
+#endif

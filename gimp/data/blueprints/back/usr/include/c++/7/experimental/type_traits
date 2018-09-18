@@ -1,0 +1,13 @@
+// GGHASH:VcZMJyAnfL3PCfl1ygZQ6baaCHKPsNSr9QwnOvHuyX4c00002b31
+#ifndef _GLIBCXX_EXPERIMENTAL_TYPE_TRAITS
+#define _GLIBCXX_EXPERIMENTAL_TYPE_TRAITS 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <type_traits>
+#include <experimental/bits/lfts_config.h>
+#define __cpp_lib_experimental_type_trait_variable_templates 201402
+#define __cpp_lib_experimental_detect 201505
+#define __cpp_lib_experimental_logical_traits 201511
+#endif
+#endif

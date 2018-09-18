@@ -1,0 +1,19 @@
+// GGHASH:VFNlxTqYxtXgTGlXEP4mYM8prLFEj9kwmWrb00Nk9JWI000012a9
+#ifndef __EXCEPTION__
+#define __EXCEPTION__ 
+#pragma GCC visibility push(default)
+#include <bits/c++config.h>
+#include <bits/exception.h>
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus > 201402L || !defined(__STRICT_ANSI__)
+#define __cpp_lib_uncaught_exceptions 201411
+#endif
+#pragma GCC visibility pop
+#if (__cplusplus >= 201103L)
+#include <bits/exception_ptr.h>
+#include <bits/nested_exception.h>
+#endif
+#endif

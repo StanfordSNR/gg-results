@@ -1,0 +1,7 @@
+// GGHASH:VcR8E.U5_AdVIJlIdaNfvYbFQOA.WfUbRT22PgDY86BA000002cc
+#ifndef _XT_STATISTIC_H
+#define _XT_STATISTIC_H 
+#include <linux/types.h>
+#define XT_STATISTIC_MODE_MAX (__XT_STATISTIC_MODE_MAX - 1)
+#define XT_STATISTIC_MASK 0x1
+#endif

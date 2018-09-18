@@ -1,0 +1,13 @@
+// GGHASH:VeW_3nZvOToYRVVv8.4lZweKPm4oyPk8h82EDcDlFDsA00000d65
+#ifndef GTK_DISABLE_DEPRECATED
+#ifndef __GTK_INPUTDIALOG_H__
+#define __GTK_INPUTDIALOG_H__ 
+#include <gtk/gtkdialog.h>
+#define GTK_TYPE_INPUT_DIALOG (gtk_input_dialog_get_type ())
+#define GTK_INPUT_DIALOG(obj) (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_INPUT_DIALOG, GtkInputDialog))
+#define GTK_INPUT_DIALOG_CLASS(klass) (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_INPUT_DIALOG, GtkInputDialogClass))
+#define GTK_IS_INPUT_DIALOG(obj) (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_INPUT_DIALOG))
+#define GTK_IS_INPUT_DIALOG_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_INPUT_DIALOG))
+#define GTK_INPUT_DIALOG_GET_CLASS(obj) (G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_INPUT_DIALOG, GtkInputDialogClass))
+#endif
+#endif

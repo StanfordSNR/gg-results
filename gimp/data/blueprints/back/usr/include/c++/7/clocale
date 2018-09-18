@@ -1,0 +1,8 @@
+// GGHASH:Vu.VAyrh4kqp_dGnVRrmUuvxgw55OVQH3h.95MbbDYjw00000771
+#include <bits/c++config.h>
+#include <locale.h>
+#ifndef _GLIBCXX_CLOCALE
+#define _GLIBCXX_CLOCALE 1
+#undef setlocale
+#undef localeconv
+#endif

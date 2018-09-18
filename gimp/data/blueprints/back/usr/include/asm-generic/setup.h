@@ -1,0 +1,5 @@
+// GGHASH:VuzlJ..t9qpY9jTKa6koakrP_pDfYVhAHMh9o0WH23.A000000be
+#ifndef __ASM_GENERIC_SETUP_H
+#define __ASM_GENERIC_SETUP_H 
+#define COMMAND_LINE_SIZE 512
+#endif

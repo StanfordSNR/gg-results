@@ -1,0 +1,33 @@
+// GGHASH:VDqgsuUuw.6hgozsgyHhagfneyJ2j3uFN20td0xY9JaE00003060
+#ifndef _GLIBCXX_TR1_COMPLEX
+#define _GLIBCXX_TR1_COMPLEX 1
+#include <complex>
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus < 201103L
+#if _GLIBCXX_USE_C99_COMPLEX_TR1
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX_TR1
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX_TR1
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX_TR1
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX_TR1
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX_TR1
+#else
+#endif
+#endif
+#if __cplusplus < 201103L
+#if (_GLIBCXX_USE_C99_MATH && !_GLIBCXX_USE_C99_FP_MACROS_DYNAMIC)
+#else
+#endif
+#endif
+#endif

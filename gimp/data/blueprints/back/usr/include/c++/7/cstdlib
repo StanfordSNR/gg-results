@@ -1,0 +1,102 @@
+// GGHASH:VgYyEkXqtTfe4BY1hTSFgboH7yAI63313K1w80yT_oFA000018b5
+#include <bits/c++config.h>
+#ifndef _GLIBCXX_CSTDLIB
+#define _GLIBCXX_CSTDLIB 1
+#if !_GLIBCXX_HOSTED
+#define EXIT_SUCCESS 0
+#define EXIT_FAILURE 1
+#if __cplusplus >= 201103L
+# ifdef _GLIBCXX_HAVE_AT_QUICK_EXIT
+# endif
+# ifdef _GLIBCXX_HAVE_QUICK_EXIT
+# endif
+#endif
+#else
+#define _GLIBCXX_INCLUDE_NEXT_C_HEADERS 
+#include_next <stdlib.h>
+#undef _GLIBCXX_INCLUDE_NEXT_C_HEADERS
+#include <bits/std_abs.h>
+#undef abort
+#if __cplusplus >= 201703L && defined(_GLIBCXX_HAVE_ALIGNED_ALLOC)
+#undef aligned_alloc
+#endif
+#undef atexit
+#if __cplusplus >= 201103L
+# ifdef _GLIBCXX_HAVE_AT_QUICK_EXIT
+#undef at_quick_exit
+# endif
+#endif
+#undef atof
+#undef atoi
+#undef atol
+#undef bsearch
+#undef calloc
+#undef div
+#undef exit
+#undef free
+#undef getenv
+#undef labs
+#undef ldiv
+#undef malloc
+#undef mblen
+#undef mbstowcs
+#undef mbtowc
+#undef qsort
+#if __cplusplus >= 201103L
+# ifdef _GLIBCXX_HAVE_QUICK_EXIT
+#undef quick_exit
+# endif
+#endif
+#undef rand
+#undef realloc
+#undef srand
+#undef strtod
+#undef strtol
+#undef strtoul
+#undef system
+#undef wcstombs
+#undef wctomb
+#if __cplusplus >= 201703L && defined(_GLIBCXX_HAVE_ALIGNED_ALLOC)
+#endif
+#if __cplusplus >= 201103L
+# ifdef _GLIBCXX_HAVE_AT_QUICK_EXIT
+# endif
+#endif
+#ifdef _GLIBCXX_HAVE_MBSTATE_T
+#endif
+#if __cplusplus >= 201103L
+# ifdef _GLIBCXX_HAVE_QUICK_EXIT
+# endif
+#endif
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#ifndef __CORRECT_ISO_CPP_STDLIB_H_PROTO
+#endif
+#if _GLIBCXX_USE_C99_STDLIB
+#undef _Exit
+#undef llabs
+#undef lldiv
+#undef atoll
+#undef strtoll
+#undef strtoull
+#undef strtof
+#undef strtold
+#if !_GLIBCXX_USE_C99_LONG_LONG_DYNAMIC
+#endif
+#if _GLIBCXX_USE_C99_CHECK || _GLIBCXX_USE_C99_DYNAMIC
+#endif
+#if !_GLIBCXX_USE_C99_DYNAMIC
+#endif
+#if !_GLIBCXX_USE_C99_LONG_LONG_DYNAMIC
+#endif
+#if _GLIBCXX_USE_C99_LONG_LONG_CHECK || _GLIBCXX_USE_C99_LONG_LONG_DYNAMIC
+#endif
+#if !_GLIBCXX_USE_C99_LONG_LONG_DYNAMIC
+#endif
+#if !_GLIBCXX_USE_C99_LONG_LONG_DYNAMIC
+#endif
+#if !_GLIBCXX_USE_C99_LONG_LONG_DYNAMIC
+#endif
+#endif
+#endif
+#endif

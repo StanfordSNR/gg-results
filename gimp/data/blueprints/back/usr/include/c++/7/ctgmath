@@ -1,0 +1,10 @@
+// GGHASH:VG9Nu3QdA8Tt9E0p_9FIhrlzagtAM8Q4nZP0Rjm43lZs00000550
+#ifndef _GLIBCXX_CTGMATH
+#define _GLIBCXX_CTGMATH 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+# include <cmath>
+# include <complex>
+#endif
+#endif

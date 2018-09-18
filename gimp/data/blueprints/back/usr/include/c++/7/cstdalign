@@ -1,0 +1,12 @@
+// GGHASH:VCw3vaU3p3peZntNAZKwh9dgbFp6irMjfmPkmL8MEnfc0000057f
+#ifndef _GLIBCXX_CSTDALIGN
+#define _GLIBCXX_CSTDALIGN 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+# include <bits/c++config.h>
+# if _GLIBCXX_HAVE_STDALIGN_H
+# include <stdalign.h>
+# endif
+#endif
+#endif

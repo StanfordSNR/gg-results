@@ -1,0 +1,15 @@
+// GGHASH:VnQFesVZabbFRWaeqxhD1w1PxZ5kWm2eqeKfdhBetPAE00000779
+#include <bits/c++config.h>
+#include <limits.h>
+#ifndef _GLIBCXX_CLIMITS
+#define _GLIBCXX_CLIMITS 1
+#ifndef LLONG_MIN
+#define LLONG_MIN (-__LONG_LONG_MAX__ - 1)
+#endif
+#ifndef LLONG_MAX
+#define LLONG_MAX __LONG_LONG_MAX__
+#endif
+#ifndef ULLONG_MAX
+#define ULLONG_MAX (__LONG_LONG_MAX__ * 2ULL + 1)
+#endif
+#endif

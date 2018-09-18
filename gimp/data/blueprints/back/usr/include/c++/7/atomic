@@ -1,0 +1,47 @@
+// GGHASH:VxTxVeq3QnZY0Xyk85en3BJyfb3PX_BHR7EiJEcLIAq80000a00f
+#ifndef _GLIBCXX_ATOMIC
+#define _GLIBCXX_ATOMIC 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <bits/atomic_base.h>
+#include <bits/move.h>
+#if __cplusplus > 201402L
+#define __cpp_lib_atomic_is_always_lock_free 201603
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#endif
+#endif
+#endif

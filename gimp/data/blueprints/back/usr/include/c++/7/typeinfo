@@ -1,0 +1,31 @@
+// GGHASH:VF60otc8iqUcUS4CzxuFdNkJY.c1VhRdRre12rjhFNHo00001e0c
+#ifndef _TYPEINFO
+#define _TYPEINFO 
+#include <bits/exception.h>
+#if __cplusplus >= 201103L
+#include <bits/hash_bytes.h>
+#endif
+#pragma GCC visibility push(default)
+#ifndef __GXX_MERGED_TYPEINFO_NAMES
+#define __GXX_MERGED_TYPEINFO_NAMES 0
+#endif
+#ifndef __GXX_TYPEINFO_EQUALITY_INLINE
+  #if !__GXX_WEAK__
+    #define __GXX_TYPEINFO_EQUALITY_INLINE 0
+  #else
+    #define __GXX_TYPEINFO_EQUALITY_INLINE 1
+  #endif
+#endif
+#if !__GXX_TYPEINFO_EQUALITY_INLINE
+#else
+  #if !__GXX_MERGED_TYPEINFO_NAMES
+  #else
+  #endif
+#endif
+#if __cplusplus >= 201103L
+# if !__GXX_MERGED_TYPEINFO_NAMES
+# else
+# endif
+#endif
+#pragma GCC visibility pop
+#endif

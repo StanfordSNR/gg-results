@@ -1,0 +1,11 @@
+// GGHASH:VX.UA6Zu5wJBUXmlFYAlfDmmNN3m9nm2_rkKIc5klVEs000050ed
+#ifndef _GLIBCXX_PARALLEL_NUMERIC_H
+#define _GLIBCXX_PARALLEL_NUMERIC_H 1
+#include <numeric>
+#include <bits/stl_function.h>
+#include <parallel/numericfwd.h>
+#include <parallel/iterator.h>
+#include <parallel/for_each.h>
+#include <parallel/for_each_selectors.h>
+#include <parallel/partial_sum.h>
+#endif

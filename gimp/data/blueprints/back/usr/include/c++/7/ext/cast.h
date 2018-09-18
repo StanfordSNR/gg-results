@@ -1,0 +1,4 @@
+// GGHASH:VEvCMMzbWapHX1uosnov9FQUu6nEKgD2RjFvSl.W4U2Y0000115f
+#ifndef _GLIBCXX_CAST_H
+#define _GLIBCXX_CAST_H 1
+#endif

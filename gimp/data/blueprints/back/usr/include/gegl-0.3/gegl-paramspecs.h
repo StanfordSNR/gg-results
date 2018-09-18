@@ -1,0 +1,30 @@
+// GGHASH:V1QAM4.MgK.07Eg1pa.o.kTbOb1Tdc4E1k2yndsdRUoY000039d1
+#include <glib-object.h>
+#ifndef __GEGL_PARAM_SPECS_H__
+#define __GEGL_PARAM_SPECS_H__ 
+#define GEGL_PARAM_NO_VALIDATE (1 << (6 + G_PARAM_USER_SHIFT))
+#define GEGL_TYPE_PARAM_DOUBLE (gegl_param_double_get_type ())
+#define GEGL_PARAM_SPEC_DOUBLE(pspec) (G_TYPE_CHECK_INSTANCE_CAST ((pspec), GEGL_TYPE_PARAM_DOUBLE, GeglParamSpecDouble))
+#define GEGL_IS_PARAM_SPEC_DOUBLE(pspec) (G_TYPE_CHECK_INSTANCE_TYPE ((pspec), GEGL_TYPE_PARAM_DOUBLE))
+#define GEGL_TYPE_PARAM_INT (gegl_param_int_get_type ())
+#define GEGL_PARAM_SPEC_INT(pspec) (G_TYPE_CHECK_INSTANCE_CAST ((pspec), GEGL_TYPE_PARAM_INT, GeglParamSpecInt))
+#define GEGL_IS_PARAM_SPEC_INT(pspec) (G_TYPE_CHECK_INSTANCE_TYPE ((pspec), GEGL_TYPE_PARAM_INT))
+#define GEGL_TYPE_PARAM_STRING (gegl_param_string_get_type ())
+#define GEGL_PARAM_SPEC_STRING(pspec) (G_TYPE_CHECK_INSTANCE_CAST ((pspec), GEGL_TYPE_PARAM_STRING, GeglParamSpecString))
+#define GEGL_IS_PARAM_SPEC_STRING(pspec) (G_TYPE_CHECK_INSTANCE_TYPE ((pspec), GEGL_TYPE_PARAM_STRING))
+#define GEGL_TYPE_PARAM_FILE_PATH (gegl_param_file_path_get_type ())
+#define GEGL_PARAM_SPEC_FILE_PATH(pspec) (G_TYPE_CHECK_INSTANCE_CAST ((pspec), GEGL_TYPE_PARAM_FILE_PATH, GeglParamSpecFilePath))
+#define GEGL_IS_PARAM_SPEC_FILE_PATH(pspec) (G_TYPE_CHECK_INSTANCE_TYPE ((pspec), GEGL_TYPE_PARAM_FILE_PATH))
+#define GEGL_TYPE_PARAM_ENUM (gegl_param_enum_get_type ())
+#define GEGL_PARAM_SPEC_ENUM(pspec) (G_TYPE_CHECK_INSTANCE_CAST ((pspec), GEGL_TYPE_PARAM_ENUM, GeglParamSpecEnum))
+#define GEGL_IS_PARAM_SPEC_ENUM(pspec) (G_TYPE_CHECK_INSTANCE_TYPE ((pspec), GEGL_TYPE_PARAM_ENUM))
+#define GEGL_TYPE_PARAM_SEED (gegl_param_seed_get_type ())
+#define GEGL_PARAM_SPEC_SEED(pspec) (G_TYPE_CHECK_INSTANCE_CAST ((pspec), GEGL_TYPE_PARAM_SEED, GeglParamSpecSeed))
+#define GEGL_IS_PARAM_SPEC_SEED(pspec) (G_TYPE_CHECK_INSTANCE_TYPE ((pspec), GEGL_TYPE_PARAM_SEED))
+#define GEGL_TYPE_PARAM_FORMAT (gegl_param_format_get_type ())
+#define GEGL_PARAM_SPEC_FORMAT(pspec) (G_TYPE_CHECK_INSTANCE_CAST ((pspec), GEGL_TYPE_PARAM_FORMAT, GeglParamSpecFormat))
+#define GEGL_IS_PARAM_SPEC_FORMAT(pspec) (G_TYPE_CHECK_INSTANCE_TYPE ((pspec), GEGL_TYPE_PARAM_FORMAT))
+#define GEGL_TYPE_PARAM_URI (gegl_param_uri_get_type ())
+#define GEGL_PARAM_SPEC_URI(pspec) (G_TYPE_CHECK_INSTANCE_CAST ((pspec), GEGL_TYPE_PARAM_URI, GeglParamSpecUri))
+#define GEGL_IS_PARAM_SPEC_URI(pspec) (G_TYPE_CHECK_INSTANCE_TYPE ((pspec), GEGL_TYPE_PARAM_URI))
+#endif

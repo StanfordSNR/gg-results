@@ -1,0 +1,11 @@
+// GGHASH:VO0U0ivMO.n.RDsGjnUKv0hxM3kwBAIAQxALHcN5jEwo000009ed
+#ifndef _GLIBCXX_EXPERIMENTAL_SET
+#define _GLIBCXX_EXPERIMENTAL_SET 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <set>
+#include <experimental/bits/erase_if.h>
+#include <experimental/memory_resource>
+#endif
+#endif

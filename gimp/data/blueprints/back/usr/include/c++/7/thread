@@ -1,0 +1,30 @@
+// GGHASH:VDQorllTVS_gmQDcOPxRjmwSTBVSSmF5yqKaoaceBccs0000281b
+#ifndef _GLIBCXX_THREAD
+#define _GLIBCXX_THREAD 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <chrono>
+#include <memory>
+#include <tuple>
+#include <cerrno>
+#include <bits/functexcept.h>
+#include <bits/functional_hash.h>
+#include <bits/invoke.h>
+#include <bits/gthr.h>
+#if defined(_GLIBCXX_HAS_GTHREADS) && defined(_GLIBCXX_USE_C99_STDINT_TR1)
+#ifdef GTHR_ACTIVE_PROXY
+#else
+#endif
+#if _GLIBCXX_THREAD_ABI_COMPAT
+#endif
+#ifdef __GLIBC__
+#endif
+#ifdef _GLIBCXX_USE_SCHED_YIELD
+#endif
+#ifdef _GLIBCXX_USE_NANOSLEEP
+#else
+#endif
+#endif
+#endif
+#endif

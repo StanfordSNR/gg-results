@@ -1,0 +1,5 @@
+// GGHASH:VVQuu5mmHzXluemgB2uvM9ruztnO3JZrdLz6DiYVBF5A00000373
+#ifndef _BAYCOM_H
+#define _BAYCOM_H 
+#define BAYCOMCTL_GETDEBUG 0x92
+#endif

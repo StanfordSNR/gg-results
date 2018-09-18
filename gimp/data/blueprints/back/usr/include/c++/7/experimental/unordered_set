@@ -1,0 +1,11 @@
+// GGHASH:VbuRlQCkXOmBMEIbFZFu_mkpctGSJ6UHWYkOuEYvGWlw00000aec
+#ifndef _GLIBCXX_EXPERIMENTAL_UNORDERED_SET
+#define _GLIBCXX_EXPERIMENTAL_UNORDERED_SET 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <unordered_set>
+#include <experimental/bits/erase_if.h>
+#include <experimental/memory_resource>
+#endif
+#endif

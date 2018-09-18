@@ -1,0 +1,25 @@
+// GGHASH:VMLYvlsrHTkOg67iDbo5gXn8044b3VgY7SgghGfubV3Q00002c79
+#ifndef _GLIBCXX_ARRAY
+#define _GLIBCXX_ARRAY 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <utility>
+#include <stdexcept>
+#include <bits/stl_algobase.h>
+#include <bits/range_access.h>
+#if __cpp_deduction_guides >= 201606
+#endif
+#if __cplusplus > 201402L || !defined(__STRICT_ANSI__)
+#else
+#endif
+#if __cplusplus > 201402L || !defined(__STRICT_ANSI__)
+#endif
+#ifdef _GLIBCXX_DEBUG
+# include <debug/array>
+#endif
+#ifdef _GLIBCXX_PROFILE
+# include <profile/array>
+#endif
+#endif
+#endif

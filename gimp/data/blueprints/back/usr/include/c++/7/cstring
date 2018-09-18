@@ -1,0 +1,30 @@
+// GGHASH:VVVMlKR5kf.XWKk2wLUV6eQCIQeGyu6pxTN8KMSbW.Zk00000c33
+#include <bits/c++config.h>
+#include <string.h>
+#ifndef _GLIBCXX_CSTRING
+#define _GLIBCXX_CSTRING 1
+#undef memchr
+#undef memcmp
+#undef memcpy
+#undef memmove
+#undef memset
+#undef strcat
+#undef strchr
+#undef strcmp
+#undef strcoll
+#undef strcpy
+#undef strcspn
+#undef strerror
+#undef strlen
+#undef strncat
+#undef strncmp
+#undef strncpy
+#undef strpbrk
+#undef strrchr
+#undef strspn
+#undef strstr
+#undef strtok
+#undef strxfrm
+#ifndef __CORRECT_ISO_CPP_STRING_H_PROTO
+#endif
+#endif

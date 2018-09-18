@@ -1,0 +1,10 @@
+// GGHASH:VQ73OO_cepEolk1y0FBdA.qWWpSO6pUJJ60WYtIPg6b000000873
+#ifndef _GLIBCXX_EXPERIMENTAL_REGEX
+#define _GLIBCXX_EXPERIMENTAL_REGEX 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <regex>
+#include <experimental/string>
+#endif
+#endif

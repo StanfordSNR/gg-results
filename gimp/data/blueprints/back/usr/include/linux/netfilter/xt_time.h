@@ -1,0 +1,6 @@
+// GGHASH:Vy2ZUMRwoueDd7AFmbDXZ4Kc_At1wREFWBCQNTlfFJCM000002da
+#ifndef _XT_TIME_H
+#define _XT_TIME_H 1
+#include <linux/types.h>
+#define XT_TIME_ALL_FLAGS (XT_TIME_LOCAL_TZ|XT_TIME_CONTIGUOUS)
+#endif

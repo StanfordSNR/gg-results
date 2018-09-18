@@ -1,0 +1,12 @@
+// GGHASH:VLksGPJ4ki6.E51rW9X__PQ2RcbenxMPNdzBD3jmqBS000000585
+#ifndef __LINUX_TC_SKBEDIT_H
+#define __LINUX_TC_SKBEDIT_H 
+#include <linux/pkt_cls.h>
+#define TCA_ACT_SKBEDIT 11
+#define SKBEDIT_F_PRIORITY 0x1
+#define SKBEDIT_F_QUEUE_MAPPING 0x2
+#define SKBEDIT_F_MARK 0x4
+#define SKBEDIT_F_PTYPE 0x8
+#define SKBEDIT_F_MASK 0x10
+#define TCA_SKBEDIT_MAX (__TCA_SKBEDIT_MAX - 1)
+#endif

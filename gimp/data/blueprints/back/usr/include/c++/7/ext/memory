@@ -1,0 +1,6 @@
+// GGHASH:VH.qN8DA2E9SsNbirOiOKfd38nftG0KgcxPE3tEwlaSQ00001bf4
+#ifndef _EXT_MEMORY
+#define _EXT_MEMORY 1
+#include <memory>
+#include <bits/stl_tempbuf.h>
+#endif

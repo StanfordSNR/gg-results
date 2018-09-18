@@ -1,0 +1,6 @@
+// GGHASH:VPMmQYqUTg2QvLtWUfsMaXtTqCnasw0pyKdz.wknF.2800000fbf
+#ifndef _EXT_ITERATOR
+#define _EXT_ITERATOR 1
+#include <bits/concept_check.h>
+#include <iterator>
+#endif

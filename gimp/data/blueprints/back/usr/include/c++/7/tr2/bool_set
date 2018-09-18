@@ -1,0 +1,7 @@
+// GGHASH:V2qAWyl3f7PsMfjPLVO5ca68dHVDXdyFVoxA6Yi7Tjbc00001cca
+#ifndef _GLIBCXX_TR2_BOOL_SET
+#define _GLIBCXX_TR2_BOOL_SET 1
+#include <typeinfo>
+#include <iostream>
+#include <tr2/bool_set.tcc>
+#endif

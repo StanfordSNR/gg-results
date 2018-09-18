@@ -1,0 +1,16 @@
+// GGHASH:V_8iP_Y6KRK6kEZqbYhNCEOUIA.5KfzqX9OC8ksrCZU0000053f0
+#ifndef UCNV_ERR_H
+#define UCNV_ERR_H 
+#include "unicode/utypes.h"
+#if !UCONFIG_NO_CONVERSION
+#define UCNV_SUB_STOP_ON_ILLEGAL "i"
+#define UCNV_SKIP_STOP_ON_ILLEGAL "i"
+#define UCNV_ESCAPE_ICU NULL
+#define UCNV_ESCAPE_JAVA "J"
+#define UCNV_ESCAPE_C "C"
+#define UCNV_ESCAPE_XML_DEC "D"
+#define UCNV_ESCAPE_XML_HEX "X"
+#define UCNV_ESCAPE_UNICODE "U"
+#define UCNV_ESCAPE_CSS2 "S"
+#endif
+#endif

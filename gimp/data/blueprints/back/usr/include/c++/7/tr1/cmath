@@ -1,0 +1,217 @@
+// GGHASH:VJiDGUId8.ItYyoiMtHYyB3dcaEHOUG.Qkt1bLrBdqkQ0000a95d
+#ifndef _GLIBCXX_TR1_CMATH
+#define _GLIBCXX_TR1_CMATH 1
+#include <cmath>
+#ifdef _GLIBCXX_USE_C99_MATH_TR1
+#undef acosh
+#undef acoshf
+#undef acoshl
+#undef asinh
+#undef asinhf
+#undef asinhl
+#undef atanh
+#undef atanhf
+#undef atanhl
+#undef cbrt
+#undef cbrtf
+#undef cbrtl
+#undef copysign
+#undef copysignf
+#undef copysignl
+#undef erf
+#undef erff
+#undef erfl
+#undef erfc
+#undef erfcf
+#undef erfcl
+#undef exp2
+#undef exp2f
+#undef exp2l
+#undef expm1
+#undef expm1f
+#undef expm1l
+#undef fdim
+#undef fdimf
+#undef fdiml
+#undef fma
+#undef fmaf
+#undef fmal
+#undef fmax
+#undef fmaxf
+#undef fmaxl
+#undef fmin
+#undef fminf
+#undef fminl
+#undef hypot
+#undef hypotf
+#undef hypotl
+#undef ilogb
+#undef ilogbf
+#undef ilogbl
+#undef lgamma
+#undef lgammaf
+#undef lgammal
+#undef llrint
+#undef llrintf
+#undef llrintl
+#undef llround
+#undef llroundf
+#undef llroundl
+#undef log1p
+#undef log1pf
+#undef log1pl
+#undef log2
+#undef log2f
+#undef log2l
+#undef logb
+#undef logbf
+#undef logbl
+#undef lrint
+#undef lrintf
+#undef lrintl
+#undef lround
+#undef lroundf
+#undef lroundl
+#undef nan
+#undef nanf
+#undef nanl
+#undef nearbyint
+#undef nearbyintf
+#undef nearbyintl
+#undef nextafter
+#undef nextafterf
+#undef nextafterl
+#undef nexttoward
+#undef nexttowardf
+#undef nexttowardl
+#undef remainder
+#undef remainderf
+#undef remainderl
+#undef remquo
+#undef remquof
+#undef remquol
+#undef rint
+#undef rintf
+#undef rintl
+#undef round
+#undef roundf
+#undef roundl
+#undef scalbln
+#undef scalblnf
+#undef scalblnl
+#undef scalbn
+#undef scalbnf
+#undef scalbnl
+#undef tgamma
+#undef tgammaf
+#undef tgammal
+#undef trunc
+#undef truncf
+#undef truncl
+#endif
+#if _GLIBCXX_USE_C99_MATH_TR1
+#endif
+#if _GLIBCXX_USE_C99_MATH
+#if !_GLIBCXX_USE_C99_FP_MACROS_DYNAMIC
+#endif
+#endif
+#if _GLIBCXX_USE_C99_MATH_TR1
+#if __cplusplus >= 201103L
+#else
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#endif
+#endif
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#if __cplusplus >= 201103L
+#ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+#ifndef __CORRECT_ISO_CPP11_MATH_H_PROTO_FP
+#endif
+#endif
+#else
+#endif
+#if _GLIBCXX_USE_STD_SPEC_FUNCS
+#else
+#include <bits/stl_algobase.h>
+#include <limits>
+#include <tr1/type_traits>
+#include <tr1/gamma.tcc>
+#include <tr1/bessel_function.tcc>
+#include <tr1/beta_function.tcc>
+#include <tr1/ell_integral.tcc>
+#include <tr1/exp_integral.tcc>
+#include <tr1/hypergeometric.tcc>
+#include <tr1/legendre_function.tcc>
+#include <tr1/modified_bessel_func.tcc>
+#include <tr1/poly_hermite.tcc>
+#include <tr1/poly_laguerre.tcc>
+#include <tr1/riemann_zeta.tcc>
+#endif
+#endif

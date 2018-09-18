@@ -1,0 +1,22 @@
+// GGHASH:V6W9NqNXGeB6MOWXEDMAJCQYdLK_qWvHaRVU9MFeBImM00002d02
+#ifndef _GLIBCXX_SYSTEM_ERROR
+#define _GLIBCXX_SYSTEM_ERROR 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <bits/c++config.h>
+#include <bits/error_constants.h>
+#include <iosfwd>
+#include <stdexcept>
+#if __cplusplus > 201402L
+#endif
+#if _GLIBCXX_USE_CXX11_ABI
+#else
+#endif
+#include <bits/functional_hash.h>
+#ifndef _GLIBCXX_COMPATIBILITY_CXX0X
+#endif
+#if __cplusplus > 201402L
+#endif
+#endif
+#endif

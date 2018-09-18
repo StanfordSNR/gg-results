@@ -1,0 +1,11 @@
+// GGHASH:VOwTYGAJvLsyMt2sFsQ4pkKjlCVt2DdFGvZ0Ls4jAaqQ00000b61
+#ifndef _GLIBCXX_EXPERIMENTAL_UNORDERED_MAP
+#define _GLIBCXX_EXPERIMENTAL_UNORDERED_MAP 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <unordered_map>
+#include <experimental/bits/erase_if.h>
+#include <experimental/memory_resource>
+#endif
+#endif

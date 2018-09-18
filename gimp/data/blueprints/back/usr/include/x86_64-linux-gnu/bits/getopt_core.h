@@ -1,0 +1,4 @@
+// GGHASH:VUFkyCb8QriOTZ2I_PkF64yTxHC.NnflVT41bn99yCQs00000e52
+#ifndef _GETOPT_CORE_H
+#define _GETOPT_CORE_H 1
+#endif

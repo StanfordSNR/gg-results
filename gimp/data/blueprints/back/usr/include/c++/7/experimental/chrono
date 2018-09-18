@@ -1,0 +1,10 @@
+// GGHASH:Vjpz7a2UMupl_SPkDHtqceafYqspSt5A8cxKAZHytL.E000007b8
+#ifndef _GLIBCXX_EXPERIMENTAL_CHRONO
+#define _GLIBCXX_EXPERIMENTAL_CHRONO 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <chrono>
+#include <experimental/bits/lfts_config.h>
+#endif
+#endif

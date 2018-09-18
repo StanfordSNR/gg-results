@@ -1,0 +1,20 @@
+// GGHASH:VE7g0ZQVCWzTyGZrJnifzo0pwSWTsHJw1i0cUNGtPqSA00004735
+#ifndef _GLIBCXX_ANY
+#define _GLIBCXX_ANY 1
+#if __cplusplus >= 201703L
+#include <typeinfo>
+#include <new>
+#include <utility>
+#include <type_traits>
+#if __cpp_exceptions
+#else
+#endif
+#define __cpp_lib_any 201603
+#if __cpp_rtti
+#endif
+#if __cpp_rtti
+#endif
+#if __cpp_rtti
+#endif
+#endif
+#endif

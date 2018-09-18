@@ -1,0 +1,7 @@
+// GGHASH:VjmZj7FvcgORkp.kMAKT7Tg4B5cWOMpcin25ny4ge2NY000004de
+#ifndef _GLIBCXX_PROFILE_SET
+#define _GLIBCXX_PROFILE_SET 1
+#include <set>
+#include <profile/set.h>
+#include <profile/multiset.h>
+#endif

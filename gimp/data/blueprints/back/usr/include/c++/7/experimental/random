@@ -1,0 +1,7 @@
+// GGHASH:VaGwItwJidt2U5iGw0pQAsZp5Kos2uPV9VxXGMFbDZgQ000009ab
+#ifndef _GLIBCXX_EXPERIMENTAL_RANDOM
+#define _GLIBCXX_EXPERIMENTAL_RANDOM 1
+#include <random>
+#include <experimental/bits/lfts_config.h>
+#define __cpp_lib_experimental_randint 201511
+#endif

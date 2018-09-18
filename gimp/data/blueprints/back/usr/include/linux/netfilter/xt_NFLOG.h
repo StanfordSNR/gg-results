@@ -1,0 +1,9 @@
+// GGHASH:VkbkZ0NsIxhUPCGeAdzupVDy5i50M55yaW.H2jOYCQ0E0000022c
+#ifndef _XT_NFLOG_TARGET
+#define _XT_NFLOG_TARGET 
+#include <linux/types.h>
+#define XT_NFLOG_DEFAULT_GROUP 0x1
+#define XT_NFLOG_DEFAULT_THRESHOLD 0
+#define XT_NFLOG_MASK 0x1
+#define XT_NFLOG_F_COPY_LEN 0x1
+#endif

@@ -1,0 +1,8 @@
+// GGHASH:V.sclUIALeuMr3fGwLIN29ekFaB.xXMffij5dskX_f1g00000a6e
+#ifndef _GLIBCXX_EXPERIMENTAL_SRCLOC
+#define _GLIBCXX_EXPERIMENTAL_SRCLOC 1
+#include <cstdint>
+#define __cpp_lib_experimental_source_location 201505
+#ifndef _GLIBCXX_USE_C99_STDINT_TR1
+#endif
+#endif

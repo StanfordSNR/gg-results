@@ -1,0 +1,15 @@
+// GGHASH:VeowUkb7J0O97pLcxIcDde1r9iFwtzFkefW15a2Qoqvo000055d9
+#ifndef _GLIBCXX_OSTREAM
+#define _GLIBCXX_OSTREAM 1
+#include <ios>
+#include <bits/ostream_insert.h>
+#ifdef _GLIBCXX_USE_LONG_LONG
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#include <bits/ostream.tcc>
+#endif

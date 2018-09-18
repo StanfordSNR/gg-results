@@ -1,0 +1,4 @@
+// GGHASH:Vw8.u6LqD_GWP6wSHqjlumoT_b4au69Bms49eTlS9iJ80000107d
+#ifndef _LINUX_MEMBARRIER_H
+#define _LINUX_MEMBARRIER_H 
+#endif

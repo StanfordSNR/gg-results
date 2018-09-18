@@ -1,0 +1,11 @@
+// GGHASH:VsuKzUXCQT7KWGLfYbahhX4nTRFj8Fv_CmC18R5xHG300000278a
+#ifndef _GLIBCXX_DEBUG_ARRAY
+#define _GLIBCXX_DEBUG_ARRAY 1
+#include <array>
+#include <debug/formatter.h>
+#include <debug/macros.h>
+#if __cpp_deduction_guides >= 201606
+#endif
+#if __cplusplus > 201402L || !defined(__STRICT_ANSI__)
+#endif
+#endif

@@ -1,0 +1,7 @@
+// GGHASH:VHmLmxl84g6JxJvCWK6lNxWw5JAdoKjN.2r9DfO6lxiQ000004de
+#ifndef _GLIBCXX_PROFILE_MAP
+#define _GLIBCXX_PROFILE_MAP 1
+#include <map>
+#include <profile/map.h>
+#include <profile/multimap.h>
+#endif

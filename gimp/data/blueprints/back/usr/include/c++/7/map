@@ -1,0 +1,14 @@
+// GGHASH:VEofYezJ6lj7zvcbzxORwSSwfS5imBT8QkurUK_DibEI000009ff
+#ifndef _GLIBCXX_MAP
+#define _GLIBCXX_MAP 1
+#include <bits/stl_tree.h>
+#include <bits/stl_map.h>
+#include <bits/stl_multimap.h>
+#include <bits/range_access.h>
+#ifdef _GLIBCXX_DEBUG
+# include <debug/map>
+#endif
+#ifdef _GLIBCXX_PROFILE
+# include <profile/map>
+#endif
+#endif

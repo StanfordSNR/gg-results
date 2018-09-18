@@ -1,0 +1,15 @@
+// GGHASH:Vx_3jNlbpudMpiFvfKdwX0wQR5_v9wFlhSWo1in4yCMI0000d2ec
+#ifndef _GLIBCXX_TR1_RANDOM_TCC
+#define _GLIBCXX_TR1_RANDOM_TCC 1
+#if _GLIBCXX_USE_C99_MATH_TR1
+#else
+#endif
+#if _GLIBCXX_USE_C99_MATH_TR1
+#endif
+#if _GLIBCXX_USE_C99_MATH_TR1
+#endif
+#if _GLIBCXX_USE_C99_MATH_TR1
+#endif
+#if _GLIBCXX_USE_C99_MATH_TR1
+#endif
+#endif

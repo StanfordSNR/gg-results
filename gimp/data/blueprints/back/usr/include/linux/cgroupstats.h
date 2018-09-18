@@ -1,0 +1,9 @@
+// GGHASH:VKVS.8eIjhd0KOIPD1o349HNNewd7cM5Z0RKNuctchxQ000008ab
+#ifndef _LINUX_CGROUPSTATS_H
+#define _LINUX_CGROUPSTATS_H 
+#include <linux/types.h>
+#include <linux/taskstats.h>
+#define CGROUPSTATS_CMD_MAX (__CGROUPSTATS_CMD_MAX - 1)
+#define CGROUPSTATS_TYPE_MAX (__CGROUPSTATS_TYPE_MAX - 1)
+#define CGROUPSTATS_CMD_ATTR_MAX (__CGROUPSTATS_CMD_ATTR_MAX - 1)
+#endif

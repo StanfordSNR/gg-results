@@ -1,0 +1,15 @@
+// GGHASH:VMIByKP6mk59e0DMq9Sa9jrS9VPLahYAF3ici3wjpjMQ00004a4b
+#ifndef _GLIBCXX_TR1_TYPE_TRAITS
+#define _GLIBCXX_TR1_TYPE_TRAITS 1
+#include <bits/c++config.h>
+#define _DEFINE_SPEC_0_HELPER template<>
+#define _DEFINE_SPEC_1_HELPER template<typename _Tp>
+#define _DEFINE_SPEC_2_HELPER template<typename _Tp, typename _Cp>
+#define _DEFINE_SPEC(_Order,_Trait,_Type,_Value) _DEFINE_SPEC_ ##_Order ##_HELPER struct _Trait<_Type> : public integral_constant<bool, _Value> { };
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#undef _DEFINE_SPEC_0_HELPER
+#undef _DEFINE_SPEC_1_HELPER
+#undef _DEFINE_SPEC_2_HELPER
+#undef _DEFINE_SPEC
+#endif

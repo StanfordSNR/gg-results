@@ -1,0 +1,11 @@
+// GGHASH:VWOTk88AHKMNqBZj8S313dtO1AKaUDwiRMMkbqh0lbwQ00003f5d
+#ifndef _SCOPED_ALLOCATOR
+#define _SCOPED_ALLOCATOR 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <utility>
+#include <tuple>
+#include <bits/alloc_traits.h>
+#endif
+#endif

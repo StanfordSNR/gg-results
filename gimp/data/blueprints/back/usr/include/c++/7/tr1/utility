@@ -1,0 +1,7 @@
+// GGHASH:VGFoMYs9T8_H2Nn9pM0zPCUTn1WkrW_VNG6BBQLrejmY00000c99
+#ifndef _GLIBCXX_TR1_UTILITY
+#define _GLIBCXX_TR1_UTILITY 1
+#include <bits/c++config.h>
+#include <bits/stl_relops.h>
+#include <bits/stl_pair.h>
+#endif

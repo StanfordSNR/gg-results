@@ -1,0 +1,41 @@
+// GGHASH:VW9uVr8tOKwZsW_eDbJv8yfZkREKYMFjM318y4TYhdZo00008376
+#ifndef _GLIBCXX_DEBUG_STRING
+#define _GLIBCXX_DEBUG_STRING 1
+#include <string>
+#include <debug/safe_sequence.h>
+#include <debug/safe_container.h>
+#include <debug/safe_iterator.h>
+#if __cplusplus < 201103L
+#else
+#if _GLIBCXX_USE_CXX11_ABI
+#endif
+#endif
+#if __cplusplus < 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus < 201103L && defined(_GLIBCXX_DEBUG_PEDANTIC)
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#endif

@@ -1,0 +1,53 @@
+// GGHASH:ViDfihQ_gNm6xWmzkUD0HxIfvhgOYFOW_jwyKj9kATlM0000261a
+#ifndef __CL_EXT_H
+#define __CL_EXT_H 
+#ifdef __cplusplus
+#endif
+#ifdef __APPLE__
+ #include "cl.h"
+  #include <AvailabilityMacros.h>
+#else
+ #include "cl.h"
+#endif
+#define CL_DEVICE_DOUBLE_FP_CONFIG 0x1032
+#define CL_DEVICE_HALF_FP_CONFIG 0x1033
+#define cl_APPLE_SetMemObjectDestructor 1
+#define cl_APPLE_ContextLoggingFunctions 1
+#define cl_khr_icd 1
+#define CL_PLATFORM_ICD_SUFFIX_KHR 0x0920
+#define CL_PLATFORM_NOT_FOUND_KHR -1001
+#define CL_DEVICE_COMPUTE_CAPABILITY_MAJOR_NV 0x4000
+#define CL_DEVICE_COMPUTE_CAPABILITY_MINOR_NV 0x4001
+#define CL_DEVICE_REGISTERS_PER_BLOCK_NV 0x4002
+#define CL_DEVICE_WARP_SIZE_NV 0x4003
+#define CL_DEVICE_GPU_OVERLAP_NV 0x4004
+#define CL_DEVICE_KERNEL_EXEC_TIMEOUT_NV 0x4005
+#define CL_DEVICE_INTEGRATED_MEMORY_NV 0x4006
+#define CL_DEVICE_PROFILING_TIMER_OFFSET_AMD 0x4036
+#ifdef CL_VERSION_1_1
+    #define cl_ext_device_fission 1
+    #define CL_DEVICE_PARTITION_EQUALLY_EXT 0x4050
+    #define CL_DEVICE_PARTITION_BY_COUNTS_EXT 0x4051
+    #define CL_DEVICE_PARTITION_BY_NAMES_EXT 0x4052
+    #define CL_DEVICE_PARTITION_BY_AFFINITY_DOMAIN_EXT 0x4053
+    #define CL_DEVICE_PARENT_DEVICE_EXT 0x4054
+    #define CL_DEVICE_PARTITION_TYPES_EXT 0x4055
+    #define CL_DEVICE_AFFINITY_DOMAINS_EXT 0x4056
+    #define CL_DEVICE_REFERENCE_COUNT_EXT 0x4057
+    #define CL_DEVICE_PARTITION_STYLE_EXT 0x4058
+    #define CL_DEVICE_PARTITION_FAILED_EXT -1057
+    #define CL_INVALID_PARTITION_COUNT_EXT -1058
+    #define CL_INVALID_PARTITION_NAME_EXT -1059
+    #define CL_AFFINITY_DOMAIN_L1_CACHE_EXT 0x1
+    #define CL_AFFINITY_DOMAIN_L2_CACHE_EXT 0x2
+    #define CL_AFFINITY_DOMAIN_L3_CACHE_EXT 0x3
+    #define CL_AFFINITY_DOMAIN_L4_CACHE_EXT 0x4
+    #define CL_AFFINITY_DOMAIN_NUMA_EXT 0x10
+    #define CL_AFFINITY_DOMAIN_NEXT_FISSIONABLE_EXT 0x100
+    #define CL_PROPERTIES_LIST_END_EXT ((cl_device_partition_property_ext) 0)
+    #define CL_PARTITION_BY_COUNTS_LIST_END_EXT ((cl_device_partition_property_ext) 0)
+    #define CL_PARTITION_BY_NAMES_LIST_END_EXT ((cl_device_partition_property_ext) 0 - 1)
+#endif
+#ifdef __cplusplus
+#endif
+#endif

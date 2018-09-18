@@ -1,0 +1,8 @@
+// GGHASH:VLvXJAk32v6D8O5o0hQId3v4VdcFyKVD8S8XCadC9r4Q00000537
+#ifndef _GLIBCXX_CCOMPLEX
+#define _GLIBCXX_CCOMPLEX 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#endif
+#include <complex>
+#endif

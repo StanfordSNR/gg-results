@@ -1,0 +1,10 @@
+// GGHASH:VgPYVyG_bmAuHtZm3VU3Di24nJMqGEdID2rpUI68IZE8000019aa
+#ifndef _EXT_CMATH
+#define _EXT_CMATH 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <cmath>
+#include <type_traits>
+#endif
+#endif

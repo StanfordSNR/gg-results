@@ -1,0 +1,8 @@
+// GGHASH:VPHWr1j4oMv8r9G_VQO6hDxQFQlaHrrwNbWhXPPJ5xDI00000274
+#ifndef _LINUX_BINFMTS_H
+#define _LINUX_BINFMTS_H 
+#include <linux/capability.h>
+#define MAX_ARG_STRLEN (PAGE_SIZE * 32)
+#define MAX_ARG_STRINGS 0x7FFFFFFF
+#define BINPRM_BUF_SIZE 128
+#endif

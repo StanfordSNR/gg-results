@@ -1,0 +1,18 @@
+// GGHASH:VB.0ijOmzK58XxUP4kFao72I2OZCnAsNmiWlBK21Pojs00001470
+#ifndef _GLIBCXX_NUMERIC
+#define _GLIBCXX_NUMERIC 1
+#include <bits/c++config.h>
+#include <bits/stl_iterator_base_types.h>
+#include <bits/stl_numeric.h>
+#ifdef _GLIBCXX_PARALLEL
+# include <parallel/numeric>
+#endif
+#if __cplusplus >= 201402L
+#include <type_traits>
+#if __cplusplus > 201402L
+#define __cpp_lib_gcd_lcm 201606
+#define __cpp_lib_gcd 201606
+#define __cpp_lib_lcm 201606
+#endif
+#endif
+#endif

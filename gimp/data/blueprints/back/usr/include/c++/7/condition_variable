@@ -1,0 +1,21 @@
+// GGHASH:V7Bj6xV66Wy5QFuaSemW9g6fqt3_wqZx4l5AqtgQCk7c000021c8
+#ifndef _GLIBCXX_CONDITION_VARIABLE
+#define _GLIBCXX_CONDITION_VARIABLE 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <chrono>
+#include <bits/std_mutex.h>
+#include <ext/concurrence.h>
+#include <bits/alloc_traits.h>
+#include <bits/allocator.h>
+#include <bits/unique_ptr.h>
+#include <bits/shared_ptr.h>
+#include <bits/cxxabi_forced.h>
+#if defined(_GLIBCXX_HAS_GTHREADS) && defined(_GLIBCXX_USE_C99_STDINT_TR1)
+#ifdef __GTHREAD_COND_INIT
+#else
+#endif
+#endif
+#endif
+#endif

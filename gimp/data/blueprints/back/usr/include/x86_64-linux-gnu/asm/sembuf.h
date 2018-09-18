@@ -1,0 +1,4 @@
+// GGHASH:Vg_t9MY8PBiQVchuq7eoOQU5.7LFh8eQMTjRk.s2Ey1800000309
+#ifndef _ASM_X86_SEMBUF_H
+#define _ASM_X86_SEMBUF_H 
+#endif

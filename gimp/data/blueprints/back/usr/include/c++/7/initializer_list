@@ -1,0 +1,11 @@
+// GGHASH:VcobYd14_hEPid9VooZACzZ4NP6TGGSzgOHX.6WujScU00000b9e
+#ifndef _INITIALIZER_LIST
+#define _INITIALIZER_LIST 
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#pragma GCC visibility push(default)
+#include <bits/c++config.h>
+#pragma GCC visibility pop
+#endif
+#endif

@@ -1,0 +1,22 @@
+// GGHASH:VGA9LqrN7hT7v8S9dokR0GF5Xbp8MLAzHngEkf8bvTGo00007376
+#ifndef _GLIBXX_STREAMBUF
+#define _GLIBXX_STREAMBUF 1
+#include <bits/c++config.h>
+#include <iosfwd>
+#include <bits/localefwd.h>
+#include <bits/ios_base.h>
+#include <bits/cpp_type_traits.h>
+#include <ext/type_traits.h>
+#if _GLIBCXX_USE_DEPRECATED
+#endif
+#if __cplusplus < 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#include <bits/streambuf.tcc>
+#endif

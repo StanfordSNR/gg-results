@@ -1,0 +1,7 @@
+// GGHASH:V6WuN6ax3ISe.4v9z5IIejIxWUHKx36_ALiopREa_HMI0000102c
+#ifndef MLX4_ABI_USER_H
+#define MLX4_ABI_USER_H 
+#include <linux/types.h>
+#define MLX4_IB_UVERBS_NO_DEV_CAPS_ABI_VERSION 3
+#define MLX4_IB_UVERBS_ABI_VERSION 4
+#endif

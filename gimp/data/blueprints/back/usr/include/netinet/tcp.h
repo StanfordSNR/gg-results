@@ -1,0 +1,91 @@
+// GGHASH:VpestDYWiReLqhbf9Yss_Br3NcpThdhn8jAUquKJCjjw00002634
+#ifndef _NETINET_TCP_H
+#define _NETINET_TCP_H 1
+#include <features.h>
+#define TCP_NODELAY 1
+#define TCP_MAXSEG 2
+#define TCP_CORK 3
+#define TCP_KEEPIDLE 4
+#define TCP_KEEPINTVL 5
+#define TCP_KEEPCNT 6
+#define TCP_SYNCNT 7
+#define TCP_LINGER2 8
+#define TCP_DEFER_ACCEPT 9
+#define TCP_WINDOW_CLAMP 10
+#define TCP_INFO 11
+#define TCP_QUICKACK 12
+#define TCP_CONGESTION 13
+#define TCP_MD5SIG 14
+#define TCP_COOKIE_TRANSACTIONS 15
+#define TCP_THIN_LINEAR_TIMEOUTS 16
+#define TCP_THIN_DUPACK 17
+#define TCP_USER_TIMEOUT 18
+#define TCP_REPAIR 19
+#define TCP_REPAIR_QUEUE 20
+#define TCP_QUEUE_SEQ 21
+#define TCP_REPAIR_OPTIONS 22
+#define TCP_FASTOPEN 23
+#define TCP_TIMESTAMP 24
+#define TCP_NOTSENT_LOWAT 25
+#define TCP_CC_INFO 26
+#define TCP_SAVE_SYN 27
+#define TCP_SAVED_SYN 28
+#define TCP_REPAIR_WINDOW 29
+#define TCP_FASTOPEN_CONNECT 30
+#define TCP_ULP 31
+#define TCP_MD5SIG_EXT 32
+#ifdef __USE_MISC
+# include <sys/types.h>
+# include <sys/socket.h>
+# include <stdint.h>
+# if __BYTE_ORDER == __LITTLE_ENDIAN
+# endif
+# if __BYTE_ORDER == __BIG_ENDIAN
+# endif
+#define TH_FIN 0x01
+#define TH_SYN 0x02
+#define TH_RST 0x04
+#define TH_PUSH 0x08
+#define TH_ACK 0x10
+#define TH_URG 0x20
+# if __BYTE_ORDER == __LITTLE_ENDIAN
+# elif __BYTE_ORDER == __BIG_ENDIAN
+# else
+# error "Adjust your <bits/endian.h> defines"
+# endif
+#define TCPOPT_EOL 0
+#define TCPOPT_NOP 1
+#define TCPOPT_MAXSEG 2
+#define TCPOLEN_MAXSEG 4
+#define TCPOPT_WINDOW 3
+#define TCPOLEN_WINDOW 3
+#define TCPOPT_SACK_PERMITTED 4
+#define TCPOLEN_SACK_PERMITTED 2
+#define TCPOPT_SACK 5
+#define TCPOPT_TIMESTAMP 8
+#define TCPOLEN_TIMESTAMP 10
+#define TCPOLEN_TSTAMP_APPA (TCPOLEN_TIMESTAMP+2)
+#define TCPOPT_TSTAMP_HDR (TCPOPT_NOP<<24|TCPOPT_NOP<<16|TCPOPT_TIMESTAMP<<8|TCPOLEN_TIMESTAMP)
+#define TCP_MSS 512
+#define TCP_MAXWIN 65535
+#define TCP_MAX_WINSHIFT 14
+#define SOL_TCP 6
+#define TCPI_OPT_TIMESTAMPS 1
+#define TCPI_OPT_SACK 2
+#define TCPI_OPT_WSCALE 4
+#define TCPI_OPT_ECN 8
+#define TCPI_OPT_ECN_SEEN 16
+#define TCPI_OPT_SYN_DATA 32
+#define TCP_MD5SIG_MAXKEYLEN 80
+#define TCP_MD5SIG_FLAG_PREFIX 1
+#define TCP_COOKIE_MIN 8
+#define TCP_COOKIE_MAX 16
+#define TCP_COOKIE_PAIR_SIZE (2*TCP_COOKIE_MAX)
+#define TCP_COOKIE_IN_ALWAYS (1 << 0)
+#define TCP_COOKIE_OUT_NEVER (1 << 1)
+#define TCP_S_DATA_IN (1 << 2)
+#define TCP_S_DATA_OUT (1 << 3)
+#define TCP_MSS_DEFAULT 536U
+#define TCP_MSS_DESIRED 1220U
+#endif
+#endif

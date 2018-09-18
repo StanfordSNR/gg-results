@@ -1,0 +1,17 @@
+// GGHASH:VaghrzoHdpE6ywhhMo4.WErI5.rDOc8TSeixCGviVovQ00000a69
+#ifndef _GLIBCXX_DEQUE
+#define _GLIBCXX_DEQUE 1
+#include <bits/stl_algobase.h>
+#include <bits/allocator.h>
+#include <bits/stl_construct.h>
+#include <bits/stl_uninitialized.h>
+#include <bits/stl_deque.h>
+#include <bits/range_access.h>
+#include <bits/deque.tcc>
+#ifdef _GLIBCXX_DEBUG
+# include <debug/deque>
+#endif
+#ifdef _GLIBCXX_PROFILE
+# include <profile/deque>
+#endif
+#endif

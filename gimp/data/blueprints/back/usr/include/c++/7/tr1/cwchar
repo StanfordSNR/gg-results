@@ -1,0 +1,17 @@
+// GGHASH:V7r.iEbJ6U31W7b03T9ALpC1pNiU66Nr_tMrrG97wc1w000006b6
+#ifndef _GLIBCXX_TR1_CWCHAR
+#define _GLIBCXX_TR1_CWCHAR 1
+#include <cwchar>
+#ifdef _GLIBCXX_USE_WCHAR_T
+#if _GLIBCXX_HAVE_WCSTOF
+#endif
+#if _GLIBCXX_HAVE_VFWSCANF
+#endif
+#if _GLIBCXX_HAVE_VSWSCANF
+#endif
+#if _GLIBCXX_HAVE_VWSCANF
+#endif
+#if _GLIBCXX_USE_C99_WCHAR
+#endif
+#endif
+#endif

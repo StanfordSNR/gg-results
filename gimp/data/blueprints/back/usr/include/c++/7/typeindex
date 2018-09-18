@@ -1,0 +1,9 @@
+// GGHASH:VSs5AQBUYQU7mL1IQ1FmTve5O1VxarPXsI4jZgGdkzqY00000c15
+#ifndef _GLIBCXX_TYPEINDEX
+#define _GLIBCXX_TYPEINDEX 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <typeinfo>
+#endif
+#endif

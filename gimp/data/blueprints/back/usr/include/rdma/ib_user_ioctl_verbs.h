@@ -1,0 +1,7 @@
+// GGHASH:VZF5b9B2jXxcdlKlvOx1j1zMHB9Lhc9hMvz9ufswH6DA00000984
+#ifndef IB_USER_IOCTL_VERBS_H
+#define IB_USER_IOCTL_VERBS_H 
+#include <rdma/rdma_user_ioctl.h>
+#define UVERBS_UDATA_DRIVER_DATA_NS 1
+#define UVERBS_UDATA_DRIVER_DATA_FLAG (1UL << UVERBS_ID_NS_SHIFT)
+#endif

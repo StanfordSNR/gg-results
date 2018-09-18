@@ -1,0 +1,11 @@
+// GGHASH:VMmB5uMYa2SWQFhqi3yUgoBKjGnoywmsG314uXbKCQw800000934
+#ifndef _GLIBCXX_EXPERIMENTAL_DEQUE
+#define _GLIBCXX_EXPERIMENTAL_DEQUE 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <deque>
+#include <algorithm>
+#include <experimental/memory_resource>
+#endif
+#endif

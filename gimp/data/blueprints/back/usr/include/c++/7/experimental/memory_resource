@@ -1,0 +1,11 @@
+// GGHASH:VpEjCF6lFkFhM0i.JBgTCpgzBHpM8S2J._RGsMRDQLxI00002ef5
+#ifndef _GLIBCXX_EXPERIMENTAL_MEMORY_RESOURCE
+#define _GLIBCXX_EXPERIMENTAL_MEMORY_RESOURCE 1
+#include <memory>
+#include <new>
+#include <atomic>
+#include <cstddef>
+#include <bits/alloc_traits.h>
+#include <experimental/bits/lfts_config.h>
+#define __cpp_lib_experimental_memory_resources 201402L
+#endif

@@ -1,0 +1,12 @@
+// GGHASH:VniC.o8VJ.QiPMPCTR0e1xB37UUOrkFAlRQHjiFKi3vM00000ddd
+#ifndef _GLIBCXX_EXPERIMENTAL_ITERATOR
+#define _GLIBCXX_EXPERIMENTAL_ITERATOR 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <iterator>
+#include <iosfwd>
+#include <experimental/type_traits>
+#define __cpp_lib_experimental_ostream_joiner 201411
+#endif
+#endif

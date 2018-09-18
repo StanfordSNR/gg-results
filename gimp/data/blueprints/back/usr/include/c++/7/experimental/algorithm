@@ -1,0 +1,11 @@
+// GGHASH:VNnaEPnGjTOhbgVbg6zbg_W56cixmbY_cGO1N8wnJwQM00000c38
+#ifndef _GLIBCXX_EXPERIMENTAL_ALGORITHM
+#define _GLIBCXX_EXPERIMENTAL_ALGORITHM 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <algorithm>
+#include <experimental/bits/lfts_config.h>
+#define __cpp_lib_experimental_sample 201402
+#endif
+#endif

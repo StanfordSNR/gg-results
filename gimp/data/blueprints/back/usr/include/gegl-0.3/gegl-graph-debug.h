@@ -1,0 +1,4 @@
+// GGHASH:VDKAFrMgIaLt4SMdntwAPfC1Ym02cHV2ka6R3BjEMyyQ00000504
+#ifndef __GEGL_GRAPH_DEBUG_H__
+#define __GEGL_GRAPH_DEBUG_H__ 
+#endif

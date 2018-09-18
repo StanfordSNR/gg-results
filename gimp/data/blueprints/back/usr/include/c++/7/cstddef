@@ -1,0 +1,24 @@
+// GGHASH:VBELAvt4lXHeVbCE3j_cAa1a306EYwPe2JvaGMTMZEWc00001928
+#ifndef _GLIBCXX_CSTDDEF
+#define _GLIBCXX_CSTDDEF 1
+#undef __need_wchar_t
+#undef __need_ptrdiff_t
+#undef __need_size_t
+#undef __need_NULL
+#undef __need_wint_t
+#include <bits/c++config.h>
+#include <stddef.h>
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201703L
+#define __cpp_lib_byte 201603
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_0)
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_1)
+#endif
+#if defined(__GLIBCXX_TYPE_INT_N_2)
+#endif
+#endif
+#endif

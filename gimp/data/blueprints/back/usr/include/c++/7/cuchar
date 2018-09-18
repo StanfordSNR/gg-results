@@ -1,0 +1,17 @@
+// GGHASH:V9dyeByIcXeTRSOQqH_OaIz5lvxjeNOYYa_vOXqvZ9Gg000008a2
+#ifndef _GLIBCXX_CUCHAR
+#define _GLIBCXX_CUCHAR 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <bits/c++config.h>
+#include <cwchar>
+#if _GLIBCXX_USE_C11_UCHAR_CXX11
+#include <uchar.h>
+#undef mbrtoc16
+#undef c16rtomb
+#undef mbrtoc32
+#undef c32rtomb
+#endif
+#endif
+#endif

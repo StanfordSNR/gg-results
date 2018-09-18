@@ -1,0 +1,5 @@
+// GGHASH:V5ZAiRi.mHII.8rNHzw3EmVX2ikrSSX9CXmXsg5mAjBo000000e3
+#ifndef _CAN_VXCAN_H
+#define _CAN_VXCAN_H 
+#define VXCAN_INFO_MAX (__VXCAN_INFO_MAX - 1)
+#endif

@@ -1,0 +1,5 @@
+// GGHASH:VaaZIFh6tgGRa7gznGhzJG8bxAzKtiDs56imLoeygxx40000225c
+#ifndef _GLIBCXX_PROFILE_ARRAY
+#define _GLIBCXX_PROFILE_ARRAY 1
+#include <array>
+#endif

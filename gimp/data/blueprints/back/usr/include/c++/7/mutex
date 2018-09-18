@@ -1,0 +1,46 @@
+// GGHASH:VpUFTTXBvFxBgZjv6o8gL.9byhXi1Y9OaCBgWNUSPYD000004786
+#ifndef _GLIBCXX_MUTEX
+#define _GLIBCXX_MUTEX 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <tuple>
+#include <chrono>
+#include <exception>
+#include <type_traits>
+#include <system_error>
+#include <bits/std_mutex.h>
+#if ! _GTHREAD_USE_MUTEX_TIMEDLOCK
+# include <condition_variable>
+# include <thread>
+#endif
+#ifndef _GLIBCXX_HAVE_TLS
+# include <bits/std_function.h>
+#endif
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+#ifdef _GLIBCXX_HAS_GTHREADS
+#ifdef __GTHREAD_RECURSIVE_MUTEX_INIT
+#else
+#endif
+#if _GTHREAD_USE_MUTEX_TIMEDLOCK
+#else
+#endif
+#endif
+#if __cplusplus >= 201703L
+#define __cpp_lib_scoped_lock 201703
+#endif
+#ifdef _GLIBCXX_HAS_GTHREADS
+#ifdef _GLIBCXX_HAVE_TLS
+#else
+#endif
+#ifdef _GLIBCXX_HAVE_TLS
+#else
+#endif
+#ifndef _GLIBCXX_HAVE_TLS
+#endif
+#ifdef __clang_analyzer__
+#endif
+#endif
+#endif
+#endif
+#endif

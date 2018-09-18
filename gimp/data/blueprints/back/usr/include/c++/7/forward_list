@@ -1,0 +1,17 @@
+// GGHASH:VVoPXJ5vwzbmyOUxjNIG5dpEBiKDJ4zb7HfsCDcPZlCE00000629
+#ifndef _GLIBCXX_FORWARD_LIST
+#define _GLIBCXX_FORWARD_LIST 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <bits/forward_list.h>
+#include <bits/range_access.h>
+#include <bits/forward_list.tcc>
+#ifdef _GLIBCXX_DEBUG
+# include <debug/forward_list>
+#endif
+#ifdef _GLIBCXX_PROFILE
+# include <profile/forward_list>
+#endif
+#endif
+#endif

@@ -1,0 +1,14 @@
+// GGHASH:VaiH59j7HlL.oxgw5W5_V2Svlb5aK02Ucb7JSGr2VKVM0000146d
+#ifndef __G_BUFFERED_INPUT_STREAM_H__
+#define __G_BUFFERED_INPUT_STREAM_H__ 
+#if !defined (__GIO_GIO_H_INSIDE__) && !defined (GIO_COMPILATION)
+#error "Only <gio/gio.h> can be included directly."
+#endif
+#include <gio/gfilterinputstream.h>
+#define G_TYPE_BUFFERED_INPUT_STREAM (g_buffered_input_stream_get_type ())
+#define G_BUFFERED_INPUT_STREAM(o) (G_TYPE_CHECK_INSTANCE_CAST ((o), G_TYPE_BUFFERED_INPUT_STREAM, GBufferedInputStream))
+#define G_BUFFERED_INPUT_STREAM_CLASS(k) (G_TYPE_CHECK_CLASS_CAST((k), G_TYPE_BUFFERED_INPUT_STREAM, GBufferedInputStreamClass))
+#define G_IS_BUFFERED_INPUT_STREAM(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), G_TYPE_BUFFERED_INPUT_STREAM))
+#define G_IS_BUFFERED_INPUT_STREAM_CLASS(k) (G_TYPE_CHECK_CLASS_TYPE ((k), G_TYPE_BUFFERED_INPUT_STREAM))
+#define G_BUFFERED_INPUT_STREAM_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), G_TYPE_BUFFERED_INPUT_STREAM, GBufferedInputStreamClass))
+#endif

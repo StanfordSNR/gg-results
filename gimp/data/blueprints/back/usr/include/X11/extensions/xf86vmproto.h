@@ -1,0 +1,67 @@
+// GGHASH:VDbr5zWyDV0SXq6SNV5qnkJ8Ocomavw1heraVvlxwaM000004209
+#ifndef _XF86VIDMODEPROTO_H_
+#define _XF86VIDMODEPROTO_H_ 
+#include <X11/extensions/xf86vm.h>
+#define XF86VIDMODENAME "XFree86-VidModeExtension"
+#define XF86VIDMODE_MAJOR_VERSION 2
+#define XF86VIDMODE_MINOR_VERSION 2
+#define X_XF86VidModeQueryVersion 0
+#define X_XF86VidModeGetModeLine 1
+#define X_XF86VidModeModModeLine 2
+#define X_XF86VidModeSwitchMode 3
+#define X_XF86VidModeGetMonitor 4
+#define X_XF86VidModeLockModeSwitch 5
+#define X_XF86VidModeGetAllModeLines 6
+#define X_XF86VidModeAddModeLine 7
+#define X_XF86VidModeDeleteModeLine 8
+#define X_XF86VidModeValidateModeLine 9
+#define X_XF86VidModeSwitchToMode 10
+#define X_XF86VidModeGetViewPort 11
+#define X_XF86VidModeSetViewPort 12
+#define X_XF86VidModeGetDotClocks 13
+#define X_XF86VidModeSetClientVersion 14
+#define X_XF86VidModeSetGamma 15
+#define X_XF86VidModeGetGamma 16
+#define X_XF86VidModeGetGammaRamp 17
+#define X_XF86VidModeSetGammaRamp 18
+#define X_XF86VidModeGetGammaRampSize 19
+#define X_XF86VidModeGetPermissions 20
+#define sz_xXF86VidModeQueryVersionReq 4
+#define sz_xXF86VidModeQueryVersionReply 32
+#define sz_xXF86VidModeGetModeLineReq 8
+#define sz_xXF86VidModeGetAllModeLinesReq 8
+#define sz_xXF86VidModeGetMonitorReq 8
+#define sz_xXF86VidModeGetViewPortReq 8
+#define sz_xXF86VidModeGetDotClocksReq 8
+#define sz_xXF86VidModeGetPermissionsReq 8
+#define sz_xXF86VidModeGetModeLineReply 52
+#define sz_xXF86OldVidModeGetModeLineReply 36
+#define sz_xXF86VidModeGetAllModeLinesReply 32
+#define sz_xXF86VidModeAddModeLineReq 92
+#define sz_xXF86OldVidModeAddModeLineReq 60
+#define sz_xXF86VidModeModModeLineReq 48
+#define sz_xXF86OldVidModeModModeLineReq 32
+#define sz_xXF86VidModeDeleteModeLineReq 52
+#define sz_xXF86VidModeValidateModeLineReq 52
+#define sz_xXF86VidModeSwitchToModeReq 52
+#define sz_xXF86OldVidModeDeleteModeLineReq 36
+#define sz_xXF86OldVidModeValidateModeLineReq 36
+#define sz_xXF86OldVidModeSwitchToModeReq 36
+#define sz_xXF86VidModeSwitchModeReq 8
+#define sz_xXF86VidModeLockModeSwitchReq 8
+#define sz_xXF86VidModeValidateModeLineReply 32
+#define sz_xXF86VidModeGetMonitorReply 32
+#define sz_xXF86VidModeGetViewPortReply 32
+#define sz_xXF86VidModeSetViewPortReq 16
+#define sz_xXF86VidModeGetDotClocksReply 32
+#define sz_xXF86VidModeSetClientVersionReq 8
+#define sz_xXF86VidModeGetGammaReq 32
+#define sz_xXF86VidModeGetGammaReply 32
+#define sz_xXF86VidModeSetGammaReq 32
+#define sz_xXF86VidModeSetGammaRampReq 8
+#define sz_xXF86VidModeGetGammaRampReq 8
+#define sz_xXF86VidModeGetGammaRampReply 32
+#define sz_xXF86VidModeGetGammaRampSizeReq 8
+#define sz_xXF86VidModeGetGammaRampSizeReply 32
+#define sz_xXF86VidModeGetPermissionsReply 32
+#endif

@@ -1,0 +1,24 @@
+// GGHASH:VkHXQKugUDUt_foOchof1lYftaM0stsMIsz6uAmrdDVE00000969
+#include <bits/c++config.h>
+#include <ctype.h>
+#ifndef _GLIBCXX_CCTYPE
+#define _GLIBCXX_CCTYPE 1
+#undef isalnum
+#undef isalpha
+#undef iscntrl
+#undef isdigit
+#undef isgraph
+#undef islower
+#undef isprint
+#undef ispunct
+#undef isspace
+#undef isupper
+#undef isxdigit
+#undef tolower
+#undef toupper
+#if __cplusplus >= 201103L
+#ifdef _GLIBCXX_USE_C99_CTYPE_TR1
+#undef isblank
+#endif
+#endif
+#endif

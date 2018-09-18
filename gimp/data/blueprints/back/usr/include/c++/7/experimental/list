@@ -1,0 +1,10 @@
+// GGHASH:V88yGpJbRlIntiC1rjNoTa7TMnIgHT6zEasJie44j6vg00000913
+#ifndef _GLIBCXX_EXPERIMENTAL_LIST
+#define _GLIBCXX_EXPERIMENTAL_LIST 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <list>
+#include <experimental/memory_resource>
+#endif
+#endif

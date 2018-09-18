@@ -1,0 +1,10 @@
+// GGHASH:VSF7hrBhXR7blMkCUqkYq8ZS6OiKgIGMU4l9wQjBF5D000000a46
+#ifndef LZMA_H_INTERNAL
+# error Never include this file directly. Use <lzma.h> instead.
+#endif
+#define LZMA_FILTER_X86 LZMA_VLI_C(0x04)
+#define LZMA_FILTER_POWERPC LZMA_VLI_C(0x05)
+#define LZMA_FILTER_IA64 LZMA_VLI_C(0x06)
+#define LZMA_FILTER_ARM LZMA_VLI_C(0x07)
+#define LZMA_FILTER_ARMTHUMB LZMA_VLI_C(0x08)
+#define LZMA_FILTER_SPARC LZMA_VLI_C(0x09)

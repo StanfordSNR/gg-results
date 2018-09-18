@@ -1,0 +1,23 @@
+// GGHASH:Vd4G6xxadevls0P9qdi5p3sAVcQ4Y7E7wo9z7i_CMr4E000070d8
+#ifndef _GLIBCXX_EXPERIMENTAL_OPTIONAL
+#define _GLIBCXX_EXPERIMENTAL_OPTIONAL 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <utility>
+#include <type_traits>
+#include <stdexcept>
+#include <new>
+#include <initializer_list>
+#include <bits/functexcept.h>
+#include <bits/functional_hash.h>
+#include <bits/enable_special_members.h>
+#include <experimental/bits/lfts_config.h>
+#define __cpp_lib_experimental_optional 201411
+#ifndef __cpp_lib_addressof_constexpr
+#endif
+#ifndef __cpp_lib_addressof_constexpr
+#else
+#endif
+#endif
+#endif

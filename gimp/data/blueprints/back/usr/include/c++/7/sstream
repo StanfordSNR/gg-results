@@ -1,0 +1,22 @@
+// GGHASH:VUFo0ny9cjy9AUuMb76PeZBsyX0swLmtrOII3y3uzMSw000068d7
+#ifndef _GLIBCXX_SSTREAM
+#define _GLIBCXX_SSTREAM 1
+#include <istream>
+#include <ostream>
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#if _GLIBCXX_USE_CXX11_ABI
+#else
+#endif
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#include <bits/sstream.tcc>
+#endif

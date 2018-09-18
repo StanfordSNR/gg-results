@@ -1,0 +1,29 @@
+// GGHASH:V_aZGe14PKbxbAS4tquzCGJiF2VaRbYwSBRCCiJDJiOM0000113a
+#ifndef _SYS_EPOLL_H
+#define _SYS_EPOLL_H 1
+#include <stdint.h>
+#include <sys/types.h>
+#include <bits/types/sigset_t.h>
+#include <bits/epoll.h>
+#ifndef __EPOLL_PACKED
+#define __EPOLL_PACKED 
+#endif
+#define EPOLLIN EPOLLIN
+#define EPOLLPRI EPOLLPRI
+#define EPOLLOUT EPOLLOUT
+#define EPOLLRDNORM EPOLLRDNORM
+#define EPOLLRDBAND EPOLLRDBAND
+#define EPOLLWRNORM EPOLLWRNORM
+#define EPOLLWRBAND EPOLLWRBAND
+#define EPOLLMSG EPOLLMSG
+#define EPOLLERR EPOLLERR
+#define EPOLLHUP EPOLLHUP
+#define EPOLLRDHUP EPOLLRDHUP
+#define EPOLLEXCLUSIVE EPOLLEXCLUSIVE
+#define EPOLLWAKEUP EPOLLWAKEUP
+#define EPOLLONESHOT EPOLLONESHOT
+#define EPOLLET EPOLLET
+#define EPOLL_CTL_ADD 1
+#define EPOLL_CTL_DEL 2
+#define EPOLL_CTL_MOD 3
+#endif

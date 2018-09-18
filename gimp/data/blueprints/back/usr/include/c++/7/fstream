@@ -1,0 +1,41 @@
+// GGHASH:VM_C29RLqB.bBCKvrBbRlnTnGHvPeEUgy1l8ho22dAyA00008435
+#ifndef _GLIBCXX_FSTREAM
+#define _GLIBCXX_FSTREAM 1
+#include <istream>
+#include <ostream>
+#include <bits/codecvt.h>
+#include <cstdio>
+#include <bits/basic_file.h>
+#if __cplusplus >= 201103L
+#include <string>
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#include <bits/fstream.tcc>
+#endif

@@ -1,0 +1,46 @@
+// GGHASH:VQqFEnZuxpQKaOF5WbEvPs6ntig_Dm61qZWOfzuYTwg000009a54
+#ifndef _GLIBCXX_FUNCTIONAL
+#define _GLIBCXX_FUNCTIONAL 1
+#include <bits/c++config.h>
+#include <bits/stl_function.h>
+#if __cplusplus >= 201103L
+#include <new>
+#include <tuple>
+#include <type_traits>
+#include <bits/functional_hash.h>
+#include <bits/invoke.h>
+#include <bits/std_function.h>
+#if __cplusplus > 201402L
+# include <unordered_map>
+# include <vector>
+# include <array>
+# include <utility>
+# include <bits/stl_algo.h>
+#endif
+#if __cplusplus > 201402L
+#define __cpp_lib_invoke 201411
+#endif
+#define _GLIBCXX_MEM_FN_TRAITS2(_CV,_REF,_LVAL,_RVAL) template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) _CV _REF> : _Mem_fn_traits_base<_Res, _CV _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes... ...) _CV _REF> : _Mem_fn_traits_base<_Res, _CV _Class, _ArgTypes...> { using __vararg = true_type; };
+#define _GLIBCXX_MEM_FN_TRAITS(_REF,_LVAL,_RVAL) _GLIBCXX_MEM_FN_TRAITS2( , _REF, _LVAL, _RVAL) _GLIBCXX_MEM_FN_TRAITS2(const , _REF, _LVAL, _RVAL) _GLIBCXX_MEM_FN_TRAITS2(volatile , _REF, _LVAL, _RVAL) _GLIBCXX_MEM_FN_TRAITS2(const volatile, _REF, _LVAL, _RVAL)
+#if __cplusplus > 201402L
+#endif
+#undef _GLIBCXX_MEM_FN_TRAITS
+#undef _GLIBCXX_MEM_FN_TRAITS2
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201402L
+#define _GLIBCXX_DEPR_BIND [[deprecated("std::bind does not support volatile in C++17")]]
+#else
+#define _GLIBCXX_DEPR_BIND 
+#endif
+#undef _GLIBCXX_DEPR_BIND
+#if __cplusplus >= 201402L
+#define _GLIBCXX_NOT_FN_CALL_OP(_QUALS) template<typename... _Args> decltype(_S_not<__inv_res_t<_Fn _QUALS, _Args...>>()) operator()(_Args&&... __args) _QUALS noexcept(noexcept(_S_not<__inv_res_t<_Fn _QUALS, _Args...>>())) { return !std::__invoke(std::forward< _Fn _QUALS >(_M_fn), std::forward<_Args>(__args)...); }
+#undef _GLIBCXX_NOT_FN_CALL
+#if __cplusplus > 201402L
+#define __cpp_lib_not_fn 201603
+#define __cpp_lib_boyer_moore_searcher 201603
+#endif
+#endif
+#endif
+#endif

@@ -1,0 +1,14 @@
+// GGHASH:VztJzOpWieaZj.NRPZ6qjW4ZKTeDkbqTYDrzbyo3.k0o000017bf
+#ifndef _GLIBCXX_EXPERIMENTAL_MEMORY
+#define _GLIBCXX_EXPERIMENTAL_MEMORY 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <memory>
+#include <type_traits>
+#include <utility>
+#include <experimental/bits/shared_ptr.h>
+#include <bits/functional_hash.h>
+#define __cpp_lib_experimental_observer_ptr 201411
+#endif
+#endif

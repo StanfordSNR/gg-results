@@ -1,0 +1,9 @@
+// GGHASH:VZh5akvkI5uOzGZ3gVxOQEQE15JwQpiiJ.gbqRDTfftw0000031e
+#ifndef __UAPI_PSAMPLE_H
+#define __UAPI_PSAMPLE_H 
+#define PSAMPLE_ATTR_MAX (__PSAMPLE_ATTR_MAX - 1)
+#define PSAMPLE_NL_MCGRP_CONFIG_NAME "config"
+#define PSAMPLE_NL_MCGRP_SAMPLE_NAME "packets"
+#define PSAMPLE_GENL_NAME "psample"
+#define PSAMPLE_GENL_VERSION 1
+#endif

@@ -1,0 +1,4 @@
+// GGHASH:V3yZGlbyM_8pM6KIDNv6.fWdqIVWMQQauaAlnKncyl9000000399
+#ifndef _LINUX_HASH_INFO_H
+#define _LINUX_HASH_INFO_H 
+#endif

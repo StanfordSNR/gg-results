@@ -1,0 +1,28 @@
+// GGHASH:VoI4P0Zeae76l9godYkVV_xq5Jj8Jo6p3FRt92Zg5PP8000044e8
+#ifndef _GLIBCXX_DECIMAL
+#define _GLIBCXX_DECIMAL 1
+#include <bits/c++config.h>
+#ifndef _GLIBCXX_USE_DECIMAL_FLOAT
+#error This file requires compiler and library support for ISO/IEC TR 24733 that is currently not available.
+#endif
+#define _DECLARE_DECIMAL_BINARY_OP_WITH_DEC(_Op,_T1,_T2,_T3) _T1 operator _Op(_T2 __lhs, _T3 __rhs);
+#define _DECLARE_DECIMAL_BINARY_OP_WITH_INT(_Op,_Tp) _Tp operator _Op(_Tp __lhs, int __rhs); _Tp operator _Op(_Tp __lhs, unsigned int __rhs); _Tp operator _Op(_Tp __lhs, long __rhs); _Tp operator _Op(_Tp __lhs, unsigned long __rhs); _Tp operator _Op(_Tp __lhs, long long __rhs); _Tp operator _Op(_Tp __lhs, unsigned long long __rhs); _Tp operator _Op(int __lhs, _Tp __rhs); _Tp operator _Op(unsigned int __lhs, _Tp __rhs); _Tp operator _Op(long __lhs, _Tp __rhs); _Tp operator _Op(unsigned long __lhs, _Tp __rhs); _Tp operator _Op(long long __lhs, _Tp __rhs); _Tp operator _Op(unsigned long long __lhs, _Tp __rhs);
+#undef _DECLARE_DECIMAL_BINARY_OP_WITH_DEC
+#undef _DECLARE_DECIMAL_BINARY_OP_WITH_INT
+#define _DECLARE_DECIMAL_COMPARISON(_Op,_Tp) bool operator _Op(_Tp __lhs, decimal32 __rhs); bool operator _Op(_Tp __lhs, decimal64 __rhs); bool operator _Op(_Tp __lhs, decimal128 __rhs); bool operator _Op(_Tp __lhs, int __rhs); bool operator _Op(_Tp __lhs, unsigned int __rhs); bool operator _Op(_Tp __lhs, long __rhs); bool operator _Op(_Tp __lhs, unsigned long __rhs); bool operator _Op(_Tp __lhs, long long __rhs); bool operator _Op(_Tp __lhs, unsigned long long __rhs); bool operator _Op(int __lhs, _Tp __rhs); bool operator _Op(unsigned int __lhs, _Tp __rhs); bool operator _Op(long __lhs, _Tp __rhs); bool operator _Op(unsigned long __lhs, _Tp __rhs); bool operator _Op(long long __lhs, _Tp __rhs); bool operator _Op(unsigned long long __lhs, _Tp __rhs);
+#undef _DECLARE_DECIMAL_COMPARISON
+#if __cplusplus >= 201103L
+#endif
+#define _DECLARE_DECIMAL32_COMPOUND_ASSIGNMENT(_Op) decimal32& operator _Op(decimal32 __rhs); decimal32& operator _Op(decimal64 __rhs); decimal32& operator _Op(decimal128 __rhs); decimal32& operator _Op(int __rhs); decimal32& operator _Op(unsigned int __rhs); decimal32& operator _Op(long __rhs); decimal32& operator _Op(unsigned long __rhs); decimal32& operator _Op(long long __rhs); decimal32& operator _Op(unsigned long long __rhs);
+#undef _DECLARE_DECIMAL32_COMPOUND_ASSIGNMENT
+#if __cplusplus >= 201103L
+#endif
+#define _DECLARE_DECIMAL64_COMPOUND_ASSIGNMENT(_Op) decimal64& operator _Op(decimal32 __rhs); decimal64& operator _Op(decimal64 __rhs); decimal64& operator _Op(decimal128 __rhs); decimal64& operator _Op(int __rhs); decimal64& operator _Op(unsigned int __rhs); decimal64& operator _Op(long __rhs); decimal64& operator _Op(unsigned long __rhs); decimal64& operator _Op(long long __rhs); decimal64& operator _Op(unsigned long long __rhs);
+#undef _DECLARE_DECIMAL64_COMPOUND_ASSIGNMENT
+#if __cplusplus >= 201103L
+#endif
+#define _DECLARE_DECIMAL128_COMPOUND_ASSIGNMENT(_Op) decimal128& operator _Op(decimal32 __rhs); decimal128& operator _Op(decimal64 __rhs); decimal128& operator _Op(decimal128 __rhs); decimal128& operator _Op(int __rhs); decimal128& operator _Op(unsigned int __rhs); decimal128& operator _Op(long __rhs); decimal128& operator _Op(unsigned long __rhs); decimal128& operator _Op(long long __rhs); decimal128& operator _Op(unsigned long long __rhs);
+#undef _DECLARE_DECIMAL128_COMPOUND_ASSIGNMENT
+#define _GLIBCXX_USE_DECIMAL_ 1
+#include <decimal/decimal.h>
+#endif

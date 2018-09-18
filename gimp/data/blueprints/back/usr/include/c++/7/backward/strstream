@@ -1,0 +1,9 @@
+// GGHASH:V9Pjwhv8HwNeCJAuc.ti1C7C4VWCs5VdihDaPzwRHMjU000016a6
+#ifndef _BACKWARD_STRSTREAM
+#define _BACKWARD_STRSTREAM 
+#include "backward_warning.h"
+#include <iosfwd>
+#include <ios>
+#include <istream>
+#include <ostream>
+#endif

@@ -1,0 +1,35 @@
+// GGHASH:V5QVZwBZK866wvHsXHE0K2zeM9t7cxlQlNUb.VE_VXRo00001924
+#ifndef _LINUX_DCCP_H
+#define _LINUX_DCCP_H 
+#include <linux/types.h>
+#include <asm/byteorder.h>
+#if defined(__LITTLE_ENDIAN_BITFIELD)
+#elif defined(__BIG_ENDIAN_BITFIELD)
+#else
+#error "Adjust your <asm/byteorder.h> defines"
+#endif
+#if defined(__LITTLE_ENDIAN_BITFIELD)
+#elif defined(__BIG_ENDIAN_BITFIELD)
+#else
+#error "Adjust your <asm/byteorder.h> defines"
+#endif
+#define DCCP_NR_PKT_TYPES DCCP_PKT_INVALID
+#define DCCP_SINGLE_OPT_MAXLEN 253
+#define DCCP_SOCKOPT_PACKET_SIZE 1
+#define DCCP_SOCKOPT_SERVICE 2
+#define DCCP_SOCKOPT_CHANGE_L 3
+#define DCCP_SOCKOPT_CHANGE_R 4
+#define DCCP_SOCKOPT_GET_CUR_MPS 5
+#define DCCP_SOCKOPT_SERVER_TIMEWAIT 6
+#define DCCP_SOCKOPT_SEND_CSCOV 10
+#define DCCP_SOCKOPT_RECV_CSCOV 11
+#define DCCP_SOCKOPT_AVAILABLE_CCIDS 12
+#define DCCP_SOCKOPT_CCID 13
+#define DCCP_SOCKOPT_TX_CCID 14
+#define DCCP_SOCKOPT_RX_CCID 15
+#define DCCP_SOCKOPT_QPOLICY_ID 16
+#define DCCP_SOCKOPT_QPOLICY_TXQLEN 17
+#define DCCP_SOCKOPT_CCID_RX_INFO 128
+#define DCCP_SOCKOPT_CCID_TX_INFO 192
+#define DCCP_SERVICE_LIST_MAX_LEN 32
+#endif

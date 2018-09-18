@@ -1,0 +1,39 @@
+// GGHASH:VLq7k03g.SYZT57GRu9SoiblcXIqO59UItCfQzv4eGw0000026bc
+#ifndef __RPCSVC_YP_H__
+#define __RPCSVC_YP_H__ 
+#include <features.h>
+#include <rpc/rpc.h>
+#define YPMAXRECORD 1024
+#define YPMAXDOMAIN 64
+#define YPMAXMAP 64
+#define YPMAXPEER 64
+#ifdef STUPID_SUN_BUG
+#else
+#endif
+#define YPBIND_ERR_ERR 1
+#define YPBIND_ERR_NOSERV 2
+#define YPBIND_ERR_RESC 3
+#define YPPROG 100004
+#define YPVERS 2
+#define YPPROC_NULL 0
+#define YPPROC_DOMAIN 1
+#define YPPROC_DOMAIN_NONACK 2
+#define YPPROC_MATCH 3
+#define YPPROC_FIRST 4
+#define YPPROC_NEXT 5
+#define YPPROC_XFR 6
+#define YPPROC_CLEAR 7
+#define YPPROC_ALL 8
+#define YPPROC_MASTER 9
+#define YPPROC_ORDER 10
+#define YPPROC_MAPLIST 11
+#define YPPUSH_XFRRESPPROG (0x40000000)
+#define YPPUSH_XFRRESPVERS 1
+#define YPPUSHPROC_NULL 0
+#define YPPUSHPROC_XFRRESP 1
+#define YPBINDPROG 100007
+#define YPBINDVERS 2
+#define YPBINDPROC_NULL 0
+#define YPBINDPROC_DOMAIN 1
+#define YPBINDPROC_SETDOM 2
+#endif

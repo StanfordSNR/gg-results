@@ -1,0 +1,49 @@
+// GGHASH:VY5mpoCBZ3qMwbgsC94St1_rxAMH71yaXnBxbl.ATpjA00009d52
+#ifndef _GLIBCXX_VALARRAY
+#define _GLIBCXX_VALARRAY 1
+#include <bits/c++config.h>
+#include <cmath>
+#include <algorithm>
+#include <debug/debug.h>
+#if __cplusplus >= 201103L
+#include <initializer_list>
+#endif
+#include <bits/valarray_array.h>
+#include <bits/valarray_before.h>
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cpp_deduction_guides >= 201606
+#endif
+#include <bits/valarray_after.h>
+#include <bits/slice_array.h>
+#include <bits/gslice.h>
+#include <bits/gslice_array.h>
+#include <bits/mask_array.h>
+#include <bits/indirect_array.h>
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#define _DEFINE_VALARRAY_UNARY_OPERATOR(_Op,_Name) template<typename _Tp> inline typename valarray<_Tp>::template _UnaryOp<_Name>::_Rt valarray<_Tp>::operator _Op() const { typedef _UnClos<_Name, _ValArray, _Tp> _Closure; typedef typename __fun<_Name, _Tp>::result_type _Rt; return _Expr<_Closure, _Rt>(_Closure(*this)); }
+#undef _DEFINE_VALARRAY_UNARY_OPERATOR
+#define _DEFINE_VALARRAY_AUGMENTED_ASSIGNMENT(_Op,_Name) template<class _Tp> inline valarray<_Tp>& valarray<_Tp>::operator _Op ##=(const _Tp &__t) { _Array_augmented_ ##_Name(_Array<_Tp>(_M_data), _M_size, __t); return *this; } template<class _Tp> inline valarray<_Tp>& valarray<_Tp>::operator _Op ##=(const valarray<_Tp> &__v) { __glibcxx_assert(_M_size == __v._M_size); _Array_augmented_ ##_Name(_Array<_Tp>(_M_data), _M_size, _Array<_Tp>(__v._M_data)); return *this; }
+#undef _DEFINE_VALARRAY_AUGMENTED_ASSIGNMENT
+#define _DEFINE_VALARRAY_EXPR_AUGMENTED_ASSIGNMENT(_Op,_Name) template<class _Tp> template<class _Dom> inline valarray<_Tp>& valarray<_Tp>::operator _Op ##=(const _Expr<_Dom, _Tp>& __e) { _Array_augmented_ ##_Name(_Array<_Tp>(_M_data), __e, _M_size); return *this; }
+#undef _DEFINE_VALARRAY_EXPR_AUGMENTED_ASSIGNMENT
+#define _DEFINE_BINARY_OPERATOR(_Op,_Name) template<typename _Tp> inline _Expr<_BinClos<_Name, _ValArray, _ValArray, _Tp, _Tp>, typename __fun<_Name, _Tp>::result_type> operator _Op(const valarray<_Tp>& __v, const valarray<_Tp>& __w) { __glibcxx_assert(__v.size() == __w.size()); typedef _BinClos<_Name, _ValArray, _ValArray, _Tp, _Tp> _Closure; typedef typename __fun<_Name, _Tp>::result_type _Rt; return _Expr<_Closure, _Rt>(_Closure(__v, __w)); } template<typename _Tp> inline _Expr<_BinClos<_Name, _ValArray,_Constant, _Tp, _Tp>, typename __fun<_Name, _Tp>::result_type> operator _Op(const valarray<_Tp>& __v, const _Tp& __t) { typedef _BinClos<_Name, _ValArray, _Constant, _Tp, _Tp> _Closure; typedef typename __fun<_Name, _Tp>::result_type _Rt; return _Expr<_Closure, _Rt>(_Closure(__v, __t)); } template<typename _Tp> inline _Expr<_BinClos<_Name, _Constant, _ValArray, _Tp, _Tp>, typename __fun<_Name, _Tp>::result_type> operator _Op(const _Tp& __t, const valarray<_Tp>& __v) { typedef _BinClos<_Name, _Constant, _ValArray, _Tp, _Tp> _Closure; typedef typename __fun<_Name, _Tp>::result_type _Rt; return _Expr<_Closure, _Rt>(_Closure(__t, __v)); }
+#undef _DEFINE_BINARY_OPERATOR
+#if __cplusplus >= 201103L
+#endif
+#endif

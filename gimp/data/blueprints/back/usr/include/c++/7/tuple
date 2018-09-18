@@ -1,0 +1,28 @@
+// GGHASH:VA6X9CMxshJsK8orm3klBQAtV4eGLMrDW5rDeogHnq4w0000e8e1
+#ifndef _GLIBCXX_TUPLE
+#define _GLIBCXX_TUPLE 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <utility>
+#include <array>
+#include <bits/uses_allocator.h>
+#include <bits/invoke.h>
+#if __cpp_deduction_guides >= 201606
+#endif
+#if __cplusplus > 201402L
+#endif
+#if __cplusplus > 201103L
+#define __cpp_lib_tuples_by_type 201304
+#endif
+#if __cplusplus > 201402L || !defined(__STRICT_ANSI__)
+#else
+#endif
+#if __cplusplus > 201402L || !defined(__STRICT_ANSI__)
+#endif
+#if __cplusplus > 201402L
+#define __cpp_lib_apply 201603
+#define __cpp_lib_make_from_tuple 201606
+#endif
+#endif
+#endif

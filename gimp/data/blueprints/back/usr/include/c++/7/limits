@@ -1,0 +1,152 @@
+// GGHASH:VdLX.3fjgBpk9.3SIhMMXwgWK_NyDFfm_AtHB49v32WQ00010e3d
+#ifndef _GLIBCXX_NUMERIC_LIMITS
+#define _GLIBCXX_NUMERIC_LIMITS 1
+#include <bits/c++config.h>
+#ifndef __glibcxx_integral_traps
+#define __glibcxx_integral_traps true
+#endif
+#ifndef __glibcxx_float_has_denorm_loss
+#define __glibcxx_float_has_denorm_loss false
+#endif
+#ifndef __glibcxx_float_traps
+#define __glibcxx_float_traps false
+#endif
+#ifndef __glibcxx_float_tinyness_before
+#define __glibcxx_float_tinyness_before false
+#endif
+#ifndef __glibcxx_double_has_denorm_loss
+#define __glibcxx_double_has_denorm_loss false
+#endif
+#ifndef __glibcxx_double_traps
+#define __glibcxx_double_traps false
+#endif
+#ifndef __glibcxx_double_tinyness_before
+#define __glibcxx_double_tinyness_before false
+#endif
+#ifndef __glibcxx_long_double_has_denorm_loss
+#define __glibcxx_long_double_has_denorm_loss false
+#endif
+#ifndef __glibcxx_long_double_traps
+#define __glibcxx_long_double_traps false
+#endif
+#ifndef __glibcxx_long_double_tinyness_before
+#define __glibcxx_long_double_tinyness_before false
+#endif
+#define __glibcxx_signed_b(T,B) ((T)(-1) < 0)
+#define __glibcxx_min_b(T,B) (__glibcxx_signed_b (T,B) ? -__glibcxx_max_b (T,B) - 1 : (T)0)
+#define __glibcxx_max_b(T,B) (__glibcxx_signed_b (T,B) ? (((((T)1 << (__glibcxx_digits_b (T,B) - 1)) - 1) << 1) + 1) : ~(T)0)
+#define __glibcxx_digits_b(T,B) (B - __glibcxx_signed_b (T,B))
+#define __glibcxx_digits10_b(T,B) (__glibcxx_digits_b (T,B) * 643L / 2136)
+#define __glibcxx_signed(T) __glibcxx_signed_b (T, sizeof(T) * __CHAR_BIT__)
+#define __glibcxx_min(T) __glibcxx_min_b (T, sizeof(T) * __CHAR_BIT__)
+#define __glibcxx_max(T) __glibcxx_max_b (T, sizeof(T) * __CHAR_BIT__)
+#define __glibcxx_digits(T) __glibcxx_digits_b (T, sizeof(T) * __CHAR_BIT__)
+#define __glibcxx_digits10(T) __glibcxx_digits10_b (T, sizeof(T) * __CHAR_BIT__)
+#define __glibcxx_max_digits10(T) (2 + (T) * 643L / 2136)
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if !defined(__STRICT_ANSI__)
+#define __INT_N(TYPE,BITSIZE,EXT,UEXT) template<> struct numeric_limits<TYPE> { static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true; static _GLIBCXX_CONSTEXPR TYPE min() _GLIBCXX_USE_NOEXCEPT { return __glibcxx_min_b (TYPE, BITSIZE); } static _GLIBCXX_CONSTEXPR TYPE max() _GLIBCXX_USE_NOEXCEPT { return __glibcxx_max_b (TYPE, BITSIZE); } static _GLIBCXX_USE_CONSTEXPR int digits = BITSIZE - 1; static _GLIBCXX_USE_CONSTEXPR int digits10 = (BITSIZE - 1) * 643L / 2136; static _GLIBCXX_USE_CONSTEXPR bool is_signed = true; static _GLIBCXX_USE_CONSTEXPR bool is_integer = true; static _GLIBCXX_USE_CONSTEXPR bool is_exact = true; static _GLIBCXX_USE_CONSTEXPR int radix = 2; static _GLIBCXX_CONSTEXPR TYPE epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; } static _GLIBCXX_CONSTEXPR TYPE round_error() _GLIBCXX_USE_NOEXCEPT { return 0; } EXT static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0; static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0; static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0; static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0; static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false; static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false; static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false; static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm = denorm_absent; static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false; static _GLIBCXX_CONSTEXPR TYPE infinity() _GLIBCXX_USE_NOEXCEPT { return static_cast<TYPE>(0); } static _GLIBCXX_CONSTEXPR TYPE quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return static_cast<TYPE>(0); } static _GLIBCXX_CONSTEXPR TYPE signaling_NaN() _GLIBCXX_USE_NOEXCEPT { return static_cast<TYPE>(0); } static _GLIBCXX_CONSTEXPR TYPE denorm_min() _GLIBCXX_USE_NOEXCEPT { return static_cast<TYPE>(0); } static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false; static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true; static _GLIBCXX_USE_CONSTEXPR bool is_modulo = false; static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps; static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false; static _GLIBCXX_USE_CONSTEXPR float_round_style round_style = round_toward_zero; }; template<> struct numeric_limits<unsigned TYPE> { static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true; static _GLIBCXX_CONSTEXPR unsigned TYPE min() _GLIBCXX_USE_NOEXCEPT { return 0; } static _GLIBCXX_CONSTEXPR unsigned TYPE max() _GLIBCXX_USE_NOEXCEPT { return __glibcxx_max_b (unsigned TYPE, BITSIZE); } UEXT static _GLIBCXX_USE_CONSTEXPR int digits = BITSIZE; static _GLIBCXX_USE_CONSTEXPR int digits10 = BITSIZE * 643L / 2136; static _GLIBCXX_USE_CONSTEXPR bool is_signed = false; static _GLIBCXX_USE_CONSTEXPR bool is_integer = true; static _GLIBCXX_USE_CONSTEXPR bool is_exact = true; static _GLIBCXX_USE_CONSTEXPR int radix = 2; static _GLIBCXX_CONSTEXPR unsigned TYPE epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; } static _GLIBCXX_CONSTEXPR unsigned TYPE round_error() _GLIBCXX_USE_NOEXCEPT { return 0; } static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0; static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0; static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0; static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0; static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false; static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false; static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false; static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm = denorm_absent; static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false; static _GLIBCXX_CONSTEXPR unsigned TYPE infinity() _GLIBCXX_USE_NOEXCEPT { return static_cast<unsigned TYPE>(0); } static _GLIBCXX_CONSTEXPR unsigned TYPE quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return static_cast<unsigned TYPE>(0); } static _GLIBCXX_CONSTEXPR unsigned TYPE signaling_NaN() _GLIBCXX_USE_NOEXCEPT { return static_cast<unsigned TYPE>(0); } static _GLIBCXX_CONSTEXPR unsigned TYPE denorm_min() _GLIBCXX_USE_NOEXCEPT { return static_cast<unsigned TYPE>(0); } static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false; static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true; static _GLIBCXX_USE_CONSTEXPR bool is_modulo = true; static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps; static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false; static _GLIBCXX_USE_CONSTEXPR float_round_style round_style = round_toward_zero; };
+#if __cplusplus >= 201103L
+#define __INT_N_201103(TYPE) static constexpr TYPE lowest() noexcept { return min(); } static constexpr int max_digits10 = 0;
+#define __INT_N_U201103(TYPE) static constexpr unsigned TYPE lowest() noexcept { return min(); } static constexpr int max_digits10 = 0;
+#else
+#define __INT_N_201103(TYPE) 
+#define __INT_N_U201103(TYPE) 
+#endif
+#ifdef __GLIBCXX_TYPE_INT_N_0
+#endif
+#ifdef __GLIBCXX_TYPE_INT_N_1
+#endif
+#ifdef __GLIBCXX_TYPE_INT_N_2
+#endif
+#ifdef __GLIBCXX_TYPE_INT_N_3
+#endif
+#undef __INT_N
+#undef __INT_N_201103
+#undef __INT_N_U201103
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#undef __glibcxx_float_has_denorm_loss
+#undef __glibcxx_float_traps
+#undef __glibcxx_float_tinyness_before
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#undef __glibcxx_double_has_denorm_loss
+#undef __glibcxx_double_traps
+#undef __glibcxx_double_tinyness_before
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#undef __glibcxx_long_double_has_denorm_loss
+#undef __glibcxx_long_double_traps
+#undef __glibcxx_long_double_tinyness_before
+#undef __glibcxx_signed
+#undef __glibcxx_min
+#undef __glibcxx_max
+#undef __glibcxx_digits
+#undef __glibcxx_digits10
+#undef __glibcxx_max_digits10
+#endif

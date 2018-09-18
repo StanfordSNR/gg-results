@@ -1,0 +1,8 @@
+// GGHASH:VREg8ra7azxSvvG9ksDETPwWVRK5IytH.1UR8CU2d._o00000540
+#ifndef _GLIBCXX_TR1_CSTDBOOL
+#define _GLIBCXX_TR1_CSTDBOOL 1
+#include <bits/c++config.h>
+#if _GLIBCXX_HAVE_STDBOOL_H
+#include <stdbool.h>
+#endif
+#endif

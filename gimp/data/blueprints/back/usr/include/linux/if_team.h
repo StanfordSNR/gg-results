@@ -1,0 +1,8 @@
+// GGHASH:VhJJAi6LoZpWWhKZcOxEifXFOUSrE7gy9ABVxkb3SvzM00000a28
+#ifndef _LINUX_IF_TEAM_H_
+#define _LINUX_IF_TEAM_H_ 
+#define TEAM_STRING_MAX_LEN 32
+#define TEAM_GENL_NAME "team"
+#define TEAM_GENL_VERSION 0x1
+#define TEAM_GENL_CHANGE_EVENT_MC_GRP_NAME "change_event"
+#endif

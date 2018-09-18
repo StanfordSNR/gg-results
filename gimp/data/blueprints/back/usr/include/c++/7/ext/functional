@@ -1,0 +1,5 @@
+// GGHASH:VYElesiWA.wQdfVokRV7hJCaxzgm.Dj2S_Sez2EUrkIQ000037d4
+#ifndef _EXT_FUNCTIONAL
+#define _EXT_FUNCTIONAL 1
+#include <functional>
+#endif

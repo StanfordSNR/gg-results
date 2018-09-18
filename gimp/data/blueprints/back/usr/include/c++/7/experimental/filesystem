@@ -1,0 +1,13 @@
+// GGHASH:Vh4Mv92rj4yIH3Yt5MLEdidCuA2DoWdY5b6QByfGS8bs000008b9
+#ifndef _GLIBCXX_EXPERIMENTAL_FILESYSTEM
+#define _GLIBCXX_EXPERIMENTAL_FILESYSTEM 1
+#if __cplusplus < 201103L
+# include <bits/c++0x_warning.h>
+#else
+#include <experimental/bits/fs_fwd.h>
+#include <experimental/bits/fs_path.h>
+#include <experimental/bits/fs_dir.h>
+#include <experimental/bits/fs_ops.h>
+#define __cpp_lib_experimental_filesystem 201406
+#endif
+#endif

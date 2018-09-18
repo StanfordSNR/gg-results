@@ -1,0 +1,42 @@
+// GGHASH:VPOK_qI_jCOAvkw9vgSdP98cash9d2fi77s04FDGqRaw00001f27
+#ifndef _GLIBCXX_STDEXCEPT
+#define _GLIBCXX_STDEXCEPT 1
+#include <exception>
+#include <string>
+#if _GLIBCXX_USE_DUAL_ABI
+#if _GLIBCXX_USE_CXX11_ABI
+#if __cplusplus >= 201103L
+#endif
+#else
+#if __cplusplus >= 201103L
+#endif
+#endif
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if _GLIBCXX_USE_CXX11_ABI || _GLIBCXX_DEFINE_STDEXCEPT_COPY_OPS
+#endif
+# ifdef _GLIBCXX_TM_TS_INTERNAL
+# endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if _GLIBCXX_USE_CXX11_ABI || _GLIBCXX_DEFINE_STDEXCEPT_COPY_OPS
+#endif
+# ifdef _GLIBCXX_TM_TS_INTERNAL
+# endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#endif

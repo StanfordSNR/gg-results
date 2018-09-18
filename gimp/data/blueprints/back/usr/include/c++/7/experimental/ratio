@@ -1,0 +1,10 @@
+// GGHASH:Vgn3VLMlQ1RjIAzNgJ5iHFmCPHQ8SmgevWsVUrdFWNPM00000997
+#ifndef _GLIBCXX_EXPERIMENTAL_RATIO
+#define _GLIBCXX_EXPERIMENTAL_RATIO 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <ratio>
+#include <experimental/bits/lfts_config.h>
+#endif
+#endif

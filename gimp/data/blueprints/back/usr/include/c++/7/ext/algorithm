@@ -1,0 +1,14 @@
+// GGHASH:VAcA11AnMnEJrkb.F23ZecA46HQ0ydx4XZTzHfMgGJIw00004b5a
+#ifndef _EXT_ALGORITHM
+#define _EXT_ALGORITHM 1
+#include <algorithm>
+#if CHAR_MAX == SCHAR_MAX
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#endif

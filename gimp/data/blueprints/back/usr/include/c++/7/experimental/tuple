@@ -1,0 +1,12 @@
+// GGHASH:VF3XuIEZqaEcCLNSBdWe._zvvJ4rYpI8CunC4g9h8xDc000009b9
+#ifndef _GLIBCXX_EXPERIMENTAL_TUPLE
+#define _GLIBCXX_EXPERIMENTAL_TUPLE 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <tuple>
+#include <bits/invoke.h>
+#include <experimental/bits/lfts_config.h>
+#define __cpp_lib_experimental_tuple 201402
+#endif
+#endif

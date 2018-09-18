@@ -1,0 +1,109 @@
+// GGHASH:VelhZokPalKef6NmByyw3mQFgPvzRV8z5EE_RpGDERfw0000d3bc
+#ifndef _GLIBCXX_COMPLEX
+#define _GLIBCXX_COMPLEX 1
+#include <bits/c++config.h>
+#include <bits/cpp_type_traits.h>
+#include <ext/type_traits.h>
+#include <cmath>
+#include <sstream>
+#undef complex
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if ! _GLIBCXX_USE_C99_COMPLEX
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if __cplusplus >= 201103L
+#else
+#endif
+#if _GLIBCXX_EXTERN_TEMPLATE
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#endif
+#if __cplusplus >= 201103L
+#if _GLIBCXX_USE_C99_COMPLEX_TR1
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX_TR1
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX_TR1
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX_TR1
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX_TR1
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX_TR1
+#else
+#endif
+#if (_GLIBCXX11_USE_C99_MATH && !_GLIBCXX_USE_C99_FP_MACROS_DYNAMIC)
+#else
+#endif
+#if _GLIBCXX_USE_C99_COMPLEX
+#else
+#endif
+#if __cplusplus > 201103L
+#define __cpp_lib_complex_udls 201309
+#endif
+#endif
+#endif

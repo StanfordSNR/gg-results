@@ -1,0 +1,5 @@
+// GGHASH:VPHiBCPuD7XaiX86cpccAvQXW2.qYOt.4mpLFxfis97g00000107
+#ifndef _ASM_X86_VSYSCALL_H
+#define _ASM_X86_VSYSCALL_H 
+#define VSYSCALL_ADDR (-10UL << 20)
+#endif

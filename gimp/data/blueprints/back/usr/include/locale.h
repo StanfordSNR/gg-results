@@ -1,0 +1,41 @@
+// GGHASH:VS0LdLHCmzQDOg9ElqUl.Fpu3v.lWBPZVEDjkNmYgcLM00001dfa
+#ifndef _LOCALE_H
+#define _LOCALE_H 1
+#include <features.h>
+#define __need_NULL 
+#include <stddef.h>
+#include <bits/locale.h>
+#define LC_CTYPE __LC_CTYPE
+#define LC_NUMERIC __LC_NUMERIC
+#define LC_TIME __LC_TIME
+#define LC_COLLATE __LC_COLLATE
+#define LC_MONETARY __LC_MONETARY
+#define LC_MESSAGES __LC_MESSAGES
+#define LC_ALL __LC_ALL
+#define LC_PAPER __LC_PAPER
+#define LC_NAME __LC_NAME
+#define LC_ADDRESS __LC_ADDRESS
+#define LC_TELEPHONE __LC_TELEPHONE
+#define LC_MEASUREMENT __LC_MEASUREMENT
+#define LC_IDENTIFICATION __LC_IDENTIFICATION
+#ifdef __USE_ISOC99
+#else
+#endif
+#ifdef __USE_XOPEN2K8
+# include <bits/types/locale_t.h>
+#define LC_CTYPE_MASK (1 << __LC_CTYPE)
+#define LC_NUMERIC_MASK (1 << __LC_NUMERIC)
+#define LC_TIME_MASK (1 << __LC_TIME)
+#define LC_COLLATE_MASK (1 << __LC_COLLATE)
+#define LC_MONETARY_MASK (1 << __LC_MONETARY)
+#define LC_MESSAGES_MASK (1 << __LC_MESSAGES)
+#define LC_PAPER_MASK (1 << __LC_PAPER)
+#define LC_NAME_MASK (1 << __LC_NAME)
+#define LC_ADDRESS_MASK (1 << __LC_ADDRESS)
+#define LC_TELEPHONE_MASK (1 << __LC_TELEPHONE)
+#define LC_MEASUREMENT_MASK (1 << __LC_MEASUREMENT)
+#define LC_IDENTIFICATION_MASK (1 << __LC_IDENTIFICATION)
+#define LC_ALL_MASK (LC_CTYPE_MASK | LC_NUMERIC_MASK | LC_TIME_MASK | LC_COLLATE_MASK | LC_MONETARY_MASK | LC_MESSAGES_MASK | LC_PAPER_MASK | LC_NAME_MASK | LC_ADDRESS_MASK | LC_TELEPHONE_MASK | LC_MEASUREMENT_MASK | LC_IDENTIFICATION_MASK )
+#define LC_GLOBAL_LOCALE ((locale_t) -1L)
+#endif
+#endif

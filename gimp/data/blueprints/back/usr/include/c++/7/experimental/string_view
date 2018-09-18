@@ -1,0 +1,25 @@
+// GGHASH:VajiLq.WsDRfFh2k8TNNemsCbqfX08G.zKiTohd8FCtE00005545
+#ifndef _GLIBCXX_EXPERIMENTAL_STRING_VIEW
+#define _GLIBCXX_EXPERIMENTAL_STRING_VIEW 1
+#if __cplusplus <= 201103L
+# include <bits/c++14_warning.h>
+#else
+#include <string>
+#include <limits>
+#include <experimental/bits/lfts_config.h>
+#define __cpp_lib_experimental_string_view 201411
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+#endif
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+#endif
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+#endif
+#include <experimental/bits/string_view.tcc>
+#endif
+#endif

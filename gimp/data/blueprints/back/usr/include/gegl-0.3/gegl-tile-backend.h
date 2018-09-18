@@ -1,0 +1,11 @@
+// GGHASH:VnxhS3UNvc5v.lrt1lfY5eDqzHpYbN1GAyKHC6KiDMSA000012ae
+#ifndef __GEGL_TILE_BACKEND_H__
+#define __GEGL_TILE_BACKEND_H__ 
+#include "gegl-tile-source.h"
+#define GEGL_TYPE_TILE_BACKEND (gegl_tile_backend_get_type ())
+#define GEGL_TILE_BACKEND(obj) (G_TYPE_CHECK_INSTANCE_CAST ((obj), GEGL_TYPE_TILE_BACKEND, GeglTileBackend))
+#define GEGL_TILE_BACKEND_CLASS(klass) (G_TYPE_CHECK_CLASS_CAST ((klass), GEGL_TYPE_TILE_BACKEND, GeglTileBackendClass))
+#define GEGL_IS_TILE_BACKEND(obj) (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GEGL_TYPE_TILE_BACKEND))
+#define GEGL_IS_TILE_BACKEND_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), GEGL_TYPE_TILE_BACKEND))
+#define GEGL_TILE_BACKEND_GET_CLASS(obj) (G_TYPE_INSTANCE_GET_CLASS ((obj), GEGL_TYPE_TILE_BACKEND, GeglTileBackendClass))
+#endif

@@ -1,0 +1,5 @@
+// GGHASH:VbfuP6aWGdr4DhFtyOLJ_eQ32pLtiLtRcOP.3aFHDOLU000000ae
+#ifndef _ASM_X86_HWCAP2_H
+#define _ASM_X86_HWCAP2_H 
+#define HWCAP2_RING3MWAIT (1 << 0)
+#endif

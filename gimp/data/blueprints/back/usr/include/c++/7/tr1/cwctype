@@ -1,0 +1,9 @@
+// GGHASH:V_pszcLFVowcTDgf.pccKAtPF.fmNCqloh4ozL2FUbaw000005b3
+#ifndef _GLIBCXX_TR1_CWCTYPE
+#define _GLIBCXX_TR1_CWCTYPE 1
+#include <cwctype>
+#ifdef _GLIBCXX_USE_WCHAR_T
+#if _GLIBCXX_HAVE_ISWBLANK
+#endif
+#endif
+#endif

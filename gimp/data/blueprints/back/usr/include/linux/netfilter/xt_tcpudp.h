@@ -1,0 +1,13 @@
+// GGHASH:VQZZI9k9GLRUjOH1CXk_IyYCB.GkqFUdUiSlVH6BqIcA000004e2
+#ifndef _XT_TCPUDP_H
+#define _XT_TCPUDP_H 
+#include <linux/types.h>
+#define XT_TCP_INV_SRCPT 0x01
+#define XT_TCP_INV_DSTPT 0x02
+#define XT_TCP_INV_FLAGS 0x04
+#define XT_TCP_INV_OPTION 0x08
+#define XT_TCP_INV_MASK 0x0F
+#define XT_UDP_INV_SRCPT 0x01
+#define XT_UDP_INV_DSTPT 0x02
+#define XT_UDP_INV_MASK 0x03
+#endif

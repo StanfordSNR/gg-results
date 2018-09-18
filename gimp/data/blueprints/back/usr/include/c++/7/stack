@@ -1,0 +1,6 @@
+// GGHASH:VPgLQVdkNYL0Cvfw3S8ge4X1JXaorbe9uN5LkfOYGU0s00000957
+#ifndef _GLIBCXX_STACK
+#define _GLIBCXX_STACK 1
+#include <deque>
+#include <bits/stl_stack.h>
+#endif

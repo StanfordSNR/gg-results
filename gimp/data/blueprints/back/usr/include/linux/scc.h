@@ -1,0 +1,14 @@
+// GGHASH:VVCYElUT7yKfEtX48U3ZATH0UGY.aKsdY0sWEJ_YvFXI000011f5
+#ifndef _SCC_H
+#define _SCC_H 
+#define PA0HZP 0x00
+#define EAGLE 0x01
+#define PC100 0x02
+#define PRIMUS 0x04
+#define DRSI 0x08
+#define BAYCOM 0x10
+#define TIMER_OFF 65535U
+#define NO_SUCH_PARAM 65534U
+#define RXGROUP 0100
+#define TXGROUP 0200
+#endif

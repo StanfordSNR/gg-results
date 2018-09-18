@@ -1,0 +1,22 @@
+// GGHASH:Vj7CJNbVC71Quztiv8pA2vIvoa_ONx0O9c1elTy.XR4M00003f04
+#ifndef _GLIBCXX_IOMANIP
+#define _GLIBCXX_IOMANIP 1
+#include <bits/c++config.h>
+#include <iosfwd>
+#include <bits/ios_base.h>
+#if __cplusplus >= 201103L
+#include <locale>
+#if __cplusplus > 201103L
+#include <bits/quoted_string.h>
+#endif
+#endif
+#if __cplusplus >= 201103L
+#if __cplusplus > 201103L
+#define __cpp_lib_quoted_string_io 201304
+#endif
+#endif
+#if _GLIBCXX_EXTERN_TEMPLATE
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#endif
+#endif

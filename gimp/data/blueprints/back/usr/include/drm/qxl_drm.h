@@ -1,0 +1,30 @@
+// GGHASH:VVI6WPlIwnnQcQTotGRjm.OMTmaNQ.Ytf1Gw4FVVGum400001023
+#ifndef QXL_DRM_H
+#define QXL_DRM_H 
+#include "drm.h"
+#if defined(__cplusplus)
+#endif
+#define QXL_GEM_DOMAIN_CPU 0
+#define QXL_GEM_DOMAIN_VRAM 1
+#define QXL_GEM_DOMAIN_SURFACE 2
+#define DRM_QXL_ALLOC 0x00
+#define DRM_QXL_MAP 0x01
+#define DRM_QXL_EXECBUFFER 0x02
+#define DRM_QXL_UPDATE_AREA 0x03
+#define DRM_QXL_GETPARAM 0x04
+#define DRM_QXL_CLIENTCAP 0x05
+#define DRM_QXL_ALLOC_SURF 0x06
+#define QXL_RELOC_TYPE_BO 1
+#define QXL_RELOC_TYPE_SURF 2
+#define QXL_PARAM_NUM_SURFACES 1
+#define QXL_PARAM_MAX_RELOCS 2
+#define DRM_IOCTL_QXL_ALLOC DRM_IOWR(DRM_COMMAND_BASE + DRM_QXL_ALLOC, struct drm_qxl_alloc)
+#define DRM_IOCTL_QXL_MAP DRM_IOWR(DRM_COMMAND_BASE + DRM_QXL_MAP, struct drm_qxl_map)
+#define DRM_IOCTL_QXL_EXECBUFFER DRM_IOW(DRM_COMMAND_BASE + DRM_QXL_EXECBUFFER, struct drm_qxl_execbuffer)
+#define DRM_IOCTL_QXL_UPDATE_AREA DRM_IOW(DRM_COMMAND_BASE + DRM_QXL_UPDATE_AREA, struct drm_qxl_update_area)
+#define DRM_IOCTL_QXL_GETPARAM DRM_IOWR(DRM_COMMAND_BASE + DRM_QXL_GETPARAM, struct drm_qxl_getparam)
+#define DRM_IOCTL_QXL_CLIENTCAP DRM_IOW(DRM_COMMAND_BASE + DRM_QXL_CLIENTCAP, struct drm_qxl_clientcap)
+#define DRM_IOCTL_QXL_ALLOC_SURF DRM_IOWR(DRM_COMMAND_BASE + DRM_QXL_ALLOC_SURF, struct drm_qxl_alloc_surf)
+#if defined(__cplusplus)
+#endif
+#endif

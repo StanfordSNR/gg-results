@@ -1,0 +1,19 @@
+// GGHASH:VCT6EEmD0LINgqntKZm85RbxHSRwGY5Uj58fcVuAPxd40000804b
+#ifndef _GLIBCXX_ISTREAM
+#define _GLIBCXX_ISTREAM 1
+#include <ios>
+#include <ostream>
+#ifdef _GLIBCXX_USE_LONG_LONG
+#endif
+#if __cplusplus >= 201103L
+#endif
+#ifdef _GLIBCXX_USE_WCHAR_T
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#if __cplusplus >= 201103L
+#endif
+#include <bits/istream.tcc>
+#endif
