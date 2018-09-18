@@ -1,6 +1,7 @@
 #!/bin/bash -ex
 
 pushd source
+./fetch-submodules.sh
 ./autogen.sh
 popd
 
