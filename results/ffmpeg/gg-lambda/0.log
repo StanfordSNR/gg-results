@@ -1,0 +1,23 @@
+	Command being timed: "gg-force --jobs 2000 --engine lambda=us-west-2 --engine lambda=us-east-1 --jobs 1000 --engine lambda=us-west-1 --engine lambda=us-east-2 --timeout 4 ffmpeg ffprobe"
+	User time (seconds): 9.68
+	System time (seconds): 2.21
+	Percent of CPU this job got: 31%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:37.27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 528732
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 161367
+	Voluntary context switches: 8725
+	Involuntary context switches: 492
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 435160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
