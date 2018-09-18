@@ -1,18 +1,18 @@
 	Command being timed: "gg-build-infer make -j4 inkscape inkview"
-	User time (seconds): 28.44
-	System time (seconds): 15.75
+	User time (seconds): 28.97
+	System time (seconds): 15.48
 	Percent of CPU this job got: 193%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:22.86
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:22.94
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 90624
+	Maximum resident set size (kbytes): 90888
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 1978129
-	Voluntary context switches: 15622
-	Involuntary context switches: 11082
+	Minor (reclaiming a frame) page faults: 1987363
+	Voluntary context switches: 14416
+	Involuntary context switches: 10999
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 654880
