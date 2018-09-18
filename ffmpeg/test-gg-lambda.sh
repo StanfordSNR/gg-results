@@ -17,3 +17,5 @@ EOL
 
 ${TIMECOMMAND_PREP0} gg-build-infer make -j${SMALL_CORES} ${__TARGETS}
 ${TIMECOMMAND} gg-force ${LAMBDA_ENGINES} --timeout 4 ${__TARGETS?"not set"}
+
+rm -rf ../data/remotes/
