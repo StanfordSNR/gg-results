@@ -5,6 +5,12 @@ source ${BASH_SOURCE%/*}/define.sh
 gg-init
 tar xf ../data/remotes.tar.gz -C ../data
 
+for i in $(seq 1 8)
+do
+  REMOTE=GG_REMOTE_$i
+  curl --fail http://${!REMOTE}:9924/reset
+done
+
 export GG_GCC_BUILD_DIR=$(readlink -f .)
 export GG_CACHE_DIR=$(readlink -f ../data/)
 
