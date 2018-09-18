@@ -1,0 +1,23 @@
+	Command being timed: "gg-force --jobs 48 --engine remote=18.237.26.176 --engine remote=54.244.216.52 --engine remote=34.221.57.15 --engine remote=54.149.75.39 --engine remote=18.237.202.215 --engine remote=18.237.149.209 --engine remote=18.236.222.36 --engine remote=35.160.161.228 --timeout 4 ffmpeg ffprobe"
+	User time (seconds): 4.29
+	System time (seconds): 3.08
+	Percent of CPU this job got: 23%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:30.78
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 257784
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 105731
+	Voluntary context switches: 13293
+	Involuntary context switches: 347
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 355104
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
