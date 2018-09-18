@@ -15,5 +15,5 @@ cat >headers.gg.txt <<EOL
 .inc
 EOL
 
-${TIMECOMMAND_PREP0} gg-build-infer make -j${SMALL_CORES} ${__MAKE_TARGETS}
-${TIMECOMMAND} gg-force ${LAMBDA_ENGINES} --timeout 4 ${__GG_TARGETS?"not set"}
+${TIMECOMMAND_PREP0} gg-build-infer make -j${SMALL_CORES} ${__TARGETS}
+${TIMECOMMAND} gg-force ${LAMBDA_ENGINES} --timeout 4 ${__TARGETS?"not set"}
