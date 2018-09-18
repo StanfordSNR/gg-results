@@ -1,0 +1,10 @@
+*.h
+*.hh
+*.hpp
+*.hxx
+*.xpm
+*.c
+*.cpp
+*.cc
+*.cxx
+*.inc
