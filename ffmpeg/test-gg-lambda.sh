@@ -6,6 +6,7 @@ gg-init
 tar xf ../data/remotes.tar.gz -C ../data
 
 export GG_GCC_BUILD_DIR=$(readlink -f .)
+export GG_GCC_SOURCE_DIR=`pwd`/src
 export GG_CACHE_DIR=$(readlink -f ../data/)
 
 cat >headers.gg.txt <<EOL
