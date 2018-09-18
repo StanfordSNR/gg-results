@@ -1,21 +1,21 @@
 	Command being timed: "gg-build-infer make -j4 ffmpeg ffprobe"
-	User time (seconds): 16.55
-	System time (seconds): 11.95
-	Percent of CPU this job got: 348%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.19
+	User time (seconds): 16.60
+	System time (seconds): 11.94
+	Percent of CPU this job got: 349%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.17
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 44864
+	Maximum resident set size (kbytes): 44952
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 1751160
-	Voluntary context switches: 21848
-	Involuntary context switches: 14168
+	Minor (reclaiming a frame) page faults: 1756600
+	Voluntary context switches: 20695
+	Involuntary context switches: 14147
 	Swaps: 0
 	File system inputs: 0
-	File system outputs: 584264
+	File system outputs: 583232
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
