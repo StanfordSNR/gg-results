@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ${BASH_SOURCE%/*}/define.sh
+
 mkdir -p .gg-cache
 export GG_CACHE_DIR=$(readlink -f .gg-cache)
 
