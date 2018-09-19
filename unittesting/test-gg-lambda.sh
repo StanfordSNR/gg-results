@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ${BASH_SOURCE%/*}/define.sh
+
 gg-init
 export GG_CACHE_DIR=$(readlink -f .ggcache)
 
