@@ -6,6 +6,7 @@
 *.inc
 *.def
 *.ipp
+*.inl
 */__config
 */buildtools/third_party/libc++/trunk/include/*
 */aacdec_template.c
@@ -186,6 +187,7 @@
 */foo.cc
 */fork.c
 */formats.c
+*/ft*.c
 */ftadvanc.c
 */ftcalc.c
 */ftcbasic.c
