@@ -21,8 +21,8 @@ PROGRAMS = [
     'ffmpeg',
     'gimp',
     'inkscape',
-    'llvm',
     'chrome',
+    'unittesting',
     # 'objectrec',
     # 'excamera'
 ]
@@ -32,12 +32,26 @@ TESTS = [
     ('make-48', 0),
     ('icecc-48', 0),
     ('icecc-48x8', 0),
-    ('icecc-48x8-2', 0),
     ('gg-48x8', 1),
     ('gg-lambda', 1),
+    ('make-parallel-4', 0),
+    ('make-parallel-48', 0),
     # ('gg-ec2-64', 1),
     # ('gg-lambda-64', 1),
 ]
+
+PREP_COUNT = {
+    'chrome-gg-48x8': 10,
+    'chrome-gg-lambda': 10
+}
+
+TEST_NAME = {
+    'inkscape-icecc-48x8': 'icecc-48x8-2'
+}
+
+TEST_NAME = {
+    'unittesting-make': 'make-check'
+}
 
 TIME_LINE = 'Elapsed (wall clock) time (h:mm:ss or m:ss): '
 
@@ -89,16 +103,49 @@ def process_logs(log_dir, test_count, suffix=''):
         'median': timedelta(seconds=numpy.median(seconds_data))
     }
 
+def extract_time(log_file):
+    point = None
+    with open(log_file, "r") as fin:
+        for line in fin:
+            line = line.strip()
+            if line.startswith(TIME_LINE):
+                point = line[len(TIME_LINE):]
+                break
+
+    return parse_time(point)
+
+
+def get_total_time(log_dir, test_number, prep_count):
+    total = timedelta()
+
+    main_log_file = os.path.join(log_dir, '%d.log' % test_number)
+    if not os.path.exists(main_log_file):
+        return total
+    total += extract_time(main_log_file)
+
+
+    for i in range(prep_count):
+        log_file = os.path.join(log_dir, '%d-prep%d.log' % (test_number, i))
+        if not os.path.exists(log_file):
+            raise Exception("inconsistency in %s" % log_dir)
+
+        total += extract_time(log_file)
+
+    return total
+
+
 def generate_tables(results_dir):
     output = {x: dict() for x in PROGRAMS}
 
     for program in PROGRAMS:
         for test, prep_count in TESTS:
-            data_path = os.path.join(results_dir, program, test)
+            nametag = '%s-%s' % (program, test)
+            actual_test = TEST_NAME.get(nametag, test)
+            prep_count = PREP_COUNT.get(nametag, prep_count)
+
+            data_path = os.path.join(results_dir, program, actual_test)
 
             if not os.path.exists(data_path):
-                for i in range(prep_count):
-                    output[program]['%s@prep%d' % (test, i)] = None
                 output[program][test] = None
                 continue
 
@@ -110,9 +157,15 @@ def generate_tables(results_dir):
 
             test_count = file_count // batch_count
 
-            for i in range(prep_count):
-                output[program]['%s@prep%d' % (test, i)] = process_logs(data_path, test_count, '-prep%d' % i)
-            output[program][test] = process_logs(data_path, test_count)
+            values = []
+            for i in range(test_count):
+                values += [get_total_time(data_path, i, prep_count).total_seconds()]
+
+            output[program][test] = {
+                'mean': timedelta(seconds=numpy.mean(values)),
+                'stdev': timedelta(seconds=numpy.std(values)),
+                'median': timedelta(seconds=numpy.median(values))
+            }
 
     return output
 
@@ -153,16 +206,14 @@ def markdown(data):
     print("|".join(["---"] * (len(PROGRAMS) + 1)))
 
     for test, prep_count in TESTS:
-        for test_name in ['%s@prep%d' % (test, i) for i in range(prep_count)] + [test]:
-            row_data = []
+        row_data = []
+        for p in PROGRAMS:
+            if data[p][test]:
+                row_data += ["%s *(± %s)*" % (format_timedelta(data[p][test]['median']), format_timedelta(data[p][test]['stdev']))]
+            else:
+                row_data += ["—"]
 
-            for p in PROGRAMS:
-                if data[p][test_name]:
-                    row_data += ["%s *(± %s)*" % (format_timedelta(data[p][test_name]['median']), format_timedelta(data[p][test_name]['stdev']))]
-                else:
-                    row_data += ["—"]
-
-            print("|".join([('**%s**' if '@' not in test_name else '*%s*') % test_name] + row_data))
+        print("|".join([('**%s**' if '@' not in test else '*%s*') % test] + row_data))
 
 target_programs = [
     # ('mosh', 'Mosh'),
@@ -172,7 +223,6 @@ target_programs = [
     ('ffmpeg', 'FFmpeg'),
     ('gimp', 'GIMP'),
     ('inkscape', 'Inkscape'),
-    ('llvm', 'LLVM'),
     ('chrome', 'Chrome')
 ]
 
