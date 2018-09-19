@@ -241,10 +241,10 @@ def latex_table(cols):
 def latex_main_results(data):
     target_tests = [
         ('make', 'make'),
-        ('make-64', 'make (64)'),
-        ('gg-64', 'gg (64)'),
-        ('icecc-make-64', ('Icecream (64+1)')),
-        ('gg-lambda-2000', r'gg-\textlambda'),
+        ('make-48', 'make (48)'),
+        ('icecc-48x8', r'Icecream ($48\times8$)'),
+        ('gg-48x8', ('gg ($48\times8$)')),
+        ('gg-lambda', r'gg-\textlambda'),
     ]
 
     with latex_table('l %s' % (' '.join(['c'] * len(target_tests)))):
