@@ -19,3 +19,6 @@
 [submodule "llvm/source"]
 	path = llvm/source
 	url = https://github.com/llvm-mirror/llvm
+[submodule "unittesting/source"]
+	path = unittesting/source
+	url = https://chromium.googlesource.com/webm/libvpx
