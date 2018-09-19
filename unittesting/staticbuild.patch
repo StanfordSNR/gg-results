@@ -1,0 +1,13 @@
+diff --git a/libs.mk b/libs.mk
+index 20aad0b49..548351c55 100644
+--- a/libs.mk
++++ b/libs.mk
+@@ -522,7 +522,7 @@ TEST_LIBS := lib$(CODEC_LIB)$(CODEC_LIB_SUF) libgtest.a
+ $(LIBVPX_TEST_BIN): $(TEST_LIBS)
+ $(eval $(call linkerxx_template,$(LIBVPX_TEST_BIN), \
+               $(LIBVPX_TEST_OBJS) \
+-              -L. -lvpx -lgtest $(extralibs) -lm))
++              -L. -lvpx -lgtest $(extralibs) -lm -static -s))
+
+ ifneq ($(strip $(TEST_INTRA_PRED_SPEED_OBJS)),)
+ $(TEST_INTRA_PRED_SPEED_OBJS) $(TEST_INTRA_PRED_SPEED_OBJS:.o=.d): CXXFLAGS += $(GTEST_INCLUDES)
