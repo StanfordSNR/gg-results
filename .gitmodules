@@ -22,3 +22,6 @@
 [submodule "unittesting/source"]
 	path = unittesting/source
 	url = https://chromium.googlesource.com/webm/libvpx
+[submodule "unittesting/gtest-parallel"]
+	path = unittesting/gtest-parallel
+	url = https://github.com/google/gtest-parallel.git
