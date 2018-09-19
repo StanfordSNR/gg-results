@@ -57,8 +57,7 @@ ${TIMECOMMAND_PREP8} gg-force ${LARGE_LAMBDA_ENGINES} ${FALLBACK_ENGINES} --time
 
 # (6) and for my next trick, i'm gonna build chrome
 ${TIMECOMMAND_PREP9} gg-build-infer ninja -j${SMALL_CORES} chrome
-${TIMECOMMAND} gg-force ${LARGE_LAMBDA_ENGINES} ${FALLBACK_ENGINES} --timeout 10
-chrome
+${TIMECOMMAND} gg-force ${LARGE_LAMBDA_ENGINES} ${FALLBACK_ENGINES} --timeout 10 chrome
 
 popd
 
