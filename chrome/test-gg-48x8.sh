@@ -71,14 +71,14 @@ sleep 10
 unset GG_GCC_BUILD_DIR
 
 ${TIMECOMMAND_PREP7} gg-build-infer ninja -j${SMALL_CORES} v8_context_snapshot_generator
-${TIMECOMMAND_PREP8} gg-force ${REMOTE_ENGINES} ${FALLBACK_ENGINES} --timeout 30 --timeout-multiplier 3 v8_context_snapshot_generator *.so
+${TIMECOMMAND_PREP8} gg-force ${REMOTE_ENGINES} --timeout 30 --timeout-multiplier 3 v8_context_snapshot_generator *.so
 
 echo "stage 5: done."
 sleep 10
 
 # (6) and for my next trick, i'm gonna build chrome
 ${TIMECOMMAND_PREP9} gg-build-infer ninja -j${SMALL_CORES} chrome
-${TIMECOMMAND} gg-force ${REMOTE_ENGINES} ${FALLBACK_ENGINES} --timeout 30 --timeout-multiplier 3 chrome
+${TIMECOMMAND} gg-force ${REMOTE_ENGINES} --timeout 30 --timeout-multiplier 3 chrome
 
 echo "stage 6: done."
 
