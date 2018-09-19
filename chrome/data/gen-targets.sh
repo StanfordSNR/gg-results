@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+ninja -t targets all |
+  egrep "^gen/" |
+  egrep "(angle/id/commit.h|_bindings_|buildflags|autogen|generator|generate_message_ids|generate_version_info|device_bluetooth_strings_strings_grit|library_loaders|media_audio_pulse|net_resources_grit|net_http_generate_transport_security_state|services_metrics_public_cpp|third_party/angle|third_party_blink_|third_party_ffmpeg_|ui_base_ui_features|ui_gl_gl_features|ui/resources/grit|ui/strings/grit|url_url_features|widevine_cdm_version\.h|v8_run_mksnapshot_default|third_party/blink/public/resources/grit/media_controls_resources.h|net_base_registry_controlled|base_build_date|third_party_yasm|v8_run_torque|v8/src/inspector/protocol/|v8/include/inspector/|v8_js2c|/grit/|\.pbzero\.|build_util_webkit_version|chrome_browser_devtools_protocol_generated|chrome_browser_metrics|chrome_browser_search_local_ntp_code_generate|chrome_browser_vr|chrome_common_extensions_api|chrome_common_version_header|components_certificate_transparency|components_data_reduction_proxy|components_domain_reliability|components_language_content|components_search_engines_prepopulated_engines|components_subresource_filter|components_ui_devtools_protocol_generated_sources|components_url_formatter_top_domains_generate|components_url_pattern_index_flat_url|components_variations_field_trial_config|content_browser_devtools_protocol|device_usb_usb_device_ids|extensions_browser_api_declarative_net|extensions/common/api/|flapper_version\.h|headless|third_party/libaddressinput|ui/views/|vector_icons|\.pb\.)" |
+  cut -d ':' -f 1 |
+  egrep "\.(h|hh|hpp|hxx|inc|c|cc|cpp|cxx)$" |
+  egrep -v "(gen/chrome/test/|gen/content/test/|headless_browsertest_resources)"
