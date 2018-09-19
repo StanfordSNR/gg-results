@@ -32,6 +32,7 @@ TESTS = [
     ('make-48', 0),
     ('icecc-48', 0),
     ('icecc-48x8', 0),
+    ('icecc-48x8-2', 0),
     ('gg-48x8', 1),
     ('gg-lambda', 1),
     # ('gg-ec2-64', 1),
