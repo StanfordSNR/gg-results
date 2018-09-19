@@ -1,0 +1,23 @@
+	Command being timed: "gg-force --jobs 2500 --engine lambda=us-west-2 --engine lambda=us-east-1 --jobs 1500 --engine lambda=us-west-1 --engine lambda=us-east-2 --jobs 4 --fallback-engine remote=34.210.29.64 --timeout 30 --timeout-multiplier 3 v8_context_snapshot_generator libEGL.so libGLESv2.so libVkICD_mock_icd.so libVkLayer_core_validation.so libVkLayer_object_tracker.so libVkLayer_parameter_validation.so libVkLayer_threading.so libVkLayer_unique_objects.so libffmpeg.so"
+	User time (seconds): 174.21
+	System time (seconds): 23.63
+	Percent of CPU this job got: 66%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:57.33
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3233740
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 935212
+	Voluntary context switches: 43325
+	Involuntary context switches: 4056
+	Swaps: 0
+	File system inputs: 96
+	File system outputs: 4234192
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
