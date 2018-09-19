@@ -117,6 +117,8 @@ def run_tests(program_name, test_name, repeat_count):
                 output=os.path.join(result_path, '{}-prep7.log'.format(run_index)))
             env['TIMECOMMAND_PREP8'] = '/usr/bin/time --output={output} --verbose'.format(
                 output=os.path.join(result_path, '{}-prep8.log'.format(run_index)))
+            env['TIMECOMMAND_PREP9'] = '/usr/bin/time --output={output} --verbose'.format(
+                output=os.path.join(result_path, '{}-prep9.log'.format(run_index)))
 
             try:
                 sub.check_call([test_command], stderr=sub.DEVNULL, stdout=sub.DEVNULL, env=env, cwd=build_path)

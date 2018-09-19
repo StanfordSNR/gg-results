@@ -10,4 +10,8 @@ export LAMBDA_SMALL_CORES=500
 
 export LAMBDA_ENGINES="--jobs ${LAMBDA_CORES} --engine lambda=us-west-2 --engine lambda=us-east-1 --jobs ${LAMBDA_MEDIUM_CORES} --engine lambda=us-west-1 --engine lambda=us-east-2"
 
+export LARGE_LAMBDA_ENGINES="--jobs 2500 --engine lambda=us-west-2 --engine lambda=us-east-1 --jobs 1500 --engine lambda=us-west-1 --engine lambda=us-east-2"
+
 export REMOTE_ENGINES="--jobs ${LARGE_CORES} --engine remote=${GG_REMOTE_1} --engine remote=${GG_REMOTE_2} --engine remote=${GG_REMOTE_3} --engine remote=${GG_REMOTE_4} --engine remote=${GG_REMOTE_5} --engine remote=${GG_REMOTE_6} --engine remote=${GG_REMOTE_7} --engine remote=${GG_REMOTE_8}"
+
+export FALLBACK_ENGINES="--jobs 4 --fallback-engine remote=${GG_REMOTE_FALLBACK}"
