@@ -5,6 +5,7 @@ source ${BASH_SOURCE%/*}/define.sh
 BUILD_ROOT_DIR=`pwd`
 
 # prepare the caches
+rm -rf ../temp-cache
 cp -R ../data ../temp-cache
 export GG_CACHE_DIR=$(readlink -f ../temp-cache)
 
@@ -39,13 +40,13 @@ ${TIMECOMMAND_PREP2} gg-build-infer ninja -j${SMALL_CORES} ${TARGETS}
 ${TIMECOMMAND_PREP3} gg-force ${LAMBDA_ENGINES} --timeout 4 ${TARGETS}
 
 # (3) run ninja to generate the extra source & headers
-${TIMECOMMAND_PREP4} ${BUILD_ROOT_DIR}/../data/gen-targets.sh |
-  xargs -- gg-infer ninja -j${SMALL_CORES} -k0
+${TIMECOMMAND_PREP4} /bin/bash -c "${BUILD_ROOT_DIR}/../data/gen-targets.sh |
+  xargs -- gg-infer ninja -j${SMALL_CORES} -k0"
 
 # (4) create blueprints for generated headers
 pushd gen/
 ${TIMECOMMAND_PREP5} gg-create-blueprints -f ${BUILD_ROOT_DIR}/../data/gen-includes.txt -t /dev/shm -o /dev/shm/file-list.txt .
-${TIMECOMMAND_PREP6} -- /bin/bash -c 'cat /dev/shm/file-list.txt | gg-put'
+${TIMECOMMAND_PREP6} /bin/bash -c 'cat /dev/shm/file-list.txt | gg-put'
 popd
 
 # (5) now we're ready to build v8_context_snapshot_generator
