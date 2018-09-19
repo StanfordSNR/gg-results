@@ -48,7 +48,7 @@ ${TIMECOMMAND_PREP4} /bin/bash -c "${BUILD_ROOT_DIR}/../data/gen-targets.sh |
 # (4) create blueprints for generated headers
 pushd gen/
 ${TIMECOMMAND_PREP5} gg-create-blueprints -f ${BUILD_ROOT_DIR}/../data/gen-includes.txt -t /dev/shm -o /dev/shm/file-list.txt .
-${TIMECOMMAND_PREP6} /bin/bash -c 'cat /dev/shm/file-list.txt | gg-put'
+${TIMECOMMAND_PREP6} /bin/bash -c 'until ( cat /dev/shm/file-list.txt | gg-put ); do : ; done'
 popd
 
 # (5) now we're ready to build v8_context_snapshot_generator
