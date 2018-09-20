@@ -23,6 +23,7 @@ PROGRAMS = [
     'inkscape',
     'chrome',
     'unittesting',
+    'sleep2',
     # 'objectrec',
     # 'excamera'
 ]
@@ -36,6 +37,7 @@ TESTS = [
     ('gg-lambda', 1),
     ('make-parallel-4', 0),
     ('make-parallel-48', 0),
+    ('gg', 0),
     # ('gg-ec2-64', 1),
     # ('gg-lambda-64', 1),
 ]
@@ -46,10 +48,7 @@ PREP_COUNT = {
 }
 
 TEST_NAME = {
-    'inkscape-icecc-48x8': 'icecc-48x8-2'
-}
-
-TEST_NAME = {
+    'inkscape-icecc-48x8': 'icecc-48x8-2',
     'unittesting-make': 'make-check'
 }
 
