@@ -9,4 +9,4 @@ def f(x):
 
 wrenexec = pywren.default_executor()
 futures = wrenexec.map(f, range(1000))
-print(pywren.get_all_results(futures))
+pywren.get_all_results(futures)
