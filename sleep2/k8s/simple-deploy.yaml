@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-deployment
+  labels:
+    app: sleep 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sleep
+  template:
+    metadata:
+      labels:
+        app: sleep
+    spec:
+      containers:
+      - name: command-demo-container
+        image: nginx:1.7.9
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 0.001
+          limits:
+            cpu: 0.001
